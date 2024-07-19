@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>0xAdra</title>
+    <title>Home</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on 0xAdra</description>
+    <description>Recent content on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 19 Jul 2024 17:24:48 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jul 2024 18:14:01 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apply</title>
+      <link>http://localhost:1313/apply/</link>
+      <pubDate>Fri, 19 Jul 2024 18:14:01 +0530</pubDate>
+      <guid>http://localhost:1313/apply/</guid>
+      <description>Open Positions&#xD;Link to heading&#xD;Friend&#xD;Link to heading&#xD;Description: Seeking interesting, fun individuals to share laughs, exchange ideas, and build lasting memories.&#xA;How to Apply: Send a hello on twitter&#xA;Apply Now</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Fri, 19 Jul 2024 17:38:13 +0530</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description> A independent security researcher &amp;amp; developer auditing smart contracts for a living&amp;hellip; Things I believe&#xD;Link to heading&#xD;Form is everything Excess in moderation Think less Think less AI will be transformative, soon, and it may not go well Choosing to care about silly things (especially communities) is important Strength before weakness Things gonna be more hardcore Quotes I Like&#xD;Link to heading&#xD;&amp;ldquo;Given enough eyeballs, all bugs are shallow&amp;rdquo; </description>
+    </item>
     <item>
       <title>Projects</title>
       <link>http://localhost:1313/projects/</link>

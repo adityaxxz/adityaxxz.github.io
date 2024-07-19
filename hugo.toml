@@ -1,5 +1,5 @@
 baseurl = "http://www.0xadra.xyz"
-title = "0xAdra"
+title = "Home"
 theme = "hugo-coder"
 languagecode = "en"
 defaultcontentlanguage = "en"
@@ -19,7 +19,7 @@ style = "github-dark"
   description = "OxAdra's website"
   keywords = "blog,developer,personal,projects"
   #avatarurl = "images/avatar.jpg"
-  gravatar = ""
+  gravatar = ".0xadra"
 
   faviconSVG = "/img/favicon.svg"
   favicon_32 = "/img/favicon-32x32.png"
@@ -65,9 +65,14 @@ style = "github-dark"
   weight = 2
   url = "projects/"
 [[menu.main]]
-  name = "About"
+  name = "Apply"
   weight = 3
+  url = "apply/"
+[[menu.main]]
+  name = "About"
+  weight = 4
   url = "about/"
+
 
 
 theme = 'hugo-coder'
