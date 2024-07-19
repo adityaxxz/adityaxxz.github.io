@@ -1,5 +1,4 @@
 +++ 
-draft = true
 date = 2024-07-19T12:04:38+05:30
 title = "The War of Art"
 description = ""
