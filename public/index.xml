@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>0xAdra</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on 0xAdra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 19 Jul 2024 12:04:38 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The War of Art</title>
+      <link>http://localhost:1313/posts/thewarofart/</link>
+      <pubDate>Fri, 19 Jul 2024 12:04:38 +0530</pubDate>
+      <guid>http://localhost:1313/posts/thewarofart/</guid>
+      <description>Author : Steven Pressfield&#xA;Book Link : The War of Art: Break Through the Blocks and Win Your Inner Creative Battles&#xA;&amp;ldquo;The War of Art&amp;rdquo; is a concise, engaging, and practical guide to success in any creative field. It serves as a modern Sun-Tzu for the soul, addressing the internal obstacles that prevent us from achieving our goals. Bestselling novelist Steven Pressfield identifies the inner enemy we all face, provides a battle plan to overcome it, and explains how to achieve the highest level of creative discipline.</description>
+    </item>
+  </channel>
+</rss>
