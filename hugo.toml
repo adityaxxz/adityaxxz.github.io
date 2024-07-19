@@ -1,4 +1,4 @@
-baseurl = "http://www.example.com"
+baseurl = "http://www.0xadra.xyz"
 title = "0xAdra"
 theme = "hugo-coder"
 languagecode = "en"
@@ -17,15 +17,15 @@ style = "github-dark"
   author = "0xAdra"
   info = "Security Researcher"
   description = "OxAdra's website"
-  keywords = "blog,developer,personal"
-  avatarurl = "images/avatar.jpg"
-  #gravatar = "john.doe@example.com"
+  keywords = "blog,developer,personal,projects"
+  #avatarurl = "images/avatar.jpg"
+  gravatar = ""
 
   faviconSVG = "/img/favicon.svg"
   favicon_32 = "/img/favicon-32x32.png"
   favicon_16 = "/img/favicon-16x16.png"
 
-  since = 2019
+  since = 2023
 
   enableTwemoji = true
 
@@ -52,12 +52,12 @@ style = "github-dark"
 [[params.social]]
   name = "Twitter"
   icon = "fa-brands fa-x-twitter fa-2x"
-  weight = 3
+  weight = 2
   url = "https://twitter.com/0xadra/"
 
 # Menu links
 [[menu.main]]
-  name = "Blog"
+  name = "Posts"
   weight = 1
   url  = "posts/"
 [[menu.main]]
