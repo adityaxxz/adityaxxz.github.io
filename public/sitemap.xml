@@ -2,30 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:53540/</loc>
     <lastmod>2024-07-19T18:14:01+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/apply/</loc>
+    <loc>http://localhost:53540/apply/</loc>
     <lastmod>2024-07-19T18:14:01+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>http://localhost:53540/about/</loc>
     <lastmod>2024-07-19T17:38:13+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>http://localhost:53540/projects/</loc>
     <lastmod>2024-07-19T17:24:48+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://localhost:53540/posts/</loc>
     <lastmod>2024-07-19T12:04:38+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/thewarofart/</loc>
+    <loc>http://localhost:53540/posts/thewarofart/</loc>
     <lastmod>2024-07-19T12:04:38+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/authors/</loc>
+    <loc>http://localhost:53540/authors/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:53540/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/series/</loc>
+    <loc>http://localhost:53540/series/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:53540/tags/</loc>
   </url>
 </urlset>
