@@ -1,13 +1,12 @@
 +++
-title = 'Apply'
+title = 'Open Positions'
 date = 2024-07-19T18:14:01+05:30
 +++
 
-## Open Positions
 ---
 #### **Friend🫂**
 
-*Description*: Seeking interesting, fun individuals to share laughs, exchange ideas, and build lasting memories.
+*Description*: Seeking fun, interesting people to laugh with, brainstorm ideas, and make great memories.
 
 *How to Apply*: Send a hello on twitter [Apply Now](https://twitter.com/0xadra)
 

@@ -19,7 +19,9 @@ style = "github-dark"
   description = "OxAdra's website"
   keywords = "blog,developer,personal,projects"
   #avatarurl = "images/avatar.jpg"
-  gravatar = ".0xadra"
+  avatarURL = "images/me.jpg"
+  #avatarabout = "images/me.jpg"
+  #gravatar = ".0xadra"
 
   faviconSVG = "/img/favicon.svg"
   favicon_32 = "/img/favicon-32x32.png"
@@ -32,7 +34,7 @@ style = "github-dark"
   colorScheme = "auto"
   hidecolorschemetoggle = false
 
-  # customCSS = ["css/custom.css"]
+  #customCSS = ["css/custom.css"]
   # customSCSS = ["scss/custom.scss"]
   # customJS = ["js/custom.js"]
 
@@ -54,6 +56,12 @@ style = "github-dark"
   icon = "fa-brands fa-x-twitter fa-2x"
   weight = 2
   url = "https://twitter.com/0xadra/"
+
+[[params.social]]
+name = "Email"
+icon = "fa fa-2x fa-envelope"
+weight = 3
+url = "mailto:adityaranjan5995@gmail.com"
 
 # Menu links
 [[menu.main]]
