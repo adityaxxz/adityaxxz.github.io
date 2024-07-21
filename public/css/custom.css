@@ -1,11 +1,20 @@
 /* Custom CSS */
-body {
+/* body {
     font-family: 'Source Sans 3', sans-serif;
 }
 
 h1, h2, h3 {
     font-family: 'Source Sans 3', sans-serif;
+} */
+
+/* body {
+    font-family: 'Source Sans 3', sans-serif;
+} */
+
+h1, h2, h3,h4,h5 {
+    font-family: 'Playfair Display', 'Georgia', 'Times New Roman','Times New Roman','Times New Roman',serif;
 }
+
 /* Add more custom styles as needed */
 
 code.has-jax {

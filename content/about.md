@@ -3,7 +3,11 @@ title = 'About me'
 date = 2024-07-19T17:38:13+05:30
 +++
 
-- An independent security researcher & developer auditing smart contracts for a living...
+<p align="center">
+<img src = "" width=850>
+<br/>
+
+##### An independent security researcher & developer auditing smart contracts for a living...
 
 ### Things I believe
 - Form is everything
