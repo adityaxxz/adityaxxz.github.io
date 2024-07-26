@@ -1,4 +1,4 @@
-baseurl = "http://www.0xadra.xyz"
+baseurl = "https://www.0xadra.xyz"
 title = "Home"
 theme = "hugo-coder"
 languagecode = "en"
@@ -23,20 +23,20 @@ style = "github-dark"
   avatarabout = "images/me.jpg"
   #gravatar = ".0xadra"
 
-  faviconSVG = "/img/favicon.svg"
-  favicon_32 = "/img/favicon-32x32.png"
-  favicon_16 = "/img/favicon-16x16.png"
+  #favicon = "favicon.png"
+  #favicon_32 = "/img/favicon-32x32.png"
+  #favicon_16 = "/img/favicon-16x16.png"
 
   since = 2023
 
   enableTwemoji = true
 
-  colorScheme = "auto"
-  hidecolorschemetoggle = false
+  colorScheme = "dark"
+  hidecolorschemetoggle = true
 
   customCSS = ["css/custom.css"]
-  # customSCSS = ["scss/custom.scss"]
-  # customJS = ["js/custom.js"]
+  #customSCSS = ["scss/custom.scss"]
+  customJS = ["js/custom.js"]
 
 [taxonomies]
   category = "categories"

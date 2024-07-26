@@ -3,9 +3,6 @@ title = 'About me'
 date = 2024-07-19T17:38:13+05:30
 +++
 
-<p align="center">
-<img src = "" width=850>
-<br/>
 
 ##### An independent security researcher & developer auditing smart contracts for a living...
 
@@ -17,7 +14,7 @@ date = 2024-07-19T17:38:13+05:30
 - AI will be transformative, soon, and it may not go well
 - Choosing to care about silly things (especially communities) is important
 - Strength before weakness
-- Things gonna be more hardcore
+- Things gonna be more challenging
 
 ### Quotes I Like
 - "Given enough eyeballs, all bugs are shallow"

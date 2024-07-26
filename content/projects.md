@@ -8,4 +8,8 @@ slug = "projects"
 
 
 
-#### &nbsp;&nbsp;&nbsp;[Account Abstraction](https://github.com/adityaxxz/account-abstraction) - Minimal Account Abstraction implementation on &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ethereum & ZKSync
+#### [Account Abstraction](https://github.com/adityaxxz/account-abstraction) - Minimal Account Abstraction implementation on Ethereum & ZKSync
+
+<!-- Project Name | Link | Description
+|--|--|--|
+Account Abstraction | Link | Minimal Account Abstraction implementation on Ethereum & ZKSync -->
