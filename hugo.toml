@@ -80,7 +80,6 @@ url = "mailto:adityaranjan5995@gmail.com"
   name = "About"
   weight = 4
   url = "about/"
-
-
+  
 
 theme = 'hugo-coder'
