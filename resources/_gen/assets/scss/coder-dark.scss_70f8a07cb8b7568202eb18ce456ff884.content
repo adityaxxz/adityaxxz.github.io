@@ -266,11 +266,11 @@ body.colorscheme-dark .taxonomy-element {
       color: #dadada; } }
 
 body.colorscheme-dark .footer a {
-  color: #42a5f5; }
+  color: #dadada; }
 
 @media (prefers-color-scheme: dark) {
   body.colorscheme-auto .footer a {
-    color: #42a5f5; } }
+    color: #dadada; } }
 
 body.colorscheme-dark .float-container a {
   color: #dadada;
