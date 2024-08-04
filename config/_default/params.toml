@@ -49,8 +49,8 @@ smartTOCHideUnfocusedChildren = true
 [article]
   showDate = true
   showViews = false
-  showLikes = true
-  showDateOnlyInArticle = false
+  showLikes = false
+  showDateOnlyInArticle = true
   showDateUpdated = true
   showAuthor = false
   # showAuthorBottom = false
@@ -69,11 +69,11 @@ smartTOCHideUnfocusedChildren = true
   invertPagination = false
   showReadingTime = true
   showTableOfContents = true
-  showRelatedContent = true
+  showRelatedContent = false
   relatedContentLimit = 3
   showTaxonomies = false
   showAuthorsBadges = false
-  showWordCount = true
+  showWordCount = false
   # sharingLinks = [ "linkedin", "twitter", "bluesky", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
   showZenMode = false
 
