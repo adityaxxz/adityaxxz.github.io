@@ -19,6 +19,8 @@ enableEmoji = true
 
 # googleAnalytics = "G-XXXXXXXXX"
 
+disableKinds = ['sitemap']
+
 [imaging]
   anchor = 'Center'
 

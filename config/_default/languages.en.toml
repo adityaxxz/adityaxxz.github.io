@@ -1,7 +1,7 @@
 languageCode = "en"
 languageName = "English"
-weight = 1
-title = "Blowfish"
+weight = 100
+title = "0xAdra"
 
 [params]
   displayName = "EN"
@@ -11,15 +11,15 @@ title = "Blowfish"
    logo = "images/me.jpg"
   # secondaryLogo = "img/secondary-logo.png"
   # description = "My awesome website"
-  # copyright = "Copy, _right?_ :thinking_face:"
+  copyright = "0xAdra ©2024"
 
-# [author]
-#   name = "Your name here"
-#   image = "img/blowfish_logo.png"
-#   headline = "I'm only human"
-#   bio = "A little bit about you"
-#   links = [
-#     { email = "mailto:hello@your_domain.com" },
+ [author]
+  name = "Aditya"
+  image = "img/me.jpg"
+  headline = "Security Researcher"
+   bio = "Security Researcher"
+   links = [
+     { email = "mailto:adityaranjan5995@gmail.com" },
 #     { link = "https://link-to-some-website.com/" },
 #     { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
 #     { apple = "https://www.apple.com" },
@@ -62,9 +62,9 @@ title = "Blowfish"
 #     { tumblr = "https://username.tumblr.com" },
 #     { twitch = "https://twitch.tv/username" },
 #     { twitter = "https://twitter.com/username" },
-#     { x-twitter = "https://twitter.com/username" },
+     { x-twitter = "https://twitter.com/0xadra" },
 #     { whatsapp = "https://wa.me/phone-number" },
 #     { youtube = "https://youtube.com/username" },
 #     { ko-fi = "https://ko-fi.com/username" },
 #     { codeberg = "https://codeberg.org/username"},
-#   ]
+   ]
