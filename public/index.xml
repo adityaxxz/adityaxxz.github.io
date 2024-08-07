@@ -20,12 +20,12 @@
     
     <item>
       <title>The War of Art</title>
-      <link>http://localhost:1313/blog/the-war-of-art/</link>
+      <link>http://localhost:1313/blogs/the-war-of-art/</link>
       <pubDate>Sun, 04 Aug 2024 22:26:37 +0530</pubDate>
       
-      <guid>http://localhost:1313/blog/the-war-of-art/</guid>
+      <guid>http://localhost:1313/blogs/the-war-of-art/</guid>
       <description>Author : Steven Pressfield</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blog/the-war-of-art/featured.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blogs/the-war-of-art/featured.jpg" />
     </item>
     
     <item>

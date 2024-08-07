@@ -1,6 +1,6 @@
 languageCode = "en"
 languageName = "English"
-weight = 100
+weight = 1
 title = "0xAdra"
 
 [params]
@@ -8,7 +8,7 @@ title = "0xAdra"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  logo = "./assets/favicon-32x32.png"
+  logo = "./static/favicon-32x32.png"
   #secondaryLogo = "img/secondary-logo.png"
   #description = "My Personal Website"
   copyright = "0xAdra ©2024"

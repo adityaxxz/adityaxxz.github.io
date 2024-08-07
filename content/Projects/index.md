@@ -14,7 +14,7 @@ Projects
 {{< /typeit >}}
 
 
-> "If you find my projects useful, a [star](https://github.com/adityaxxz?tab=repositories) ⭐ would be fantastic."
+> "If you find my projects useful, a [star ⭐](https://github.com/adityaxxz?tab=repositories) would be fantastic."
 
 
 

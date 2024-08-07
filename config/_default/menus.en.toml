@@ -12,8 +12,8 @@
 
 
 [[main]]
-  name = "Blog"
-  pageRef = "Blog"
+  name = "Blogs"
+  pageRef = "Blogs"
   weight = 2
 
 [[main]]
@@ -24,7 +24,7 @@ weight = 3
 [[main]]
 name = "About"
 pageRef = "About"
-weight = 30
+weight = 4
 
 #[[main]]##
 #  name = "Parent"

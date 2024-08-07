@@ -18,8 +18,8 @@ enableCodeCopy = false
 disableImageOptimization = true
 disableTextInHeader = false
 
-defaultBackgroundImage = "wlppr.jpg" # used as default for background images 
-defaultFeaturedImage = "me.jpg" # used as default for featured images in all articles
+#defaultBackgroundImage = "wlppr.jpg" # used as default for background images 
+#defaultFeaturedImage = "me.jpg" # used as default for featured images in all articles
 
 highlightCurrentMenuArea = true
 smartTOC = true
@@ -55,8 +55,8 @@ smartTOCHideUnfocusedChildren = true
   showAuthor = false
   # showAuthorBottom = false
   showHero = true
-  # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
-  layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
+  heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
+  layoutBackgroundBlur = false # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = false
   showDraftLabel = true
