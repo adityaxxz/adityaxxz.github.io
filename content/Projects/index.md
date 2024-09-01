@@ -18,6 +18,9 @@ Projects
 
 
 
-## Account Abstraction
+## 1️⃣ Account Abstraction
 
 {{< github repo="adityaxxz/account-abstraction" >}}
+>
+## 2️⃣ Multi-Threaded Web Server
+{{< github repo="adityaxxz/multithreaded-web-server" >}}

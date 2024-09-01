@@ -16,12 +16,14 @@ title = "0xAdra"
  [author]
   name = "Aditya"
   image = "img/me.jpg"
-  headline = "Security Researcher"
+  headline = "Security Researcher"	
    bio = "Security Researcher"
    links = [
-     { github = "https://github.com/adityaxxz" },
-      { x-twitter = "https://twitter.com/0xadra" },
-     { email = "mailto:adityaranjan5995@gmail.com" },
+	 	{ github = "https://github.com/adityaxxz" },
+		{ x-twitter = "https://twitter.com/0xadra" },
+	 	{ email = "mailto:adityaranjan5995@gmail.com" },
+	    { telegram = "https://t.me/adiityaxxz" },
+
 #     { link = "https://link-to-some-website.com/" },
 #     { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
 #     { apple = "https://www.apple.com" },
@@ -57,7 +59,6 @@ title = "0xAdra"
 #     { spotify = "https://open.spotify.com/user/userid" },
 #     { stack-overflow = "https://stackoverflow.com/users/userid/username" },
 #     { steam = "https://steamcommunity.com/profiles/userid" },
-#     { telegram = "https://t.me/username" },
 #     { threads = "https://www.threads.net/@username" },
 #     { tiktok = "https://tiktok.com/@username" },
 #     { tumblr = "https://username.tumblr.com" },
