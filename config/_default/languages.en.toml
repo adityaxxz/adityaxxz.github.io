@@ -16,7 +16,7 @@ title = "0xAdra"
  [author]
   name = "Aditya"
   image = "img/me.jpg"
-  headline = "Security Researcher"	
+  headline = "Blockchain Security Researcher"	
    bio = "Security Researcher"
    links = [
 	 	{ github = "https://github.com/adityaxxz" },
