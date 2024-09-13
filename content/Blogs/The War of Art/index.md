@@ -18,8 +18,12 @@ Between the two stands **resistance**.
 
 - **What's resistance ?** Late at night have you experienced a vision of the person you might become, the work you could accomplish, the realized being you were meant to be? Are you a writer who doesn't write, a painter who doesn't paint, an entrepreneur who never starts a venture? Then you know what Resistance is.
 
-- If you believe in God (and I do) you must declare **Resistance** evil, for it prevents us from achieving the life God intended when He endowed each of us with our own unique genius.(One of the great lines)
+- If you believe in God (and I do) you must **declare Resistance evil**, for it prevents us from achieving the life God intended when He endowed each of us with our own unique genius.(One of the great lines)
 
-- Look in your own heart. Unless I'm crazy, right now a still small voice is piping up, telling you as it has ten thousand times, the calling that is yours and yours alone. You know it. No one has to tell you. And you're no closer to taking action on it than you were yesterday or will be tomorrow. You think Resistance isn't real? **Resistance** will bury you.
+- Look in your own heart. Unless I'm crazy, right now a still small voice is piping up, telling you as it has ten thousand times, the calling that is yours and yours alone. You know it. No one has to tell you. And you're no closer to taking action on it than you were yesterday or will be tomorrow. You think Resistance isn't real? **Resistance will bury you**.
+
+- Resistance is not a peripheral opponent. Resistance arises from within. It is self-generated and self-perpetuated. **Resistance is the enemy within**.
+
+- **Procrastination** is the most common manifestation of resistance because its the easiest to rationalize.
 
 
