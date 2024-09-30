@@ -30,6 +30,8 @@ About
 <h4> <ins>Quotes I Like</ins>
 <p>
 
+- "True creation requires sacrifice"
+- "Fear of loss is the path to dark side"
 - "It's not who I am underneath, but what I do that defines me"
 - "Given enough eyeballs, all bugs are shallow"
 
