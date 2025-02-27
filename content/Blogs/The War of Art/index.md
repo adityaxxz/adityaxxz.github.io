@@ -27,3 +27,5 @@ Between the two stands **resistance**.
 - **Procrastination** is the most common manifestation of resistance because its the easiest to rationalize.
 
 
+
+

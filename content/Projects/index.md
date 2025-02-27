@@ -24,18 +24,24 @@ Projects
 
 ---
 
-## 2️⃣ FundMe Contract in foundry
+## 2️⃣ Stablecoin defi project
+
+{{< github repo="adityaxxz/stablecoin-defi-project" >}}
+
+---
+
+## 3️⃣ FundMe Contract in foundry
 
 {{< github repo="adityaxxz/foundry-fund-me" >}}
 
 ---
 
-## 3️⃣ Multi-Threaded Web Server
+## 4️⃣ Multi-Threaded Web Server
 {{< github repo="adityaxxz/multithreaded-web-server" >}}
 
 ---
 
-## 4️⃣ CryptoTracer 
+## 5️⃣ CryptoTracer 
 
  > Visit the [addy🔗](https://github.com/abhinavjain1110/CryptoTracer/tree/addy) or [test🔗](https://github.com/abhinavjain1110/CryptoTracer/tree/test) branch to see my commits! 
 
