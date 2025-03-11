@@ -30,9 +30,12 @@ Projects
 
 ---
 
-## 3️⃣ FundMe Contract in foundry
+## 3️⃣ CryptoTracer 
 
-{{< github repo="adityaxxz/foundry-fund-me" >}}
+ > Visit the [addy🔗](https://github.com/abhinavjain1110/CryptoTracer/tree/addy) or [test🔗](https://github.com/abhinavjain1110/CryptoTracer/tree/test) branch to see my commits! 
+
+ {{< github repo="adityaxxz/CryptoTracer" >}}
+
 
 ---
 
@@ -41,11 +44,10 @@ Projects
 
 ---
 
-## 5️⃣ CryptoTracer 
+## 5️⃣ FundMe Contract in foundry
 
- > Visit the [addy🔗](https://github.com/abhinavjain1110/CryptoTracer/tree/addy) or [test🔗](https://github.com/abhinavjain1110/CryptoTracer/tree/test) branch to see my commits! 
 
- {{< github repo="adityaxxz/CryptoTracer" >}}
+ {{< github repo="adityaxxz/foundry-fund-me" >}}
  <!-- <h4> Description: Implemented a software solution to identify the end receiver of a cryptocurrency transaction. -->
 
 ---
