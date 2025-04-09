@@ -18,23 +18,22 @@ Projects
 
 
 
-## 1️⃣ Account Abstraction 
+## 1️⃣ Account Abstraction
 
 {{< github repo="adityaxxz/account-abstraction" >}}
 
 ---
 
-## 2️⃣ Stablecoin defi project
+## 2️⃣ Stablecoin DeFi Project
 
 {{< github repo="adityaxxz/stablecoin-defi-project" >}}
 
 ---
 
-## 3️⃣ CryptoTracer 
+## 3️⃣ FundMe Contract
 
- > Visit the [addy🔗](https://github.com/abhinavjain1110/CryptoTracer/tree/addy) or [test🔗](https://github.com/abhinavjain1110/CryptoTracer/tree/test) branch to see my commits! 
 
- {{< github repo="adityaxxz/CryptoTracer" >}}
+ {{< github repo="adityaxxz/foundry-fund-me" >}}
 
 
 ---
@@ -44,10 +43,11 @@ Projects
 
 ---
 
-## 5️⃣ FundMe Contract in foundry
+## 5️⃣ CryptoTracer
 
+ > Visit the [addy🔗](https://github.com/abhinavjain1110/CryptoTracer/tree/addy) or [test🔗](https://github.com/abhinavjain1110/CryptoTracer/tree/test) branch to see my commits! 
 
- {{< github repo="adityaxxz/foundry-fund-me" >}}
+ {{< github repo="adityaxxz/CryptoTracer" >}}
  <!-- <h4> Description: Implemented a software solution to identify the end receiver of a cryptocurrency transaction. -->
 
 ---
