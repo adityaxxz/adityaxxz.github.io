@@ -18,8 +18,8 @@ The `size / collateral` is the leverage of a position. E.g. if I open a position
 
 #### Long/Short
 There are 2 different directions a perpetual position can take. <!--[[long-short-explained.png]]-->
-- [Long](https://youtu.be/DRZogmD647U?t=12828) → The trader profits when the price of the `index token goes up`, and loses when the price of the index token goes down.
-- [Short](https://youtu.be/DRZogmD647U?t=14000)  → The trader profits when the price of the `index token goes down`, and loses when the price of the index token goes up.
+- **Long** → The trader profits when the price of the `index token goes up`, and loses when the price of the index token goes down.
+- **Short**  → The trader profits when the price of the `index token goes down`, and loses when the price of the index token goes up.
 #### Traders
 - Traders are the actors opening perpetual positions and betting on the price of the index token.
 - Traders profit when the price of the index token moves in the direction they predict, and lose when it moves in the direction opposite to what they predict.
@@ -53,11 +53,6 @@ Shorts can never profit more than the original size of the position, therefore t
 
 Once a liquidity reserve validation such as the ones above have been implemented, trader’s cannot open positions past what is reasonably supported by the deposited liquidity and depositors cannot withdraw liquidity that is crucial for backing existing positions.
 
-
-
-> Perpetauls Code Walk explanation(external fn & design decisions) → [video](https://youtu.be/DRZogmD647U?t=25187)
-> PerpertaulEx Codebase [link](https://github.com/0xvangrim/guardian-accelerator) 
-> 
 
 
 ---
