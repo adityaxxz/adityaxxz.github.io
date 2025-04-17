@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>0xAdra ©2025</copyright>
-    <lastBuildDate>Fri, 15 Nov 2024 01:27:18 +0530</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Apr 2025 18:13:31 +0530</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Perpetuals</title>
+      <link>http://localhost:1313/blogs/perpetuals/</link>
+      <pubDate>Thu, 17 Apr 2025 18:13:31 +0530</pubDate>
+      
+      <guid>http://localhost:1313/blogs/perpetuals/</guid>
+      <description>Perpetuals Mission #1 #Perpetuals are essentially just a way for a trader to bet on the price of a certain index token without actually buying the token while enabling the trader to employ leverage.</description>
+      
+    </item>
+    
     <item>
       <title>The Pivot Year</title>
       <link>http://localhost:1313/blogs/the-pivot-year/</link>
