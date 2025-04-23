@@ -66,11 +66,12 @@
   <meta property="og:title" content="Perpetuals" />
 <meta property="og:description" content="Perpetuals Mission #1 #Perpetuals are essentially just a way for a trader to bet on the price of a certain index token without actually buying the token while enabling the trader to employ leverage." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/blogs/perpetuals/" /><meta property="article:section" content="blogs" />
+<meta property="og:url" content="http://localhost:1313/blogs/perpetuals/" /><meta property="og:image" content="http://localhost:1313/blogs/perpetuals/featured.jpg" /><meta property="article:section" content="blogs" />
 <meta property="article:published_time" content="2025-04-17T18:13:31+05:30" />
 <meta property="article:modified_time" content="2025-04-17T18:13:31+05:30" />
 
-  <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Perpetuals"/>
+  <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="http://localhost:1313/blogs/perpetuals/featured.jpg" /><meta name="twitter:title" content="Perpetuals"/>
 <meta name="twitter:description" content="Perpetuals Mission #1 #Perpetuals are essentially just a way for a trader to bet on the price of a certain index token without actually buying the token while enabling the trader to employ leverage."/>
 
   
@@ -98,7 +99,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "2538"
+    "wordCount": "2525"
   }]
   </script>
 
@@ -400,8 +401,10 @@
   
   
   
- 
-
+        
+            <div class="w-full h-36 md:h-56 lg:h-72 single_hero_basic nozoom" style="background-image:url(/blogs/perpetuals/featured.jpg);"></div>
+        
+    
   
   
 
@@ -718,8 +721,8 @@ The <code>size / collateral</code> is the leverage of a position. E.g. if I open
 </h4>
 <p>There are 2 different directions a perpetual position can take. <!--[[long-short-explained.png]]--></p>
 <ul>
-<li><a href="https://youtu.be/DRZogmD647U?t=12828" target="_blank">Long</a> → The trader profits when the price of the <code>index token goes up</code>, and loses when the price of the index token goes down.</li>
-<li><a href="https://youtu.be/DRZogmD647U?t=14000" target="_blank">Short</a>  → The trader profits when the price of the <code>index token goes down</code>, and loses when the price of the index token goes up.</li>
+<li><strong>Long</strong> → The trader profits when the price of the <code>index token goes up</code>, and loses when the price of the index token goes down.</li>
+<li><strong>Short</strong>  → The trader profits when the price of the <code>index token goes down</code>, and loses when the price of the index token goes up.</li>
 </ul>
 
 
@@ -815,10 +818,6 @@ The <code>size / collateral</code> is the leverage of a position. E.g. if I open
     </figure>
 </p>
 <p>Once a liquidity reserve validation such as the ones above have been implemented, trader’s cannot open positions past what is reasonably supported by the deposited liquidity and depositors cannot withdraw liquidity that is crucial for backing existing positions.</p>
-<blockquote>
-<p>Perpetauls Code Walk explanation(external fn &amp; design decisions) → <a href="https://youtu.be/DRZogmD647U?t=25187" target="_blank">video</a>
-PerpertaulEx Codebase <a href="https://github.com/0xvangrim/guardian-accelerator" target="_blank">link</a></p>
-</blockquote>
 <hr>
 
 
@@ -1119,6 +1118,28 @@ PerpertaulEx Codebase <a href="https://github.com/0xvangrim/guardian-accelerator
           
         </span>
         <span>
+          
+            <a class="flex text-right group ml-3" href="/blogs/mev/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >MEV (Maximum Extractable Value)</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2025-04-23 18:13:31 &#43;0530 IST">23 April 2025</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
           
         </span>
       </div>
