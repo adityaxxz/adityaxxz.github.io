@@ -19,7 +19,7 @@ disableImageOptimization = true
 disableTextInHeader = false
 
 #defaultBackgroundImage = "wlppr.jpg" # used as default for background images 
-#defaultFeaturedImage = "me.jpg" # used as default for featured images in all articles
+#defaultFeaturedImage = "me1.jpg" # used as default for featured images in all articles
 
 highlightCurrentMenuArea = true
 smartTOC = true
