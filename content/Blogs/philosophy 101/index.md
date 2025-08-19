@@ -18,3 +18,5 @@ draft = false
 - Malcolm Gladwell popularized this idea of 10,000 hours to mastery — **but I think it's 10,000** (not actually, but some unknown number) **iterations to mastery**. It's about the number of iterations that drives a learning curve.  
 - **Iterations are not repetitions**. Repetition is about repeating a thing over and over.  
   Iteration is modifying it with a learning and doing another version of it. So that's error correction. So if you’ll get 10,000 error corrections in anything, you'll be an expert at it.
+
+- 
