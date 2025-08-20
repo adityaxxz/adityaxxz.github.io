@@ -17,33 +17,41 @@ Projects
 > "If you find my projects useful, a [star ⭐](https://github.com/adityaxxz?tab=repositories) would be fantastic."
 
 
+## 1️⃣ Tweet App
 
-## 1️⃣ Account Abstraction
+{{< github repo="adityaxxz/tweet-app" >}}
 
-{{< github repo="adityaxxz/account-abstraction" >}}
+
+## 2️⃣ Youtube Backend
+
+{{< github repo="adityaxxz/yt-backend" >}}
+
 
 ---
 
-## 2️⃣ Stablecoin DeFi Project
+## 3️⃣ Account Abstraction
+
+{{< github repo="adityaxxz/account-abstraction" >}}
+
+
+
+## 4️⃣ Stablecoin DeFi Project
 
 {{< github repo="adityaxxz/stablecoin-defi-project" >}}
 
 ---
 
-## 3️⃣ FundMe Contract
+## 5️⃣ Running Tracker App
+
+{{< github repo="adityaxxz/RunningTrackerApp" >}}
 
 
- {{< github repo="adityaxxz/foundry-fund-me" >}}
-
-
----
-
-## 4️⃣ Multi-Threaded Web Server
+## 5️⃣ Multi-Threaded Web Server
 {{< github repo="adityaxxz/multithreaded-web-server" >}}
 
 ---
 
-## 5️⃣ CryptoTracer
+## 6️⃣ CryptoTracer
 
  > Visit the [addy🔗](https://github.com/abhinavjain1110/CryptoTracer/tree/addy) or [test🔗](https://github.com/abhinavjain1110/CryptoTracer/tree/test) branch to see my commits! 
 
