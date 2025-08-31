@@ -18,7 +18,7 @@ enableCodeCopy = true
 disableImageOptimization = true
 disableTextInHeader = false
 
-#defaultBackgroundImage = "wlppr.jpg" # used as default for background images 
+#defaultBackgroundImage = "wp1.png" # used as default for background images 
 #defaultFeaturedImage = "me1.jpg" # used as default for featured images in all articles
 
 highlightCurrentMenuArea = true
