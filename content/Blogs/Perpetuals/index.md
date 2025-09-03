@@ -2,6 +2,7 @@
 title = 'Perpetuals'
 date = 2025-04-17T18:13:31+05:30
 draft = false
+sharingLinks = ["twitter", "email", "whatsapp"]
 +++
 
 ## Perpetuals Mission #1

@@ -2,6 +2,7 @@
 title = 'The War of Art'
 date = 2024-08-04T22:26:37+05:30
 draft = false
+sharingLinks = ["twitter", "email", "whatsapp"]
 +++
 
 

@@ -26,7 +26,7 @@ smartTOC = true
 smartTOCHideUnfocusedChildren = true
 
 [header]
-  layout = "fixed-fill-blur" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
+  layout = "fixed" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
 
 [footer]
   showMenu = true
@@ -75,7 +75,8 @@ smartTOCHideUnfocusedChildren = true
   showTaxonomies = false
   showAuthorsBadges = false
   showWordCount = false
-  # sharingLinks = [ "linkedin", "twitter", "bluesky", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
+  #sharingLinks = [ "linkedin", "twitter", "bluesky", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
+  #sharingLinks = ["twitter", "email", "whatsapp"] # Disabled globally, enabled per blog post
   showZenMode = false
 
 [list]

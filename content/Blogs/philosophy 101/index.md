@@ -2,6 +2,7 @@
 title = 'philosophy 101'
 date = 2025-05-01T18:13:31+05:30
 draft = false
+sharingLinks = ["twitter", "email", "whatsapp"]
 +++
 
 - **No one is going to beat you at being you**. Find what that feels like—play to you but looks like work to others. So that you're going to outcompete them because you're doing it effortlessly; you're doing it for fun.  

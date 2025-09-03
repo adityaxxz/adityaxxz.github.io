@@ -2,6 +2,7 @@
 title = 'The Pivot Year'
 date = 2024-11-15T01:27:18+05:30
 draft = false
+sharingLinks = ["twitter", "email", "whatsapp"]
 +++
 
 **Author : Brianna Wiest**
