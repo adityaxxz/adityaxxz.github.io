@@ -2,78 +2,78 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>0xAdra</title>
-    <link>https://0xadra.site/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on 0xAdra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>0xAdra ©2025</copyright>
-    <lastBuildDate>Thu, 01 May 2025 18:13:31 +0530</lastBuildDate><atom:link href="https://0xadra.site/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 May 2025 18:13:31 +0530</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>philosophy 101</title>
-      <link>https://0xadra.site/blogs/philosophy-101/</link>
+      <link>http://localhost:1313/blogs/philosophy-101/</link>
       <pubDate>Thu, 01 May 2025 18:13:31 +0530</pubDate>
       
-      <guid>https://0xadra.site/blogs/philosophy-101/</guid>
+      <guid>http://localhost:1313/blogs/philosophy-101/</guid>
       <description>No one is going to beat you at being you.</description>
       
     </item>
     
     <item>
       <title>MEV (Maximum Extractable Value)</title>
-      <link>https://0xadra.site/blogs/mev/</link>
+      <link>http://localhost:1313/blogs/mev/</link>
       <pubDate>Wed, 23 Apr 2025 18:13:31 +0530</pubDate>
       
-      <guid>https://0xadra.site/blogs/mev/</guid>
+      <guid>http://localhost:1313/blogs/mev/</guid>
       <description>What&amp;rsquo;s MEV?</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://0xadra.site/blogs/mev/featured.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blogs/mev/featured.jpg" />
     </item>
     
     <item>
       <title>Perpetuals</title>
-      <link>https://0xadra.site/blogs/perpetuals/</link>
+      <link>http://localhost:1313/blogs/perpetuals/</link>
       <pubDate>Thu, 17 Apr 2025 18:13:31 +0530</pubDate>
       
-      <guid>https://0xadra.site/blogs/perpetuals/</guid>
+      <guid>http://localhost:1313/blogs/perpetuals/</guid>
       <description>Perpetuals Mission #1 #Perpetuals are essentially just a way for a trader to bet on the price of a certain index token without actually buying the token while enabling the trader to employ leverage.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://0xadra.site/blogs/perpetuals/featured.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blogs/perpetuals/featured.jpg" />
     </item>
     
     <item>
       <title>The Pivot Year</title>
-      <link>https://0xadra.site/blogs/the-pivot-year/</link>
+      <link>http://localhost:1313/blogs/the-pivot-year/</link>
       <pubDate>Fri, 15 Nov 2024 01:27:18 +0530</pubDate>
       
-      <guid>https://0xadra.site/blogs/the-pivot-year/</guid>
+      <guid>http://localhost:1313/blogs/the-pivot-year/</guid>
       <description>Author : Brianna Wiest</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://0xadra.site/blogs/the-pivot-year/featured.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blogs/the-pivot-year/featured.jpg" />
     </item>
     
     <item>
       <title></title>
-      <link>https://0xadra.site/projects/</link>
+      <link>http://localhost:1313/projects/</link>
       <pubDate>Sun, 04 Aug 2024 22:36:47 +0530</pubDate>
       
-      <guid>https://0xadra.site/projects/</guid>
+      <guid>http://localhost:1313/projects/</guid>
       <description>&amp;ldquo;If you find my projects useful, a star ⭐ would be fantastic.</description>
       
     </item>
     
     <item>
       <title>The War of Art</title>
-      <link>https://0xadra.site/blogs/the-war-of-art/</link>
+      <link>http://localhost:1313/blogs/the-war-of-art/</link>
       <pubDate>Sun, 04 Aug 2024 22:26:37 +0530</pubDate>
       
-      <guid>https://0xadra.site/blogs/the-war-of-art/</guid>
+      <guid>http://localhost:1313/blogs/the-war-of-art/</guid>
       <description>Author : Steven Pressfield</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://0xadra.site/blogs/the-war-of-art/featured.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blogs/the-war-of-art/featured.jpg" />
     </item>
     
     <item>
       <title>About</title>
-      <link>https://0xadra.site/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Sun, 04 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://0xadra.site/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>An independent security researcher &amp; developer auditing smart contracts for a living.</description>
       
     </item>
