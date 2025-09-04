@@ -37,7 +37,7 @@ smartTOCHideUnfocusedChildren = true
 
 [homepage]
   layout = "background" # valid options: page, profile, hero, card, background, custom
-  homepageVideo = "img/bgvidhq.mp4" # Path to your background video file
+  homepageVideo = "img/bgvid.mp4" # Path to your background video file
   homepageImage = "img/wp1.png" # used in: hero, and card (also serves as fallback for video)
   showRecent = true
   showRecentItems = 9
