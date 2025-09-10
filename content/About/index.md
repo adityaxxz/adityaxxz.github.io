@@ -12,26 +12,30 @@ layout = 'simple'
 About
 {{< /typeit >}} -->
 
-<h3>An independent security researcher & developer auditing smart contracts for a living...
+<h2>A backend dev & security researcher auditing smart contracts for a living...
 <p>
 
-<h4> <ins>Things I believe</ins> 
+<h3> <ins>Things I believe</ins> 
 
-- Form is everything
-- Excess in moderation
+<div style="font-size: 0.9em;">
+
 - Think less
 - Always instinct
-- AI will be transformative, soon, and it may not go well
-- Choosing to care about silly things (especially communities) is important
+- Form is everything
+- Excess in moderation
 - Strength before weakness
 - Things gonna be more challenging
+- Choosing to care about silly things is important
+- AI will be transformative, soon, and it might not go well
+
+</div>
 
 
-<h4> <ins>Quotes I Like</ins>
+<!-- <h4> <ins>Quotes I Like</ins>
 <p>
 
 - "True creation requires sacrifice"
 - "Fear of loss is the path to dark side"
 - "It's not who I am underneath, but what I do that defines me"
-- "Given enough eyeballs, all bugs are shallow"
+- "Given enough eyeballs, all bugs are shallow" -->
 

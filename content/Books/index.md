@@ -12,4 +12,6 @@ showReadingTime: false
 showPagination: false
 ---
 
+<div style="font-size: 1.1em;">
 Welcome to my personal bookshelf! Here are some of the books that have influenced my thinking and shaped my perspective.
+</div>

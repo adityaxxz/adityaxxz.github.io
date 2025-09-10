@@ -1,0 +1,92 @@
+{{ define "main" }}
+<article class="max-w-full">
+  <header>
+    {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default false) }}
+      {{ partial "breadcrumbs.html" . }}
+    {{ end }}
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      {{ .Title | emojify }}
+    </h1>
+  </header>
+  <section class="max-w-full mt-6 prose dark:prose-invert">
+    {{ if .Content }}
+    <div class="mb-8">
+      {{ .Content }}
+    </div>
+    {{ end }}
+    
+    <!-- Quotes Container -->
+    <div class="quotes-container">
+      {{ range .Site.Data.quotes.quotes }}
+      <div class="quote-item">
+        <blockquote class="quote-text">
+          "{{ .quote }}"
+        </blockquote>
+        <cite class="quote-author">
+          {{ .author }}
+        </cite>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+</article>
+
+<style>
+/* Quotes container - minimal styling */
+.quotes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+/* Individual quote item */
+.quote-item {
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 3px solid rgba(59, 130, 246, 0.3);
+}
+
+/* Quote text styling - clean and minimal */
+.quote-text {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin: 0 0 0.75rem 0;
+  font-style: italic;
+  color: inherit;
+  border-left: none !important;
+  padding-left: 0 !important;
+  font-weight: 400;
+}
+
+/* Author attribution */
+.quote-author {
+  display: block;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  opacity: 0.8;
+  margin-top: 0.5rem;
+  text-align: right;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .quotes-container {
+    gap: 2rem;
+  }
+  
+  .quote-text {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  
+  .quote-author {
+    font-size: 0.9rem;
+  }
+}
+</style>
+
+{{ end }}

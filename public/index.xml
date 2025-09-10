@@ -84,7 +84,17 @@
       <pubDate>Sun, 04 Aug 2024 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/about/</guid>
-      <description>An independent security researcher &amp; developer auditing smart contracts for a living.</description>
+      <description>A backend dev &amp; security researcher auditing smart contracts for a living.</description>
+      
+    </item>
+    
+    <item>
+      <title>Quotes</title>
+      <link>http://localhost:1313/quotes/</link>
+      <pubDate>Sun, 04 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/quotes/</guid>
+      <description>A collection of wisdom from various thinkers, writers, and philosophers that have resonated with me over time.</description>
       
     </item>
     
