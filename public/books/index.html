@@ -966,7 +966,7 @@ Welcome to my personal bookshelf! Here are some of the books that have influence
   padding: 12px 16px;
   font-size: 14px;
   font-weight: 500;
-  color: #374151;
+  color:rgb(212, 27, 27);
   cursor: pointer;
   transition: all 0.2s ease;
   min-width: 140px;
@@ -996,7 +996,7 @@ Welcome to my personal bookshelf! Here are some of the books that have influence
  
 .sort-dropdown option {
   background: white;
-  color: #374151;
+  color:rgb(201, 29, 29);
   padding: 12px 16px;
   font-size: 14px;
   font-weight: 500;
@@ -1007,7 +1007,7 @@ Welcome to my personal bookshelf! Here are some of the books that have influence
  
 @media (prefers-color-scheme: dark) {
   .sort-dropdown {
-    background: rgba(255, 255, 255, 0.1);
+    background:rgb(70, 81, 95);  {% comment %} 3b4450 {% endcomment %}
     color: #d1d5db;
   }
   
@@ -1021,7 +1021,7 @@ Welcome to my personal bookshelf! Here are some of the books that have influence
   }
   
   .sort-dropdown option {
-    background: #374151;
+    background: #374151; 
     color: #f9fafb;
   }
 }
@@ -1059,8 +1059,10 @@ Welcome to my personal bookshelf! Here are some of the books that have influence
 }
 
 .toggle-checkbox:checked + .toggle-label {
-  background-color: #3b82f6;
+  background-color: #2c61b6;  
 }
+
+{% comment %} 3b82f6 {% endcomment %}
 
 .toggle-checkbox:checked + .toggle-label .toggle-slider {
   transform: translateX(30px);
