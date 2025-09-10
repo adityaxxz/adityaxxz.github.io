@@ -98,7 +98,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "112"
+    "wordCount": "121"
   }]
   </script>
 
@@ -574,6 +574,27 @@
 
   </div>
   <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      const fullNameElement = document.getElementById('github-3072eceaa0dca36a4e0b405b6d381a63-full_name');
+      const descriptionElement = document.getElementById('github-3072eceaa0dca36a4e0b405b6d381a63-description');
+      const stargazersElement = document.getElementById('github-3072eceaa0dca36a4e0b405b6d381a63-stargazers');
+      const forksElement = document.getElementById('github-3072eceaa0dca36a4e0b405b6d381a63-forks');
+      
+      if (fullNameElement && (fullNameElement.textContent.includes('undefined') || fullNameElement.textContent === 'null')) {
+        fullNameElement.textContent = 'adityaxxz\/tweet-app';
+      }
+      if (descriptionElement && (descriptionElement.textContent.includes('undefined') || descriptionElement.textContent === 'null')) {
+        descriptionElement.textContent = 'No description available';
+      }
+      if (stargazersElement && (stargazersElement.textContent.includes('undefined') || stargazersElement.textContent === 'null')) {
+        stargazersElement.textContent = '0';
+      }
+      if (forksElement && (forksElement.textContent.includes('undefined') || forksElement.textContent === 'null')) {
+        forksElement.textContent = '0';
+      }
+    });
+
     fetch("https://api.github.com/repos/adityaxxz/tweet-app", {
       headers: new Headers({
         'User-agent': 'Mozilla/4.0 Custom User Agent'
@@ -592,25 +613,49 @@
         const stargazersElement = document.getElementById('github-3072eceaa0dca36a4e0b405b6d381a63-stargazers');
         const forksElement = document.getElementById('github-3072eceaa0dca36a4e0b405b6d381a63-forks');
         
-        if (fullNameElement && data.full_name !== undefined && data.full_name !== null) {
-          fullNameElement.innerHTML = data.full_name;
+        console.log('GitHub API response:', data);
+        
+        
+        if (fullNameElement && data && data.full_name && 
+            data.full_name !== 'undefined' && 
+            data.full_name !== 'null' &&
+            !fullNameElement.textContent.includes('undefined')) {
+          fullNameElement.textContent = data.full_name;
         }
         
-        if (descriptionElement) {
-          descriptionElement.innerHTML = data.description || 'No description available';
+        
+        if (descriptionElement && data) {
+          if (data.description && 
+              data.description !== 'undefined' && 
+              data.description !== null && 
+              data.description !== 'null' &&
+              data.description.trim() !== '') {
+            descriptionElement.textContent = data.description;
+          } else if (!descriptionElement.textContent || 
+                     descriptionElement.textContent === 'Loading description...' ||
+                     descriptionElement.textContent.includes('undefined') ||
+                     descriptionElement.textContent === 'null') {
+            descriptionElement.textContent = 'No description available';
+          }
         }
         
-        if (stargazersElement && data.stargazers_count !== undefined && data.stargazers_count !== null) {
-          stargazersElement.innerHTML = data.stargazers_count;
+        
+        if (stargazersElement && data && typeof data.stargazers_count === 'number') {
+          stargazersElement.textContent = data.stargazers_count;
         }
         
-        if (forksElement && data.forks !== undefined && data.forks !== null) {
-          forksElement.innerHTML = data.forks;
+        
+        if (forksElement && data && typeof data.forks === 'number') {
+          forksElement.textContent = data.forks;
         }
       })
       .catch(error => {
         console.error('GitHub API fetch error:', error);
         
+        const descriptionElement = document.getElementById('github-3072eceaa0dca36a4e0b405b6d381a63-description');
+        if (descriptionElement && descriptionElement.textContent === 'Loading description...') {
+          descriptionElement.textContent = 'Unable to load repository information';
+        }
       })
   </script>
 </a>
@@ -690,6 +735,27 @@
 
   </div>
   <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      const fullNameElement = document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-full_name');
+      const descriptionElement = document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-description');
+      const stargazersElement = document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-stargazers');
+      const forksElement = document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-forks');
+      
+      if (fullNameElement && (fullNameElement.textContent.includes('undefined') || fullNameElement.textContent === 'null')) {
+        fullNameElement.textContent = 'adityaxxz\/yt-backend';
+      }
+      if (descriptionElement && (descriptionElement.textContent.includes('undefined') || descriptionElement.textContent === 'null')) {
+        descriptionElement.textContent = 'No description available';
+      }
+      if (stargazersElement && (stargazersElement.textContent.includes('undefined') || stargazersElement.textContent === 'null')) {
+        stargazersElement.textContent = '0';
+      }
+      if (forksElement && (forksElement.textContent.includes('undefined') || forksElement.textContent === 'null')) {
+        forksElement.textContent = '0';
+      }
+    });
+
     fetch("https://api.github.com/repos/adityaxxz/yt-backend", {
       headers: new Headers({
         'User-agent': 'Mozilla/4.0 Custom User Agent'
@@ -708,25 +774,49 @@
         const stargazersElement = document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-stargazers');
         const forksElement = document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-forks');
         
-        if (fullNameElement && data.full_name !== undefined && data.full_name !== null) {
-          fullNameElement.innerHTML = data.full_name;
+        console.log('GitHub API response:', data);
+        
+        
+        if (fullNameElement && data && data.full_name && 
+            data.full_name !== 'undefined' && 
+            data.full_name !== 'null' &&
+            !fullNameElement.textContent.includes('undefined')) {
+          fullNameElement.textContent = data.full_name;
         }
         
-        if (descriptionElement) {
-          descriptionElement.innerHTML = data.description || 'No description available';
+        
+        if (descriptionElement && data) {
+          if (data.description && 
+              data.description !== 'undefined' && 
+              data.description !== null && 
+              data.description !== 'null' &&
+              data.description.trim() !== '') {
+            descriptionElement.textContent = data.description;
+          } else if (!descriptionElement.textContent || 
+                     descriptionElement.textContent === 'Loading description...' ||
+                     descriptionElement.textContent.includes('undefined') ||
+                     descriptionElement.textContent === 'null') {
+            descriptionElement.textContent = 'No description available';
+          }
         }
         
-        if (stargazersElement && data.stargazers_count !== undefined && data.stargazers_count !== null) {
-          stargazersElement.innerHTML = data.stargazers_count;
+        
+        if (stargazersElement && data && typeof data.stargazers_count === 'number') {
+          stargazersElement.textContent = data.stargazers_count;
         }
         
-        if (forksElement && data.forks !== undefined && data.forks !== null) {
-          forksElement.innerHTML = data.forks;
+        
+        if (forksElement && data && typeof data.forks === 'number') {
+          forksElement.textContent = data.forks;
         }
       })
       .catch(error => {
         console.error('GitHub API fetch error:', error);
         
+        const descriptionElement = document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-description');
+        if (descriptionElement && descriptionElement.textContent === 'Loading description...') {
+          descriptionElement.textContent = 'Unable to load repository information';
+        }
       })
   </script>
 </a>
@@ -807,6 +897,27 @@
 
   </div>
   <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      const fullNameElement = document.getElementById('github-511589c681a531d634a3db1aebac411d-full_name');
+      const descriptionElement = document.getElementById('github-511589c681a531d634a3db1aebac411d-description');
+      const stargazersElement = document.getElementById('github-511589c681a531d634a3db1aebac411d-stargazers');
+      const forksElement = document.getElementById('github-511589c681a531d634a3db1aebac411d-forks');
+      
+      if (fullNameElement && (fullNameElement.textContent.includes('undefined') || fullNameElement.textContent === 'null')) {
+        fullNameElement.textContent = 'adityaxxz\/account-abstraction';
+      }
+      if (descriptionElement && (descriptionElement.textContent.includes('undefined') || descriptionElement.textContent === 'null')) {
+        descriptionElement.textContent = 'No description available';
+      }
+      if (stargazersElement && (stargazersElement.textContent.includes('undefined') || stargazersElement.textContent === 'null')) {
+        stargazersElement.textContent = '0';
+      }
+      if (forksElement && (forksElement.textContent.includes('undefined') || forksElement.textContent === 'null')) {
+        forksElement.textContent = '0';
+      }
+    });
+
     fetch("https://api.github.com/repos/adityaxxz/account-abstraction", {
       headers: new Headers({
         'User-agent': 'Mozilla/4.0 Custom User Agent'
@@ -825,25 +936,49 @@
         const stargazersElement = document.getElementById('github-511589c681a531d634a3db1aebac411d-stargazers');
         const forksElement = document.getElementById('github-511589c681a531d634a3db1aebac411d-forks');
         
-        if (fullNameElement && data.full_name !== undefined && data.full_name !== null) {
-          fullNameElement.innerHTML = data.full_name;
+        console.log('GitHub API response:', data);
+        
+        
+        if (fullNameElement && data && data.full_name && 
+            data.full_name !== 'undefined' && 
+            data.full_name !== 'null' &&
+            !fullNameElement.textContent.includes('undefined')) {
+          fullNameElement.textContent = data.full_name;
         }
         
-        if (descriptionElement) {
-          descriptionElement.innerHTML = data.description || 'No description available';
+        
+        if (descriptionElement && data) {
+          if (data.description && 
+              data.description !== 'undefined' && 
+              data.description !== null && 
+              data.description !== 'null' &&
+              data.description.trim() !== '') {
+            descriptionElement.textContent = data.description;
+          } else if (!descriptionElement.textContent || 
+                     descriptionElement.textContent === 'Loading description...' ||
+                     descriptionElement.textContent.includes('undefined') ||
+                     descriptionElement.textContent === 'null') {
+            descriptionElement.textContent = 'No description available';
+          }
         }
         
-        if (stargazersElement && data.stargazers_count !== undefined && data.stargazers_count !== null) {
-          stargazersElement.innerHTML = data.stargazers_count;
+        
+        if (stargazersElement && data && typeof data.stargazers_count === 'number') {
+          stargazersElement.textContent = data.stargazers_count;
         }
         
-        if (forksElement && data.forks !== undefined && data.forks !== null) {
-          forksElement.innerHTML = data.forks;
+        
+        if (forksElement && data && typeof data.forks === 'number') {
+          forksElement.textContent = data.forks;
         }
       })
       .catch(error => {
         console.error('GitHub API fetch error:', error);
         
+        const descriptionElement = document.getElementById('github-511589c681a531d634a3db1aebac411d-description');
+        if (descriptionElement && descriptionElement.textContent === 'Loading description...') {
+          descriptionElement.textContent = 'Unable to load repository information';
+        }
       })
   </script>
 </a>
@@ -882,7 +1017,7 @@
     </div>
 
     <p id="github-c799c15b9c8e1fc3700290a1e8bb2eb7-description" class="m-0 mt-2 text-md text-neutral-800 dark:text-neutral">
-      
+      No description available
     </p>
 
     <div class="m-0 mt-2 flex items-center">
@@ -923,6 +1058,27 @@
 
   </div>
   <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      const fullNameElement = document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-full_name');
+      const descriptionElement = document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-description');
+      const stargazersElement = document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-stargazers');
+      const forksElement = document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-forks');
+      
+      if (fullNameElement && (fullNameElement.textContent.includes('undefined') || fullNameElement.textContent === 'null')) {
+        fullNameElement.textContent = 'adityaxxz\/stablecoin-defi-project';
+      }
+      if (descriptionElement && (descriptionElement.textContent.includes('undefined') || descriptionElement.textContent === 'null')) {
+        descriptionElement.textContent = 'No description available';
+      }
+      if (stargazersElement && (stargazersElement.textContent.includes('undefined') || stargazersElement.textContent === 'null')) {
+        stargazersElement.textContent = '0';
+      }
+      if (forksElement && (forksElement.textContent.includes('undefined') || forksElement.textContent === 'null')) {
+        forksElement.textContent = '0';
+      }
+    });
+
     fetch("https://api.github.com/repos/adityaxxz/stablecoin-defi-project", {
       headers: new Headers({
         'User-agent': 'Mozilla/4.0 Custom User Agent'
@@ -941,25 +1097,49 @@
         const stargazersElement = document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-stargazers');
         const forksElement = document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-forks');
         
-        if (fullNameElement && data.full_name !== undefined && data.full_name !== null) {
-          fullNameElement.innerHTML = data.full_name;
+        console.log('GitHub API response:', data);
+        
+        
+        if (fullNameElement && data && data.full_name && 
+            data.full_name !== 'undefined' && 
+            data.full_name !== 'null' &&
+            !fullNameElement.textContent.includes('undefined')) {
+          fullNameElement.textContent = data.full_name;
         }
         
-        if (descriptionElement) {
-          descriptionElement.innerHTML = data.description || 'No description available';
+        
+        if (descriptionElement && data) {
+          if (data.description && 
+              data.description !== 'undefined' && 
+              data.description !== null && 
+              data.description !== 'null' &&
+              data.description.trim() !== '') {
+            descriptionElement.textContent = data.description;
+          } else if (!descriptionElement.textContent || 
+                     descriptionElement.textContent === 'Loading description...' ||
+                     descriptionElement.textContent.includes('undefined') ||
+                     descriptionElement.textContent === 'null') {
+            descriptionElement.textContent = 'No description available';
+          }
         }
         
-        if (stargazersElement && data.stargazers_count !== undefined && data.stargazers_count !== null) {
-          stargazersElement.innerHTML = data.stargazers_count;
+        
+        if (stargazersElement && data && typeof data.stargazers_count === 'number') {
+          stargazersElement.textContent = data.stargazers_count;
         }
         
-        if (forksElement && data.forks !== undefined && data.forks !== null) {
-          forksElement.innerHTML = data.forks;
+        
+        if (forksElement && data && typeof data.forks === 'number') {
+          forksElement.textContent = data.forks;
         }
       })
       .catch(error => {
         console.error('GitHub API fetch error:', error);
         
+        const descriptionElement = document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-description');
+        if (descriptionElement && descriptionElement.textContent === 'Loading description...') {
+          descriptionElement.textContent = 'Unable to load repository information';
+        }
       })
   </script>
 </a>
@@ -999,7 +1179,7 @@
     </div>
 
     <p id="github-bf0ee489211b8679bac58054955703ef-description" class="m-0 mt-2 text-md text-neutral-800 dark:text-neutral">
-      
+      No description available
     </p>
 
     <div class="m-0 mt-2 flex items-center">
@@ -1040,6 +1220,27 @@
 
   </div>
   <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      const fullNameElement = document.getElementById('github-bf0ee489211b8679bac58054955703ef-full_name');
+      const descriptionElement = document.getElementById('github-bf0ee489211b8679bac58054955703ef-description');
+      const stargazersElement = document.getElementById('github-bf0ee489211b8679bac58054955703ef-stargazers');
+      const forksElement = document.getElementById('github-bf0ee489211b8679bac58054955703ef-forks');
+      
+      if (fullNameElement && (fullNameElement.textContent.includes('undefined') || fullNameElement.textContent === 'null')) {
+        fullNameElement.textContent = 'adityaxxz\/RunningTrackerApp';
+      }
+      if (descriptionElement && (descriptionElement.textContent.includes('undefined') || descriptionElement.textContent === 'null')) {
+        descriptionElement.textContent = 'No description available';
+      }
+      if (stargazersElement && (stargazersElement.textContent.includes('undefined') || stargazersElement.textContent === 'null')) {
+        stargazersElement.textContent = '0';
+      }
+      if (forksElement && (forksElement.textContent.includes('undefined') || forksElement.textContent === 'null')) {
+        forksElement.textContent = '0';
+      }
+    });
+
     fetch("https://api.github.com/repos/adityaxxz/RunningTrackerApp", {
       headers: new Headers({
         'User-agent': 'Mozilla/4.0 Custom User Agent'
@@ -1058,25 +1259,49 @@
         const stargazersElement = document.getElementById('github-bf0ee489211b8679bac58054955703ef-stargazers');
         const forksElement = document.getElementById('github-bf0ee489211b8679bac58054955703ef-forks');
         
-        if (fullNameElement && data.full_name !== undefined && data.full_name !== null) {
-          fullNameElement.innerHTML = data.full_name;
+        console.log('GitHub API response:', data);
+        
+        
+        if (fullNameElement && data && data.full_name && 
+            data.full_name !== 'undefined' && 
+            data.full_name !== 'null' &&
+            !fullNameElement.textContent.includes('undefined')) {
+          fullNameElement.textContent = data.full_name;
         }
         
-        if (descriptionElement) {
-          descriptionElement.innerHTML = data.description || 'No description available';
+        
+        if (descriptionElement && data) {
+          if (data.description && 
+              data.description !== 'undefined' && 
+              data.description !== null && 
+              data.description !== 'null' &&
+              data.description.trim() !== '') {
+            descriptionElement.textContent = data.description;
+          } else if (!descriptionElement.textContent || 
+                     descriptionElement.textContent === 'Loading description...' ||
+                     descriptionElement.textContent.includes('undefined') ||
+                     descriptionElement.textContent === 'null') {
+            descriptionElement.textContent = 'No description available';
+          }
         }
         
-        if (stargazersElement && data.stargazers_count !== undefined && data.stargazers_count !== null) {
-          stargazersElement.innerHTML = data.stargazers_count;
+        
+        if (stargazersElement && data && typeof data.stargazers_count === 'number') {
+          stargazersElement.textContent = data.stargazers_count;
         }
         
-        if (forksElement && data.forks !== undefined && data.forks !== null) {
-          forksElement.innerHTML = data.forks;
+        
+        if (forksElement && data && typeof data.forks === 'number') {
+          forksElement.textContent = data.forks;
         }
       })
       .catch(error => {
         console.error('GitHub API fetch error:', error);
         
+        const descriptionElement = document.getElementById('github-bf0ee489211b8679bac58054955703ef-description');
+        if (descriptionElement && descriptionElement.textContent === 'Loading description...') {
+          descriptionElement.textContent = 'Unable to load repository information';
+        }
       })
   </script>
 </a>
@@ -1156,6 +1381,27 @@
 
   </div>
   <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      const fullNameElement = document.getElementById('github-99ee1c5e1218057c574c308cf8a37596-full_name');
+      const descriptionElement = document.getElementById('github-99ee1c5e1218057c574c308cf8a37596-description');
+      const stargazersElement = document.getElementById('github-99ee1c5e1218057c574c308cf8a37596-stargazers');
+      const forksElement = document.getElementById('github-99ee1c5e1218057c574c308cf8a37596-forks');
+      
+      if (fullNameElement && (fullNameElement.textContent.includes('undefined') || fullNameElement.textContent === 'null')) {
+        fullNameElement.textContent = 'adityaxxz\/multithreaded-web-server';
+      }
+      if (descriptionElement && (descriptionElement.textContent.includes('undefined') || descriptionElement.textContent === 'null')) {
+        descriptionElement.textContent = 'No description available';
+      }
+      if (stargazersElement && (stargazersElement.textContent.includes('undefined') || stargazersElement.textContent === 'null')) {
+        stargazersElement.textContent = '0';
+      }
+      if (forksElement && (forksElement.textContent.includes('undefined') || forksElement.textContent === 'null')) {
+        forksElement.textContent = '0';
+      }
+    });
+
     fetch("https://api.github.com/repos/adityaxxz/multithreaded-web-server", {
       headers: new Headers({
         'User-agent': 'Mozilla/4.0 Custom User Agent'
@@ -1174,25 +1420,49 @@
         const stargazersElement = document.getElementById('github-99ee1c5e1218057c574c308cf8a37596-stargazers');
         const forksElement = document.getElementById('github-99ee1c5e1218057c574c308cf8a37596-forks');
         
-        if (fullNameElement && data.full_name !== undefined && data.full_name !== null) {
-          fullNameElement.innerHTML = data.full_name;
+        console.log('GitHub API response:', data);
+        
+        
+        if (fullNameElement && data && data.full_name && 
+            data.full_name !== 'undefined' && 
+            data.full_name !== 'null' &&
+            !fullNameElement.textContent.includes('undefined')) {
+          fullNameElement.textContent = data.full_name;
         }
         
-        if (descriptionElement) {
-          descriptionElement.innerHTML = data.description || 'No description available';
+        
+        if (descriptionElement && data) {
+          if (data.description && 
+              data.description !== 'undefined' && 
+              data.description !== null && 
+              data.description !== 'null' &&
+              data.description.trim() !== '') {
+            descriptionElement.textContent = data.description;
+          } else if (!descriptionElement.textContent || 
+                     descriptionElement.textContent === 'Loading description...' ||
+                     descriptionElement.textContent.includes('undefined') ||
+                     descriptionElement.textContent === 'null') {
+            descriptionElement.textContent = 'No description available';
+          }
         }
         
-        if (stargazersElement && data.stargazers_count !== undefined && data.stargazers_count !== null) {
-          stargazersElement.innerHTML = data.stargazers_count;
+        
+        if (stargazersElement && data && typeof data.stargazers_count === 'number') {
+          stargazersElement.textContent = data.stargazers_count;
         }
         
-        if (forksElement && data.forks !== undefined && data.forks !== null) {
-          forksElement.innerHTML = data.forks;
+        
+        if (forksElement && data && typeof data.forks === 'number') {
+          forksElement.textContent = data.forks;
         }
       })
       .catch(error => {
         console.error('GitHub API fetch error:', error);
         
+        const descriptionElement = document.getElementById('github-99ee1c5e1218057c574c308cf8a37596-description');
+        if (descriptionElement && descriptionElement.textContent === 'Loading description...') {
+          descriptionElement.textContent = 'Unable to load repository information';
+        }
       })
   </script>
 </a>
@@ -1235,7 +1505,7 @@
      </div>
  
      <p id="github-78f6ec2d8083e074882077e4d55cb2d8-description" class="m-0 mt-2 text-md text-neutral-800 dark:text-neutral">
-       
+       No description available
      </p>
  
      <div class="m-0 mt-2 flex items-center">
@@ -1276,6 +1546,27 @@
  
    </div>
    <script>
+     
+     document.addEventListener('DOMContentLoaded', function() {
+       const fullNameElement = document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-full_name');
+       const descriptionElement = document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-description');
+       const stargazersElement = document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-stargazers');
+       const forksElement = document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-forks');
+       
+       if (fullNameElement && (fullNameElement.textContent.includes('undefined') || fullNameElement.textContent === 'null')) {
+         fullNameElement.textContent = 'abhinavjain1110\/CryptoTracer';
+       }
+       if (descriptionElement && (descriptionElement.textContent.includes('undefined') || descriptionElement.textContent === 'null')) {
+         descriptionElement.textContent = 'No description available';
+       }
+       if (stargazersElement && (stargazersElement.textContent.includes('undefined') || stargazersElement.textContent === 'null')) {
+         stargazersElement.textContent = '0';
+       }
+       if (forksElement && (forksElement.textContent.includes('undefined') || forksElement.textContent === 'null')) {
+         forksElement.textContent = '0';
+       }
+     });
+ 
      fetch("https://api.github.com/repos/abhinavjain1110/CryptoTracer", {
        headers: new Headers({
          'User-agent': 'Mozilla/4.0 Custom User Agent'
@@ -1294,25 +1585,49 @@
          const stargazersElement = document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-stargazers');
          const forksElement = document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-forks');
          
-         if (fullNameElement && data.full_name !== undefined && data.full_name !== null) {
-           fullNameElement.innerHTML = data.full_name;
+         console.log('GitHub API response:', data);
+         
+         
+         if (fullNameElement && data && data.full_name && 
+             data.full_name !== 'undefined' && 
+             data.full_name !== 'null' &&
+             !fullNameElement.textContent.includes('undefined')) {
+           fullNameElement.textContent = data.full_name;
          }
          
-         if (descriptionElement) {
-           descriptionElement.innerHTML = data.description || 'No description available';
+         
+         if (descriptionElement && data) {
+           if (data.description && 
+               data.description !== 'undefined' && 
+               data.description !== null && 
+               data.description !== 'null' &&
+               data.description.trim() !== '') {
+             descriptionElement.textContent = data.description;
+           } else if (!descriptionElement.textContent || 
+                      descriptionElement.textContent === 'Loading description...' ||
+                      descriptionElement.textContent.includes('undefined') ||
+                      descriptionElement.textContent === 'null') {
+             descriptionElement.textContent = 'No description available';
+           }
          }
          
-         if (stargazersElement && data.stargazers_count !== undefined && data.stargazers_count !== null) {
-           stargazersElement.innerHTML = data.stargazers_count;
+         
+         if (stargazersElement && data && typeof data.stargazers_count === 'number') {
+           stargazersElement.textContent = data.stargazers_count;
          }
          
-         if (forksElement && data.forks !== undefined && data.forks !== null) {
-           forksElement.innerHTML = data.forks;
+         
+         if (forksElement && data && typeof data.forks === 'number') {
+           forksElement.textContent = data.forks;
          }
        })
        .catch(error => {
          console.error('GitHub API fetch error:', error);
          
+         const descriptionElement = document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-description');
+         if (descriptionElement && descriptionElement.textContent === 'Loading description...') {
+           descriptionElement.textContent = 'Unable to load repository information';
+         }
        })
    </script>
  </a>
