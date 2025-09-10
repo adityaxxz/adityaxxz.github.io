@@ -55,7 +55,7 @@ Projects
 
  > Visit the [addy🔗](https://github.com/abhinavjain1110/CryptoTracer/tree/addy) or [test🔗](https://github.com/abhinavjain1110/CryptoTracer/tree/ebd7e7e9a46d4417241805f478d08a34f7c25331) branch to see my commits! 
 
- {{< github repo="abhinavjain1110/CryptoTracer" >}}
+ {{< github repo="adityaxxz/CryptoTracer" >}}
  <!-- <h4> Description: Implemented a software solution to identify the end receiver of a cryptocurrency transaction. -->
 
 ---
