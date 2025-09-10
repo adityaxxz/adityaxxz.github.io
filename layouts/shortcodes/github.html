@@ -1,0 +1,268 @@
+{{ $id := delimit (slice "github" (partial "functions/uid.html" .)) "-" }}
+{{- $githubURL := print "https://api.github.com/repos/" (.Get "repo") -}}
+{{- $githubData := getJSON ($githubURL) -}}
+{{- $githubColors := .Site.Data.githubColors -}}
+{{- if $githubData -}}
+
+<a id="{{ $id }}" target="_blank" href="{{ $githubData.html_url }}" class="cursor-pointer">
+  <div
+    class="w-full md:w-auto pt-3 p-5 border border-neutral-200 dark:border-neutral-700 border rounded-md shadow-2xl">
+
+    <div class="flex items-center">
+      <span class="text-2xl text-neutral-800 dark:text-neutral" style="margin-right:10px;">
+        {{ partial "icon.html" "github" }}
+      </span>
+      <div
+        id="{{ $id }}-full_name"
+        class="m-0 font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral">
+        {{ $githubData.full_name | markdownify }}
+      </div>
+    </div>
+
+    <p id="{{ $id }}-description" class="m-0 mt-2 text-md text-neutral-800 dark:text-neutral">
+      {{ $githubData.description | default "No description available" | markdownify }}
+    </p>
+
+    <div class="m-0 mt-2 flex items-center">
+
+      <span class="mr-1 inline-block h-3 w-3 rounded-full"
+        style="background-color: {{ if $githubData.language }} {{- index $githubColors $githubData.language -}} {{ else }} #0077b6 {{ end }}"></span>
+      <div class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
+        {{ $githubData.language | default "Unknown" }}
+      </div>
+
+      <span class="text-md mr-1 text-neutral-800 dark:text-neutral">
+        {{ partial "icon.html" "star" }}
+      </span>
+      <div id="{{ $id }}-stargazers" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
+        {{ $githubData.stargazers_count | default 0 }}
+      </div>
+
+      <span class="text-md mr-1 text-neutral-800 dark:text-neutral">
+        {{ partial "icon.html" "fork" }}
+      </span>
+      <div id="{{ $id }}-forks" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
+        {{ $githubData.forks | default 0 }}
+      </div>
+
+    </div>
+
+  </div>
+  <script>
+    // Clean up any existing "undefined" text immediately
+    document.addEventListener('DOMContentLoaded', function() {
+      const fullNameElement = document.getElementById('{{ $id }}-full_name');
+      const descriptionElement = document.getElementById('{{ $id }}-description');
+      const stargazersElement = document.getElementById('{{ $id }}-stargazers');
+      const forksElement = document.getElementById('{{ $id }}-forks');
+      
+      if (fullNameElement && (fullNameElement.textContent.includes('undefined') || fullNameElement.textContent === 'null')) {
+        fullNameElement.textContent = '{{ .Get "repo" }}';
+      }
+      if (descriptionElement && (descriptionElement.textContent.includes('undefined') || descriptionElement.textContent === 'null')) {
+        descriptionElement.textContent = 'No description available';
+      }
+      if (stargazersElement && (stargazersElement.textContent.includes('undefined') || stargazersElement.textContent === 'null')) {
+        stargazersElement.textContent = '0';
+      }
+      if (forksElement && (forksElement.textContent.includes('undefined') || forksElement.textContent === 'null')) {
+        forksElement.textContent = '0';
+      }
+    });
+
+    fetch({{ $githubURL }}, {
+      headers: new Headers({
+        'User-agent': 'Mozilla/4.0 Custom User Agent'
+      })
+    })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then(data => {
+        // Only update if we have valid data and elements exist
+        const fullNameElement = document.getElementById('{{ $id }}-full_name');
+        const descriptionElement = document.getElementById('{{ $id }}-description');
+        const stargazersElement = document.getElementById('{{ $id }}-stargazers');
+        const forksElement = document.getElementById('{{ $id }}-forks');
+        
+        console.log('GitHub API response for {{ .Get "repo" }}:', data);
+        
+        // Only update full_name if we have a valid value
+        if (fullNameElement && data && data.full_name && 
+            data.full_name !== 'undefined' && 
+            data.full_name !== 'null' &&
+            !fullNameElement.textContent.includes('undefined')) {
+          fullNameElement.textContent = data.full_name;
+        }
+        
+        // Only update description if we have a valid value
+        if (descriptionElement && data) {
+          if (data.description && 
+              data.description !== 'undefined' && 
+              data.description !== null && 
+              data.description !== 'null' &&
+              data.description.trim() !== '') {
+            descriptionElement.textContent = data.description;
+          } else if (!descriptionElement.textContent || 
+                     descriptionElement.textContent === 'Loading description...' ||
+                     descriptionElement.textContent.includes('undefined') ||
+                     descriptionElement.textContent === 'null') {
+            descriptionElement.textContent = 'No description available';
+          }
+        }
+        
+        // Only update stars if we have a valid number
+        if (stargazersElement && data && typeof data.stargazers_count === 'number') {
+          stargazersElement.textContent = data.stargazers_count;
+        }
+        
+        // Only update forks if we have a valid number
+        if (forksElement && data && typeof data.forks === 'number') {
+          forksElement.textContent = data.forks;
+        }
+      })
+      .catch(error => {
+        console.error('GitHub API fetch error:', error);
+        // Update description to show error if it was loading
+        const descriptionElement = document.getElementById('{{ $id }}-description');
+        if (descriptionElement && descriptionElement.textContent === 'Loading description...') {
+          descriptionElement.textContent = 'Unable to load repository information';
+        }
+      })
+  </script>
+</a>
+{{- else -}}
+{{/* Fallback when GitHub API is unavailable at build time */}}
+<a id="{{ $id }}" target="_blank" href="https://github.com/{{ .Get "repo" }}" class="cursor-pointer">
+  <div
+    class="w-full md:w-auto pt-3 p-5 border border-neutral-200 dark:border-neutral-700 border rounded-md shadow-2xl">
+
+    <div class="flex items-center">
+      <span class="text-2xl text-neutral-800 dark:text-neutral" style="margin-right:10px;">
+        {{ partial "icon.html" "github" }}
+      </span>
+      <div
+        id="{{ $id }}-full_name"
+        class="m-0 font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral">
+        {{ .Get "repo" }}
+      </div>
+    </div>
+
+    <p id="{{ $id }}-description" class="m-0 mt-2 text-md text-neutral-800 dark:text-neutral">
+      Loading description...
+    </p>
+
+    <div class="m-0 mt-2 flex items-center">
+
+      <span class="mr-1 inline-block h-3 w-3 rounded-full"
+        style="background-color: #0077b6"></span>
+      <div class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
+        Unknown
+      </div>
+
+      <span class="text-md mr-1 text-neutral-800 dark:text-neutral">
+        {{ partial "icon.html" "star" }}
+      </span>
+      <div id="{{ $id }}-stargazers" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
+        0
+      </div>
+
+      <span class="text-md mr-1 text-neutral-800 dark:text-neutral">
+        {{ partial "icon.html" "fork" }}
+      </span>
+      <div id="{{ $id }}-forks" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
+        0
+      </div>
+
+    </div>
+
+  </div>
+  <script>
+    // Clean up any existing "undefined" text immediately
+    document.addEventListener('DOMContentLoaded', function() {
+      const fullNameElement = document.getElementById('{{ $id }}-full_name');
+      const descriptionElement = document.getElementById('{{ $id }}-description');
+      const stargazersElement = document.getElementById('{{ $id }}-stargazers');
+      const forksElement = document.getElementById('{{ $id }}-forks');
+      
+      if (fullNameElement && (fullNameElement.textContent.includes('undefined') || fullNameElement.textContent === 'null')) {
+        fullNameElement.textContent = '{{ .Get "repo" }}';
+      }
+      if (descriptionElement && (descriptionElement.textContent.includes('undefined') || descriptionElement.textContent === 'null')) {
+        descriptionElement.textContent = 'No description available';
+      }
+      if (stargazersElement && (stargazersElement.textContent.includes('undefined') || stargazersElement.textContent === 'null')) {
+        stargazersElement.textContent = '0';
+      }
+      if (forksElement && (forksElement.textContent.includes('undefined') || forksElement.textContent === 'null')) {
+        forksElement.textContent = '0';
+      }
+    });
+
+    fetch("https://api.github.com/repos/{{ .Get "repo" }}", {
+      headers: new Headers({
+        'User-agent': 'Mozilla/4.0 Custom User Agent'
+      })
+    })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then(data => {
+        // Only update if we have valid data and elements exist
+        const fullNameElement = document.getElementById('{{ $id }}-full_name');
+        const descriptionElement = document.getElementById('{{ $id }}-description');
+        const stargazersElement = document.getElementById('{{ $id }}-stargazers');
+        const forksElement = document.getElementById('{{ $id }}-forks');
+        
+        console.log('GitHub API response (fallback) for {{ .Get "repo" }}:', data);
+        
+        // Only update full_name if we have a valid value
+        if (fullNameElement && data && data.full_name && 
+            data.full_name !== 'undefined' && 
+            data.full_name !== 'null' &&
+            !fullNameElement.textContent.includes('undefined')) {
+          fullNameElement.textContent = data.full_name;
+        }
+        
+        // Only update description if we have a valid value
+        if (descriptionElement && data) {
+          if (data.description && 
+              data.description !== 'undefined' && 
+              data.description !== null && 
+              data.description !== 'null' &&
+              data.description.trim() !== '') {
+            descriptionElement.textContent = data.description;
+          } else if (descriptionElement.textContent === 'Loading description...' ||
+                     descriptionElement.textContent.includes('undefined') ||
+                     descriptionElement.textContent === 'null') {
+            descriptionElement.textContent = 'No description available';
+          }
+        }
+        
+        // Only update stars if we have a valid number
+        if (stargazersElement && data && typeof data.stargazers_count === 'number') {
+          stargazersElement.textContent = data.stargazers_count;
+        }
+        
+        // Only update forks if we have a valid number
+        if (forksElement && data && typeof data.forks === 'number') {
+          forksElement.textContent = data.forks;
+        }
+      })
+      .catch(error => {
+        console.error('GitHub API fetch error:', error);
+        // Show error message in description
+        const descriptionElement = document.getElementById('{{ $id }}-description');
+        if (descriptionElement && descriptionElement.textContent === 'Loading description...') {
+          descriptionElement.textContent = 'Unable to load repository information';
+        }
+      })
+  </script>
+</a>
+{{- end -}}
