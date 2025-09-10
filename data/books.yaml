@@ -54,6 +54,11 @@
   cover: "/img/books/warofart.jpg"
   category: "self help"
 
+- title: "The Art Of Doing Science And Engineering"
+  author: "Richard W. Hamming"
+  cover: "/img/books/thartofdoingengg.jpg"
+  category: "additional"
+
 # Classic Literature
 - title: "The Road"
   author: "Cormac McCarthy"
@@ -112,12 +117,12 @@
   cover: "/img/books/81V76D1odlL._SY522_.jpg"
   category: "literature"
 
-- title: "I Regret Almost Everything"
-  author: "Keith McNally"
-  cover: "/img/books/71ZaFaDNadL._SY522_.jpg"
-  category: "additional"
-
 - title: "Introduction To Quantum Mechanics"
   author: "David J. Griffiths & Darrell F. Schroeter"
   cover: "/img/books/61HBnuFYo-L.jpg"
+  category: "additional"
+  
+- title: "I Regret Almost Everything"
+  author: "Keith McNally"
+  cover: "/img/books/71ZaFaDNadL._SY522_.jpg"
   category: "additional"
