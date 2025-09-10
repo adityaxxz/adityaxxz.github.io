@@ -1,0 +1,123 @@
+# Core Collection From Bookself Folder
+- title: "Atomic Habits"
+  author: "James Clear"
+  cover: "/img/books/atomichabits.jpg"
+  category: "self help"
+
+- title: "Can't Hurt Me"
+  author: "David Goggins"
+  cover: "/img/books/canthurtme.jpg"
+  category: "self help"
+
+- title: "Mastering Ethereum"
+  author: "Andreas M. Antonopoulos, Gavin Wood"
+  cover: "/img/books/masteringetehreum.jpg"
+  category: "additional"
+
+- title: "The Pivot Year"
+  author: "Brianna Wiest"
+  cover: "/img/books/pivotyr.jpeg"
+  category: "self help"
+
+- title: "The Psychology Of Money"
+  author: "Morgan Housel"
+  cover: "/img/books/psychologyofmoney.jpg"
+  category: "self help"
+
+- title: "Read Write Own"
+  author: "Chris Dixon"
+  cover: "/img/books/readwriteown.jpg"
+  category: "additional"
+
+- title: "The Almanack Of Naval Ravikant"
+  author: "Eric Jorgenson"
+  cover: "/img/books/thealmanakofnavalravikant.jpg"
+  category: "philosophy"
+
+- title: "The Beginning Of Infinity"
+  author: "David Deutsch"
+  cover: "/img/books/thebeginnigofinfinity.jpg"
+  category: "philosophy"
+
+- title: "The Compound Effect"
+  author: "Darren Hardy"
+  cover: "/img/books/thecompoundeffect.jpg"
+  category: "self help"
+
+- title: "The Subtle Art Of Not Giving A F*ck"
+  author: "Mark Manson"
+  cover: "/img/books/thesubtleartofnotgivingf.jpg"
+  category: "self help"
+
+- title: "The War Of Art"
+  author: "Steven Pressfield"
+  cover: "/img/books/warofart.jpg"
+  category: "self help"
+
+# Classic Literature
+- title: "The Road"
+  author: "Cormac McCarthy"
+  cover: "/img/books/440px-The-road.jpg"
+  category: "literature"
+
+- title: "White Noise"
+  author: "Don DeLillo"
+  cover: "/img/books/White_Noise.jpg"
+  category: "literature"
+
+- title: "The Remains of the Day"
+  author: "Kazuo Ishiguro"
+  cover: "/img/books/KazuoIshiguro_TheRemainsOfTheDay.jpg"
+  category: "literature"
+
+- title: "The Call of the Wild"
+  author: "Jack London"
+  cover: "/img/books/JackLondoncallwild.jpg"
+  category: "literature"
+
+- title: "White Fang"
+  author: "Jack London"
+  cover: "/img/books/JackLondonwhitefang1.jpg"
+  category: "literature"
+
+# Philosophy & Consciousness
+- title: "Consciousness Explained"
+  author: "Daniel C. Dennett"
+  cover: "/img/books/Consciousness_Explained_(first_edition).jpg"
+  category: "philosophy"
+
+- title: "Something To Do With Paying Attention"
+  author: "David Foster Wallace"
+  cover: "/img/books/Something-to-do-with-paying-attention-9781946022271_lg.jpg"
+  category: "philosophy"
+
+# Additional Collection
+- title: "I've Been Thinking"
+  author: "Daniel C. Dennett"
+  cover: "/img/books/61q0HZNDPBL._SY522_.jpg"
+  category: "philosophy"
+
+- title: "Love In The Time Of Cholera"
+  author: "Gabriel García Márquez"
+  cover: "/img/books/61OBwknuKsL._SY522_.jpg"
+  category: "literature"
+
+- title: "The Grapes Of Wrath"
+  author: "John Steinbeck"
+  cover: "/img/books/81yN7h6yG-L._SY522_.jpg"
+  category: "literature"
+
+- title: "The House Of The Spirits"
+  author: "Isabel Allende"
+  cover: "/img/books/81V76D1odlL._SY522_.jpg"
+  category: "literature"
+
+- title: "I Regret Almost Everything"
+  author: "Keith McNally"
+  cover: "/img/books/71ZaFaDNadL._SY522_.jpg"
+  category: "additional"
+
+- title: "Introduction To Quantum Mechanics"
+  author: "David J. Griffiths & Darrell F. Schroeter"
+  cover: "/img/books/61HBnuFYo-L.jpg"
+  category: "additional"
