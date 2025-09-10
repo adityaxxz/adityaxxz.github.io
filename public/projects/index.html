@@ -579,14 +579,39 @@
         'User-agent': 'Mozilla/4.0 Custom User Agent'
       })
     })
-      .then(response => response.json())
-      .then(data => {
-        document.getElementById('github-3072eceaa0dca36a4e0b405b6d381a63-full_name').innerHTML = data.full_name;
-        document.getElementById('github-3072eceaa0dca36a4e0b405b6d381a63-description').innerHTML = data.description;
-        document.getElementById('github-3072eceaa0dca36a4e0b405b6d381a63-stargazers').innerHTML = data.stargazers_count;
-        document.getElementById('github-3072eceaa0dca36a4e0b405b6d381a63-forks').innerHTML = data.forks;
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
       })
-      .catch(error => console.error(error))
+      .then(data => {
+        
+        const fullNameElement = document.getElementById('github-3072eceaa0dca36a4e0b405b6d381a63-full_name');
+        const descriptionElement = document.getElementById('github-3072eceaa0dca36a4e0b405b6d381a63-description');
+        const stargazersElement = document.getElementById('github-3072eceaa0dca36a4e0b405b6d381a63-stargazers');
+        const forksElement = document.getElementById('github-3072eceaa0dca36a4e0b405b6d381a63-forks');
+        
+        if (fullNameElement && data.full_name !== undefined && data.full_name !== null) {
+          fullNameElement.innerHTML = data.full_name;
+        }
+        
+        if (descriptionElement) {
+          descriptionElement.innerHTML = data.description || 'No description available';
+        }
+        
+        if (stargazersElement && data.stargazers_count !== undefined && data.stargazers_count !== null) {
+          stargazersElement.innerHTML = data.stargazers_count;
+        }
+        
+        if (forksElement && data.forks !== undefined && data.forks !== null) {
+          forksElement.innerHTML = data.forks;
+        }
+      })
+      .catch(error => {
+        console.error('GitHub API fetch error:', error);
+        
+      })
   </script>
 </a>
 
@@ -670,14 +695,39 @@
         'User-agent': 'Mozilla/4.0 Custom User Agent'
       })
     })
-      .then(response => response.json())
-      .then(data => {
-        document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-full_name').innerHTML = data.full_name;
-        document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-description').innerHTML = data.description;
-        document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-stargazers').innerHTML = data.stargazers_count;
-        document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-forks').innerHTML = data.forks;
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
       })
-      .catch(error => console.error(error))
+      .then(data => {
+        
+        const fullNameElement = document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-full_name');
+        const descriptionElement = document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-description');
+        const stargazersElement = document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-stargazers');
+        const forksElement = document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-forks');
+        
+        if (fullNameElement && data.full_name !== undefined && data.full_name !== null) {
+          fullNameElement.innerHTML = data.full_name;
+        }
+        
+        if (descriptionElement) {
+          descriptionElement.innerHTML = data.description || 'No description available';
+        }
+        
+        if (stargazersElement && data.stargazers_count !== undefined && data.stargazers_count !== null) {
+          stargazersElement.innerHTML = data.stargazers_count;
+        }
+        
+        if (forksElement && data.forks !== undefined && data.forks !== null) {
+          forksElement.innerHTML = data.forks;
+        }
+      })
+      .catch(error => {
+        console.error('GitHub API fetch error:', error);
+        
+      })
   </script>
 </a>
 <hr>
@@ -762,14 +812,39 @@
         'User-agent': 'Mozilla/4.0 Custom User Agent'
       })
     })
-      .then(response => response.json())
-      .then(data => {
-        document.getElementById('github-511589c681a531d634a3db1aebac411d-full_name').innerHTML = data.full_name;
-        document.getElementById('github-511589c681a531d634a3db1aebac411d-description').innerHTML = data.description;
-        document.getElementById('github-511589c681a531d634a3db1aebac411d-stargazers').innerHTML = data.stargazers_count;
-        document.getElementById('github-511589c681a531d634a3db1aebac411d-forks').innerHTML = data.forks;
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
       })
-      .catch(error => console.error(error))
+      .then(data => {
+        
+        const fullNameElement = document.getElementById('github-511589c681a531d634a3db1aebac411d-full_name');
+        const descriptionElement = document.getElementById('github-511589c681a531d634a3db1aebac411d-description');
+        const stargazersElement = document.getElementById('github-511589c681a531d634a3db1aebac411d-stargazers');
+        const forksElement = document.getElementById('github-511589c681a531d634a3db1aebac411d-forks');
+        
+        if (fullNameElement && data.full_name !== undefined && data.full_name !== null) {
+          fullNameElement.innerHTML = data.full_name;
+        }
+        
+        if (descriptionElement) {
+          descriptionElement.innerHTML = data.description || 'No description available';
+        }
+        
+        if (stargazersElement && data.stargazers_count !== undefined && data.stargazers_count !== null) {
+          stargazersElement.innerHTML = data.stargazers_count;
+        }
+        
+        if (forksElement && data.forks !== undefined && data.forks !== null) {
+          forksElement.innerHTML = data.forks;
+        }
+      })
+      .catch(error => {
+        console.error('GitHub API fetch error:', error);
+        
+      })
   </script>
 </a>
 
@@ -853,14 +928,39 @@
         'User-agent': 'Mozilla/4.0 Custom User Agent'
       })
     })
-      .then(response => response.json())
-      .then(data => {
-        document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-full_name').innerHTML = data.full_name;
-        document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-description').innerHTML = data.description;
-        document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-stargazers').innerHTML = data.stargazers_count;
-        document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-forks').innerHTML = data.forks;
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
       })
-      .catch(error => console.error(error))
+      .then(data => {
+        
+        const fullNameElement = document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-full_name');
+        const descriptionElement = document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-description');
+        const stargazersElement = document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-stargazers');
+        const forksElement = document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-forks');
+        
+        if (fullNameElement && data.full_name !== undefined && data.full_name !== null) {
+          fullNameElement.innerHTML = data.full_name;
+        }
+        
+        if (descriptionElement) {
+          descriptionElement.innerHTML = data.description || 'No description available';
+        }
+        
+        if (stargazersElement && data.stargazers_count !== undefined && data.stargazers_count !== null) {
+          stargazersElement.innerHTML = data.stargazers_count;
+        }
+        
+        if (forksElement && data.forks !== undefined && data.forks !== null) {
+          forksElement.innerHTML = data.forks;
+        }
+      })
+      .catch(error => {
+        console.error('GitHub API fetch error:', error);
+        
+      })
   </script>
 </a>
 <hr>
@@ -945,14 +1045,39 @@
         'User-agent': 'Mozilla/4.0 Custom User Agent'
       })
     })
-      .then(response => response.json())
-      .then(data => {
-        document.getElementById('github-bf0ee489211b8679bac58054955703ef-full_name').innerHTML = data.full_name;
-        document.getElementById('github-bf0ee489211b8679bac58054955703ef-description').innerHTML = data.description;
-        document.getElementById('github-bf0ee489211b8679bac58054955703ef-stargazers').innerHTML = data.stargazers_count;
-        document.getElementById('github-bf0ee489211b8679bac58054955703ef-forks').innerHTML = data.forks;
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
       })
-      .catch(error => console.error(error))
+      .then(data => {
+        
+        const fullNameElement = document.getElementById('github-bf0ee489211b8679bac58054955703ef-full_name');
+        const descriptionElement = document.getElementById('github-bf0ee489211b8679bac58054955703ef-description');
+        const stargazersElement = document.getElementById('github-bf0ee489211b8679bac58054955703ef-stargazers');
+        const forksElement = document.getElementById('github-bf0ee489211b8679bac58054955703ef-forks');
+        
+        if (fullNameElement && data.full_name !== undefined && data.full_name !== null) {
+          fullNameElement.innerHTML = data.full_name;
+        }
+        
+        if (descriptionElement) {
+          descriptionElement.innerHTML = data.description || 'No description available';
+        }
+        
+        if (stargazersElement && data.stargazers_count !== undefined && data.stargazers_count !== null) {
+          stargazersElement.innerHTML = data.stargazers_count;
+        }
+        
+        if (forksElement && data.forks !== undefined && data.forks !== null) {
+          forksElement.innerHTML = data.forks;
+        }
+      })
+      .catch(error => {
+        console.error('GitHub API fetch error:', error);
+        
+      })
   </script>
 </a>
 
@@ -1036,14 +1161,39 @@
         'User-agent': 'Mozilla/4.0 Custom User Agent'
       })
     })
-      .then(response => response.json())
-      .then(data => {
-        document.getElementById('github-99ee1c5e1218057c574c308cf8a37596-full_name').innerHTML = data.full_name;
-        document.getElementById('github-99ee1c5e1218057c574c308cf8a37596-description').innerHTML = data.description;
-        document.getElementById('github-99ee1c5e1218057c574c308cf8a37596-stargazers').innerHTML = data.stargazers_count;
-        document.getElementById('github-99ee1c5e1218057c574c308cf8a37596-forks').innerHTML = data.forks;
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
       })
-      .catch(error => console.error(error))
+      .then(data => {
+        
+        const fullNameElement = document.getElementById('github-99ee1c5e1218057c574c308cf8a37596-full_name');
+        const descriptionElement = document.getElementById('github-99ee1c5e1218057c574c308cf8a37596-description');
+        const stargazersElement = document.getElementById('github-99ee1c5e1218057c574c308cf8a37596-stargazers');
+        const forksElement = document.getElementById('github-99ee1c5e1218057c574c308cf8a37596-forks');
+        
+        if (fullNameElement && data.full_name !== undefined && data.full_name !== null) {
+          fullNameElement.innerHTML = data.full_name;
+        }
+        
+        if (descriptionElement) {
+          descriptionElement.innerHTML = data.description || 'No description available';
+        }
+        
+        if (stargazersElement && data.stargazers_count !== undefined && data.stargazers_count !== null) {
+          stargazersElement.innerHTML = data.stargazers_count;
+        }
+        
+        if (forksElement && data.forks !== undefined && data.forks !== null) {
+          forksElement.innerHTML = data.forks;
+        }
+      })
+      .catch(error => {
+        console.error('GitHub API fetch error:', error);
+        
+      })
   </script>
 </a>
 <hr>
@@ -1131,14 +1281,39 @@
          'User-agent': 'Mozilla/4.0 Custom User Agent'
        })
      })
-       .then(response => response.json())
-       .then(data => {
-         document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-full_name').innerHTML = data.full_name;
-         document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-description').innerHTML = data.description;
-         document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-stargazers').innerHTML = data.stargazers_count;
-         document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-forks').innerHTML = data.forks;
+       .then(response => {
+         if (!response.ok) {
+           throw new Error(`HTTP error! status: ${response.status}`);
+         }
+         return response.json();
        })
-       .catch(error => console.error(error))
+       .then(data => {
+         
+         const fullNameElement = document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-full_name');
+         const descriptionElement = document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-description');
+         const stargazersElement = document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-stargazers');
+         const forksElement = document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-forks');
+         
+         if (fullNameElement && data.full_name !== undefined && data.full_name !== null) {
+           fullNameElement.innerHTML = data.full_name;
+         }
+         
+         if (descriptionElement) {
+           descriptionElement.innerHTML = data.description || 'No description available';
+         }
+         
+         if (stargazersElement && data.stargazers_count !== undefined && data.stargazers_count !== null) {
+           stargazersElement.innerHTML = data.stargazers_count;
+         }
+         
+         if (forksElement && data.forks !== undefined && data.forks !== null) {
+           forksElement.innerHTML = data.forks;
+         }
+       })
+       .catch(error => {
+         console.error('GitHub API fetch error:', error);
+         
+       })
    </script>
  </a>
  <!-- <h4> Description: Implemented a software solution to identify the end receiver of a cryptocurrency transaction. -->
