@@ -495,13 +495,27 @@ Welcome to my personal bookshelf! Here are some of the books that have influence
         </select>
       </div>
       
-      
-      <div class="toggle-switch">
-        <input type="checkbox" id="viewToggle" class="toggle-checkbox">
-        <label for="viewToggle" class="toggle-label">
-          <span class="toggle-slider"></span>
-        </label>
-      </div>
+       
+       <div class="view-toggle">
+         <button id="listViewBtn" class="view-btn">
+           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+             <line x1="8" y1="6" x2="21" y2="6"></line>
+             <line x1="8" y1="12" x2="21" y2="12"></line>
+             <line x1="8" y1="18" x2="21" y2="18"></line>
+             <line x1="3" y1="6" x2="3.01" y2="6"></line>
+             <line x1="3" y1="12" x2="3.01" y2="12"></line>
+             <line x1="3" y1="18" x2="3.01" y2="18"></line>
+           </svg>
+         </button>
+         <button id="gridViewBtn" class="view-btn active">
+           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+             <rect x="3" y="3" width="7" height="7"></rect>
+             <rect x="14" y="3" width="7" height="7"></rect>
+             <rect x="14" y="14" width="7" height="7"></rect>
+             <rect x="3" y="14" width="7" height="7"></rect>
+           </svg>
+         </button>
+       </div>
     </div>
   </header>
 
@@ -956,14 +970,29 @@ Welcome to my personal bookshelf! Here are some of the books that have influence
   position: relative;
 }
 
+.sort-container::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid #6b7280;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
 .sort-dropdown {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background: rgba(0, 0, 0, 0.05);
-  border: none;
-  border-radius: 15px;
-  padding: 12px 16px;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  padding: 10px 32px 10px 14px;
   font-size: 14px;
   font-weight: 500;
   color: #374151;
@@ -971,6 +1000,7 @@ Welcome to my personal bookshelf! Here are some of the books that have influence
   transition: all 0.2s ease;
   min-width: 140px;
   outline: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
  
@@ -985,19 +1015,24 @@ Welcome to my personal bookshelf! Here are some of the books that have influence
 }
 
 .sort-dropdown:hover {
-  background: rgba(0, 0, 0, 0.08);
+  border-color: rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
 
 .sort-dropdown:focus {
-  background: rgba(0, 0, 0, 0.08);
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  border-color: #2c61b6;
+  box-shadow: 0 0 0 3px rgba(44, 97, 182, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.sort-container:hover::after {
+  border-top-color: #374151;
 }
 
  
 .sort-dropdown option {
   background: white;
-  color:#f3f4f6;
-  padding: 12px 16px;
+  color: #374151;
+  padding: 10px 14px;
   font-size: 14px;
   font-weight: 500;
   border: none;
@@ -1006,70 +1041,97 @@ Welcome to my personal bookshelf! Here are some of the books that have influence
 
  
 @media (prefers-color-scheme: dark) {
+  .sort-container::after {
+    border-top-color: #9ca3af;
+  }
+  
   .sort-dropdown {
-    background:rgb(70, 81, 95);  {% comment %} 3b4450 {% endcomment %}
-    color: #d1d5db;
+    background: rgba(31, 41, 55, 0.8);
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #f3f4f6;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   }
   
   .sort-dropdown:hover {
-    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   }
   
   .sort-dropdown:focus {
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    border-color: #2c61b6;
+    box-shadow: 0 0 0 3px rgba(44, 97, 182, 0.2), 0 2px 4px rgba(0, 0, 0, 0.3);
   }
   
+  .sort-container:hover::after {
+    border-top-color: #d1d5db;
+  }
+  
+  {% comment %} 1f2937 {% endcomment %}
   .sort-dropdown option {
-    background: #374151; 
-    color: #f9fafb;
+    background: #1f2937;     
+    color: #f3f4f6;
   }
 }
 
-.toggle-switch {
-  position: relative;
-  display: inline-block;
+ 
+.view-toggle {
+  display: flex;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 4px;
+  gap: 2px;
 }
 
-.toggle-checkbox {
-  display: none;
-}
-
-.toggle-label {
-  display: block;
-  width: 60px;
-  height: 30px;
-  background-color: #ccc;
-  border-radius: 15px;
+.view-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 32px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: #6b7280;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  position: relative;
+  transition: all 0.2s ease;
+  outline: none;
 }
 
-.toggle-slider {
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  width: 24px;
-  height: 24px;
-  background-color: white;
-  border-radius: 50%;
-  transition: transform 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+.view-btn:hover {
+  background: rgba(0, 0, 0, 0.08);
+  color: #374151;
 }
 
-.toggle-checkbox:checked + .toggle-label {
-  background-color: #2c61b6;  
+.view-btn.active {
+  background: white;
+  color: #2c61b6;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
-{% comment %} 3b82f6 {% endcomment %}
-
-.toggle-checkbox:checked + .toggle-label .toggle-slider {
-  transform: translateX(30px);
+.view-btn svg {
+  transition: all 0.2s ease;
 }
 
-.toggle-label:hover {
-  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+ 
+@media (prefers-color-scheme: dark) {
+  .view-toggle {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .view-btn {
+    color: #9ca3af;
+  }
+  
+  .view-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: #d1d5db;
+  }
+  
+  .view-btn.active {
+    background: rgba(255, 255, 255, 0.9);
+    color: #2c61b6;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
 }
 
  
@@ -1287,8 +1349,29 @@ Welcome to my personal bookshelf! Here are some of the books that have influence
   
   .sort-dropdown {
     min-width: 180px;
-    padding: 10px 14px;
+    padding: 9px 28px 9px 12px;
     font-size: 13px;
+  }
+  
+  .sort-container::after {
+    right: 10px;
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 4px;
+  }
+  
+  .view-toggle {
+    padding: 3px;
+  }
+  
+  .view-btn {
+    width: 32px;
+    height: 28px;
+  }
+  
+  .view-btn svg {
+    width: 14px;
+    height: 14px;
   }
 }
 
@@ -1299,8 +1382,25 @@ Welcome to my personal bookshelf! Here are some of the books that have influence
   
   .sort-dropdown {
     min-width: 160px;
-    padding: 8px 12px;
+    padding: 8px 24px 8px 10px;
     font-size: 12px;
+  }
+  
+  .sort-container::after {
+    right: 8px;
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+  }
+  
+  .view-btn {
+    width: 30px;
+    height: 26px;
+  }
+  
+  .view-btn svg {
+    width: 13px;
+    height: 13px;
   }
 }
 
@@ -1308,7 +1408,8 @@ Welcome to my personal bookshelf! Here are some of the books that have influence
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  const viewToggle = document.getElementById('viewToggle');
+  const listViewBtn = document.getElementById('listViewBtn');
+  const gridViewBtn = document.getElementById('gridViewBtn');
   const sortSelect = document.getElementById('sortSelect');
   const imageView = document.getElementById('imageView');
   const listView = document.getElementById('listView');
@@ -1324,10 +1425,10 @@ document.addEventListener('DOMContentLoaded', function() {
   
   sortSelect.value = savedSort;
   if (savedView === 'image') {
-    viewToggle.checked = true;
+    setActiveView('grid');
     showImageView();
   } else {
-    viewToggle.checked = false;
+    setActiveView('list');
     showListView();
   }
   
@@ -1335,14 +1436,16 @@ document.addEventListener('DOMContentLoaded', function() {
   sortBooks(savedSort);
   
   
-  viewToggle.addEventListener('change', function() {
-    if (this.checked) {
-      showImageView();
-      localStorage.setItem('booksViewPreference', 'image');
-    } else {
-      showListView();
-      localStorage.setItem('booksViewPreference', 'list');
-    }
+  listViewBtn.addEventListener('click', function() {
+    setActiveView('list');
+    showListView();
+    localStorage.setItem('booksViewPreference', 'list');
+  });
+  
+  gridViewBtn.addEventListener('click', function() {
+    setActiveView('grid');
+    showImageView();
+    localStorage.setItem('booksViewPreference', 'image');
   });
   
   
@@ -1351,6 +1454,19 @@ document.addEventListener('DOMContentLoaded', function() {
     sortBooks(selectedCategory);
     localStorage.setItem('booksSortPreference', selectedCategory);
   });
+  
+  function setActiveView(viewType) {
+    
+    listViewBtn.classList.remove('active');
+    gridViewBtn.classList.remove('active');
+    
+    
+    if (viewType === 'list') {
+      listViewBtn.classList.add('active');
+    } else {
+      gridViewBtn.classList.add('active');
+    }
+  }
   
   function sortBooks(category) {
     const imageBooks = Array.from(imageView.children);
