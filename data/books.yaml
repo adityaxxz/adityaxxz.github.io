@@ -29,6 +29,11 @@
   cover: "/img/books/readwriteown.jpg"
   category: "additional"
 
+- title: "Bhagavad Gita"
+  author: "Ved Vyasa"
+  cover: "/img/books/bhagavad-gita.jpg"
+  category: "philosophy"
+
 - title: "The Almanack Of Naval Ravikant"
   author: "Eric Jorgenson"
   cover: "/img/books/thealmanakofnavalravikant.jpg"
@@ -64,6 +69,11 @@
   author: "Cormac McCarthy"
   cover: "/img/books/440px-The-road.jpg"
   category: "literature"
+  
+- title: "The Great Gatsby"
+  author: "F. Scott Fitzgerald"
+  cover: "/img/books/61dRoDRubtL._SY522_.jpg"
+  category: "literature"
 
 - title: "White Noise"
   author: "Don DeLillo"
@@ -75,10 +85,10 @@
   cover: "/img/books/KazuoIshiguro_TheRemainsOfTheDay.jpg"
   category: "literature"
 
-- title: "The Call of the Wild"
-  author: "Jack London"
-  cover: "/img/books/JackLondoncallwild.jpg"
-  category: "literature"
+# - title: "The Call of the Wild"
+#   author: "Jack London"
+#   cover: "/img/books/JackLondoncallwild.jpg"
+#   category: "literature"
 
 - title: "White Fang"
   author: "Jack London"
@@ -91,10 +101,6 @@
   cover: "/img/books/Consciousness_Explained_(first_edition).jpg"
   category: "philosophy"
 
-- title: "Something To Do With Paying Attention"
-  author: "David Foster Wallace"
-  cover: "/img/books/Something-to-do-with-paying-attention-9781946022271_lg.jpg"
-  category: "philosophy"
 
 # Additional Collection
 - title: "I've Been Thinking"
@@ -102,27 +108,61 @@
   cover: "/img/books/61q0HZNDPBL._SY522_.jpg"
   category: "philosophy"
 
+- title: "Introduction To Quantum Mechanics"
+  author: "David J. Griffiths & Darrell F. Schroeter"
+  cover: "/img/books/61HBnuFYo-L.jpg"
+  category: "additional"
+
+- title: "Something To Do With Paying Attention"
+  author: "David Foster Wallace"
+  cover: "/img/books/Something-to-do-with-paying-attention-9781946022271_lg.jpg"
+  category: "philosophy"
+
 - title: "Love In The Time Of Cholera"
   author: "Gabriel García Márquez"
   cover: "/img/books/61OBwknuKsL._SY522_.jpg"
   category: "literature"
 
-- title: "The Grapes Of Wrath"
-  author: "John Steinbeck"
-  cover: "/img/books/81yN7h6yG-L._SY522_.jpg"
-  category: "literature"
+# - title: "The Grapes Of Wrath"
+#   author: "John Steinbeck"
+#   cover: "/img/books/81yN7h6yG-L._SY522_.jpg"
+#   category: "literature"
 
-- title: "The House Of The Spirits"
-  author: "Isabel Allende"
-  cover: "/img/books/81V76D1odlL._SY522_.jpg"
-  category: "literature"
+# - title: "The House Of The Spirits"
+#   author: "Isabel Allende"
+#   cover: "/img/books/81V76D1odlL._SY522_.jpg"
+#   category: "literature"
 
-- title: "Introduction To Quantum Mechanics"
-  author: "David J. Griffiths & Darrell F. Schroeter"
-  cover: "/img/books/61HBnuFYo-L.jpg"
-  category: "additional"
   
-- title: "I Regret Almost Everything"
-  author: "Keith McNally"
-  cover: "/img/books/71ZaFaDNadL._SY522_.jpg"
-  category: "additional"
+# - title: "I Regret Almost Everything"
+#   author: "Keith McNally"
+#   cover: "/img/books/71ZaFaDNadL._SY522_.jpg"
+#   category: "additional"
+
+# Additional Books
+
+
+- title: "Immortality"
+  author: "Milan Kundera"
+  cover: "/img/books/71LPqVJa0aL._SY522_.jpg"
+  category: "literature"
+
+- title: "Stories Of Your Life And Others"
+  author: "Ted Chiang"
+  cover: "/img/books/71ZRRZShcGL._SY522_.jpg"
+  category: "literature"
+
+- title: "One Hundred Years Of Solitude"
+  author: "Gabriel García Márquez"
+  cover: "/img/books/81MI6+TpYkL._SL1500_.jpg"
+  category: "literature"
+
+- title: "The Stranger"
+  author: "Albert Camus"
+  cover: "/img/books/81GjCVSEDAL._SY522_.jpg"
+  category: "literature"
+
+- title: "The Year Of Magical Thinking"
+  author: "Joan Didion"
+  cover: "/img/books/414KJDhKRML._SY445_SX342_.jpg"
+  category: "philosophy"
