@@ -20,4 +20,8 @@ sharingLinks = ["twitter", "email", "whatsapp"]
 - **Iterations are not repetitions**. Repetition is about repeating a thing over and over.  
   Iteration is modifying it with a learning and doing another version of it. So that's error correction. So if you’ll get 10,000 error corrections in anything, you'll be an expert at it.
 
-- 
+- **Knowing as Inseparable from Doing** - We treat pieces of knowledge as something to be acquired once and kept forever, preserved forever on a timeless mental shelf of some kind. But the reality that we can all attest to is that knowing requires diligent practice and constant maintenance.
+
+  - In other words, knowing is a skill, like playing an instrument or playing chess, that can be honed with practice.
+
+  - How do we create tools for thought that support knowing as an active process?
