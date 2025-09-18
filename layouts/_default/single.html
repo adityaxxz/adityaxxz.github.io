@@ -1,0 +1,161 @@
+ {{ define "main" }}
+{{ .Scratch.Set "scope" "single" }}
+
+<article>
+  {{ if .Params.showHero | default (.Site.Params.article.showHero | default false) }}
+  {{ $heroStyle := .Params.heroStyle }}
+  {{ if not $heroStyle }}{{ $heroStyle = .Site.Params.article.heroStyle }}{{ end }}
+  {{ $heroPath := print "hero/" $heroStyle ".html" }}
+  {{ if templates.Exists (print "partials/" $heroPath) }}
+  {{ partial $heroPath . }}
+  {{ else }}
+  {{ partial "hero/basic.html" . }}
+  {{ end }}
+  {{ end }}
+
+  <header id="single_header" class="mt-5 max-w-prose">
+    {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default false) }}
+    {{ partial "breadcrumbs.html" . }}
+    {{ end }}
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      {{ .Title | emojify }}
+    </h1>
+    <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+      {{ partial "article-meta/basic.html" (dict "context" . "scope" "single") }}
+    </div>
+
+    {{ $authorsData := .Site.Data.authors }}
+    {{ $taxonomies := .Site.Taxonomies.authors }}
+    {{ $baseURL := .Site.BaseURL }}
+    {{ $taxonomyLink := 0 }}
+    {{ $showAuthor := 0 }}
+
+    {{ if not (strings.HasSuffix $baseURL "/") }}
+    {{ $baseURL = delimit (slice $baseURL "/") "" }}
+    {{ end }}
+
+    {{ if not (.Params.showAuthorBottom | default ( .Site.Params.article.showAuthorBottom | default false)) }}
+      
+      {{ if .Params.showAuthor | default (.Site.Params.article.showAuthor | default true) }}
+        {{ $showAuthor = 1 }}
+        {{ partial "author.html" . }}
+      {{ end }}
+
+      {{ range $author := .Page.Params.authors }}
+        
+        {{ $authorData := index $authorsData $author }}
+        
+        {{ $authorTaxonomyExists := false }}
+        {{ if $taxonomies }}
+          {{ range $key, $value := $taxonomies }}
+            {{ if eq $key $author }}
+              {{ $authorTaxonomyExists = true }}
+              {{ $taxonomyLink = 1 }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+
+        {{ if $authorData }}
+          {{ $showAuthor = 1 }}
+          <div class="flex items-center space-x-2 text-base">
+            {{ if $authorData.image }}
+            {{ $authorImage := "" }}
+              {{ if or (strings.HasPrefix $authorData.image "http:") (strings.HasPrefix $authorData.image "https:") }}
+                {{ $authorImage = resources.GetRemote $authorData.image }}
+              {{ else }}
+                {{ $authorImage = resources.Get $authorData.image }}
+              {{ end }}
+              {{ if $authorImage }}
+                <img class="w-10 h-10 rounded-full" src="{{ $authorImage.RelPermalink }}" alt="{{ $authorData.name }}" />
+              {{ end }}
+            {{ end }}
+            <div class="text-sm">
+              <div class="flex items-center space-x-1">
+                {{ if and $taxonomyLink $authorTaxonomyExists }}
+                  <a href="{{ print $baseURL "authors/" ( $author | urlize ) "/" }}" class="text-neutral-800 hover:text-primary-600 dark:text-neutral-300 dark:hover:text-primary-400">{{ $authorData.name }}</a>
+                {{ else }}
+                  <span class="text-neutral-800 dark:text-neutral-300">{{ $authorData.name }}</span>
+                {{ end }}
+                {{ if .Site.Params.article.showAuthorsBadges | default true }}
+                  {{ range $authorData.badges }}
+                    <span class="inline-flex items-center rounded-md bg-primary-50 px-2 py-1 text-xs font-medium text-primary-700 ring-1 ring-inset ring-primary-700/10 dark:bg-primary-400/10 dark:text-primary-400 dark:ring-primary-400/20">{{ . }}</span>
+                  {{ end }}
+                {{ end }}
+              </div>
+              {{ with $authorData.bio }}<div class="text-neutral-600 dark:text-neutral-400">{{ . }}</div>{{ end }}
+            </div>
+          </div>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  </header>
+
+  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+
+    {{ if and (.Params.showTableOfContents | default (.Site.Params.article.showTableOfContents | default false)) (in .TableOfContents "<ul") }}
+    <div class="order-first px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
+        {{ partial "toc.html" . }}
+      </div>
+    </div>
+    {{ end }}
+
+    <div class="min-w-0 min-h-0 max-w-fit">
+      {{ .Content | emojify }}
+    </div>
+
+  </section>
+
+  <footer class="pt-8 max-w-prose print:hidden">
+
+    {{ partial "sharing-links.html" . }}
+
+    {{ if .Params.showTaxonomies | default (.Site.Params.article.showTaxonomies | default false) }}
+    <div class="pt-3">
+      {{ partial "taxonomies.html" . }}
+    </div>
+    {{ end }}
+
+    {{ if and (.Params.showAuthorBottom | default ( .Site.Params.article.showAuthorBottom | default false)) (.Params.showAuthor | default (.Site.Params.article.showAuthor | default true)) }}
+      {{ partial "author.html" . }}
+    {{ end }}
+
+    {{ if .Params.showDateUpdated | default (.Site.Params.article.showDateUpdated | default false) }}
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      {{ i18n "article.updated" }}: {{ .Lastmod.Format (.Site.Params.dateFormat | default "2 January 2006") }}
+    </p>
+    {{ end }}
+
+    {{ if and (.Site.Params.article.showEdit | default false) .File }}
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      <a href="{{ .Site.Params.article.editURL }}{{ if .Site.Params.article.editAppendPath | default true }}{{ .File.Path }}{{ end }}" target="_blank" rel="noopener noreferrer">
+        {{ i18n "article.edit_this_page" }}
+      </a>
+    </p>
+    {{ end }}
+
+    {{ if .Params.showPagination | default (.Site.Params.article.showPagination | default true) }}
+    {{ partial "pagination.html" . }}
+    {{ end }}
+
+    {{ if .Params.showRelatedContent | default (.Site.Params.article.showRelatedContent | default false) }}
+    {{ partial "related.html" . }}
+    {{ end }}
+
+    {{ if .Params.showComments | default (.Site.Params.article.showComments | default false) }}
+    {{ if templates.Exists "partials/comments.html" }}
+    <div class="pt-3">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="pt-3">
+        {{ partial "comments.html" . }}
+      </div>
+    </div>
+    {{ else }}
+    {{ warnf "[BLOWFISH] Comments are enabled for %s but no comments partial exists." .File.Path }}
+    {{ end }}
+    {{ end }}
+
+  </footer>
+</article>
+
+{{ end }}

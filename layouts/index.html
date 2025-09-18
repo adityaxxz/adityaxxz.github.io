@@ -1,0 +1,9 @@
+{{ define "main" }}
+  {{ $homeLayout := .Site.Params.homepage.layout | default "profile" }}
+  {{ $homePath := print "home/" $homeLayout ".html" }}
+  {{ if templates.Exists (print "partials/" $homePath) }}
+    {{ partial $homePath . }}
+  {{ else }}
+    {{ partial "home/profile.html" . }}
+  {{ end }}
+{{ end }}
