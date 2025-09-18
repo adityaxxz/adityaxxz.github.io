@@ -14,7 +14,9 @@
       <pubDate>Wed, 23 Apr 2025 18:13:31 +0530</pubDate>
       
       <guid>http://localhost:1313/studies/mev/</guid>
-      <description>What&amp;rsquo;s MEV?</description>
+      <description>What&amp;rsquo;s MEV? #It&amp;rsquo;s the value that blockchain node operators and users can extract by ordering transactions in a block in a specific order.
+When a transaction is initiated, it is directed to a specific node which, instead of immediately integrating it into its block, places it into its &amp;lsquo;memory pool&amp;rsquo;, or &amp;lsquo;mempool&amp;rsquo; {waiting area for transactions}. This constitutes the lower tier of workings that enable blockchain.
+Suppose you&amp;rsquo;re a malicious user and want to use this to your advantage.</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/studies/mev/featured.jpg" />
     </item>
     
@@ -24,7 +26,8 @@
       <pubDate>Thu, 17 Apr 2025 18:13:31 +0530</pubDate>
       
       <guid>http://localhost:1313/studies/perpetuals/</guid>
-      <description>Perpetuals Mission #1 #Perpetuals are essentially just a way for a trader to bet on the price of a certain index token without actually buying the token while enabling the trader to employ leverage.</description>
+      <description>Perpetuals Mission #1 #Perpetuals are essentially just a way for a trader to bet on the price of a certain index token without actually buying the token while enabling the trader to employ leverage. Why perpetuals? #Perpetual are named as such because a trader can keep their &amp;ldquo;perpetual&amp;rdquo; position open for as long as they&amp;rsquo;d like, or in perpetuity.
+So What&amp;rsquo;s a position? #The entire protocol revolves around •positions&amp;quot; that belong to traders, a position is made up of the following:</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/studies/perpetuals/featured.jpg" />
     </item>
     
