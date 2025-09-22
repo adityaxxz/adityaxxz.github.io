@@ -2,111 +2,99 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>0xAdra</title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:51097/</link>
     <description>Recent content on 0xAdra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>0xAdra ©2025</copyright>
-    <lastBuildDate>Thu, 01 May 2025 18:13:31 +0530</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 May 2025 18:13:31 +0530</lastBuildDate><atom:link href="http://localhost:51097/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>philosophy 101</title>
-      <link>http://localhost:1313/thoughts/philosophy-101/</link>
+      <link>http://localhost:51097/thoughts/philosophy-101/</link>
       <pubDate>Thu, 01 May 2025 18:13:31 +0530</pubDate>
       
-      <guid>http://localhost:1313/thoughts/philosophy-101/</guid>
-      <description>No one is going to beat you at being you. Find what that feels like—play to you but looks like work to others. So that you&amp;rsquo;re going to outcompete them because you&amp;rsquo;re doing it effortlessly; you&amp;rsquo;re doing it for fun.
-The more you do things that are natural to you, the less competition you have. Escape competition through authenticity, by being your own self.
-To be successful in two words — productize yourself.</description>
+      <guid>http://localhost:51097/thoughts/philosophy-101/</guid>
+      <description>No one is going to beat you at being you.</description>
       
     </item>
     
     <item>
       <title>MEV (Maximum Extractable Value)</title>
-      <link>http://localhost:1313/studies/mev/</link>
+      <link>http://localhost:51097/studies/mev/</link>
       <pubDate>Wed, 23 Apr 2025 18:13:31 +0530</pubDate>
       
-      <guid>http://localhost:1313/studies/mev/</guid>
-      <description>What&amp;rsquo;s MEV? #It&amp;rsquo;s the value that blockchain node operators and users can extract by ordering transactions in a block in a specific order.
-When a transaction is initiated, it is directed to a specific node which, instead of immediately integrating it into its block, places it into its &amp;lsquo;memory pool&amp;rsquo;, or &amp;lsquo;mempool&amp;rsquo; {waiting area for transactions}. This constitutes the lower tier of workings that enable blockchain.
-Suppose you&amp;rsquo;re a malicious user and want to use this to your advantage.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/studies/mev/featured.jpg" />
+      <guid>http://localhost:51097/studies/mev/</guid>
+      <description>What&amp;rsquo;s MEV?</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:51097/studies/mev/featured.jpg" />
     </item>
     
     <item>
       <title>Perpetuals</title>
-      <link>http://localhost:1313/studies/perpetuals/</link>
+      <link>http://localhost:51097/studies/perpetuals/</link>
       <pubDate>Thu, 17 Apr 2025 18:13:31 +0530</pubDate>
       
-      <guid>http://localhost:1313/studies/perpetuals/</guid>
-      <description>Perpetuals Mission #1 #Perpetuals are essentially just a way for a trader to bet on the price of a certain index token without actually buying the token while enabling the trader to employ leverage. Why perpetuals? #Perpetual are named as such because a trader can keep their &amp;ldquo;perpetual&amp;rdquo; position open for as long as they&amp;rsquo;d like, or in perpetuity.
-So What&amp;rsquo;s a position? #The entire protocol revolves around •positions&amp;quot; that belong to traders, a position is made up of the following:</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/studies/perpetuals/featured.jpg" />
+      <guid>http://localhost:51097/studies/perpetuals/</guid>
+      <description>Perpetuals Mission #1 #Perpetuals are essentially just a way for a trader to bet on the price of a certain index token without actually buying the token while enabling the trader to employ leverage.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:51097/studies/perpetuals/featured.jpg" />
     </item>
     
     <item>
       <title>Bookshelf</title>
-      <link>http://localhost:1313/books/</link>
+      <link>http://localhost:51097/books/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/books/</guid>
-      <description> Welcome to my personal bookshelf! Here are some of the books that have influenced my thinking and shaped my perspective. </description>
+      <guid>http://localhost:51097/books/</guid>
+      <description>Welcome to my personal bookshelf!</description>
       
     </item>
     
     <item>
       <title>The Pivot Year</title>
-      <link>http://localhost:1313/thoughts/the-pivot-year/</link>
+      <link>http://localhost:51097/thoughts/the-pivot-year/</link>
       <pubDate>Fri, 15 Nov 2024 01:27:18 +0530</pubDate>
       
-      <guid>http://localhost:1313/thoughts/the-pivot-year/</guid>
-      <description>Author : Brianna Wiest
-Book Link : The Pivot Year
-My learnings from the book #Day 1 : Not to build a clean one-line story but to create a mosaic of experience — ever-forming, ever-evolving, ever-unfolding as whats within unravels into reality revealing at last the fragment of the universe that came to be known through you at this exact time.
-Day 2 : The Golden Vortex — the space between everything you know you&amp;rsquo;re meant for and anything you had previously imagined to be.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/thoughts/the-pivot-year/featured.jpg" />
+      <guid>http://localhost:51097/thoughts/the-pivot-year/</guid>
+      <description>Author : Brianna Wiest</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:51097/thoughts/the-pivot-year/featured.jpg" />
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:1313/projects/</link>
+      <link>http://localhost:51097/projects/</link>
       <pubDate>Sun, 04 Aug 2024 22:36:47 +0530</pubDate>
       
-      <guid>http://localhost:1313/projects/</guid>
-      <description>&amp;ldquo;If you find my projects useful, a star ⭐ would be fantastic.&amp;rdquo;
-1️⃣ Tweet App #adityaxxz/Tweet-Apptweet app using django, postgres backendPython002️⃣ Youtube Backend #adityaxxz/yt-backendbackend for video streaming app like yt using nodejs, express, mongodbJavaScript003️⃣ Account Abstraction #adityaxxz/account-abstractionMinimal Account Abstraction implementation on Ethereum &amp;amp; ZKSyncSolidity104️⃣ Stablecoin DeFi Project #adityaxxz/stablecoin-defi-projectNo description availableSolidity105️⃣ Running Tracker App #adityaxxz/RunningTrackerAppNo description availableKotlin005️⃣ Multi-Threaded Web Server #adityaxxz/multithreaded-web-serverBuilt a Multithreaded Web Server using Rust🦀Rust006️⃣ CryptoTracer #Visit the addy🔗 or test🔗 branch to see my commits!</description>
+      <guid>http://localhost:51097/projects/</guid>
+      <description>&amp;ldquo;If you find my projects useful, a star ⭐ would be fantastic.</description>
       
     </item>
     
     <item>
       <title>The War of Art</title>
-      <link>http://localhost:1313/thoughts/the-war-of-art/</link>
+      <link>http://localhost:51097/thoughts/the-war-of-art/</link>
       <pubDate>Sun, 04 Aug 2024 22:26:37 +0530</pubDate>
       
-      <guid>http://localhost:1313/thoughts/the-war-of-art/</guid>
-      <description>Author : Steven Pressfield
-Book Link : The War of Art: Break Through the Blocks and Win Your Inner Creative Battles
-My learnings from the book #Most of us have two lives. the life we live, and the unlived life within us. Between the two stands resistance.
-What&amp;rsquo;s resistance ? Late at night have you experienced a vision of the person you might become, the work you could accomplish, the realized being you were meant to be?</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/thoughts/the-war-of-art/featured.jpg" />
+      <guid>http://localhost:51097/thoughts/the-war-of-art/</guid>
+      <description>Author : Steven Pressfield</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:51097/thoughts/the-war-of-art/featured.jpg" />
     </item>
     
     <item>
       <title>About</title>
-      <link>http://localhost:1313/about/</link>
+      <link>http://localhost:51097/about/</link>
       <pubDate>Sun, 04 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/about/</guid>
-      <description> A backend dev &amp; security researcher auditing smart contracts for a living... Things I believe Think less Always instinct Form is everything Excess in moderation Strength before weakness Things gonna be more challenging Choosing to care about silly things is important AI will be transformative, soon, and it might not go well </description>
+      <guid>http://localhost:51097/about/</guid>
+      <description>A backend dev &amp; security researcher auditing smart contracts for a living.</description>
       
     </item>
     
     <item>
       <title>Quotes</title>
-      <link>http://localhost:1313/quotes/</link>
+      <link>http://localhost:51097/quotes/</link>
       <pubDate>Sun, 04 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/quotes/</guid>
-      <description>A collection of wisdom from various thinkers, writers, and philosophers that have resonated with me over time.</description>
+      <guid>http://localhost:51097/quotes/</guid>
+      <description>A collection of wisdom from various thinkers, writers, and philosophers that have resonated with me over time.</description>
       
     </item>
     
