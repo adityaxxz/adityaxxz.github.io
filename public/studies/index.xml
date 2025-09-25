@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Studies on 0xAdra</title>
-    <link>http://localhost:51097/studies/</link>
+    <link>http://localhost:1313/studies/</link>
     <description>Recent content in Studies on 0xAdra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>0xAdra ©2025</copyright>
-    <lastBuildDate>Wed, 23 Apr 2025 18:13:31 +0530</lastBuildDate><atom:link href="http://localhost:51097/studies/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Apr 2025 18:13:31 +0530</lastBuildDate><atom:link href="http://localhost:1313/studies/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MEV (Maximum Extractable Value)</title>
-      <link>http://localhost:51097/studies/mev/</link>
+      <link>http://localhost:1313/studies/mev/</link>
       <pubDate>Wed, 23 Apr 2025 18:13:31 +0530</pubDate>
       
-      <guid>http://localhost:51097/studies/mev/</guid>
+      <guid>http://localhost:1313/studies/mev/</guid>
       <description>What&amp;rsquo;s MEV?</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:51097/studies/mev/featured.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/studies/mev/featured.jpg" />
     </item>
     
     <item>
       <title>Perpetuals</title>
-      <link>http://localhost:51097/studies/perpetuals/</link>
+      <link>http://localhost:1313/studies/perpetuals/</link>
       <pubDate>Thu, 17 Apr 2025 18:13:31 +0530</pubDate>
       
-      <guid>http://localhost:51097/studies/perpetuals/</guid>
+      <guid>http://localhost:1313/studies/perpetuals/</guid>
       <description>Perpetuals Mission #1 #Perpetuals are essentially just a way for a trader to bet on the price of a certain index token without actually buying the token while enabling the trader to employ leverage.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:51097/studies/perpetuals/featured.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/studies/perpetuals/featured.jpg" />
     </item>
     
   </channel>
