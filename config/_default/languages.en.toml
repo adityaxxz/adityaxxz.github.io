@@ -21,9 +21,10 @@ title = "0xAdra"
    links = [
 	 	{ github = "https://github.com/adityaxxz" },
 		{ x-twitter = "https://twitter.com/0xadra" },
-	 	{ email = "mailto:adityaranjan5995@gmail.com" },
-	  { telegram = "https://t.me/adiityaxxz" },
+	 	{ envelope = "https://mail.google.com/mail/?view=cm&to=adityaranjan5995@gmail.com" },
+#	  { telegram = "https://t.me/adiityaxxz" },
     { spotify = "https://open.spotify.com/user/31gq4j4ktficjamwwjn2ql7nncja?si=ae962ef3a28a4bc2" },
+    { resume = "https://drive.google.com/file/d/17cHSnTRAHeIbEWEHoGB90iiVEPZf1WWC/view?usp=sharing" },
     { link = "https://0xaddy.xyz" },
 #     { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
 #     { apple = "https://www.apple.com" },
