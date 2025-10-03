@@ -44,8 +44,8 @@
   
   
   
-  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.8a6771e2a4bdc9f167c7087c9dc693441d000102b6f7a20e4e8f6a7e8f5729100e195efbd89effb59e5122198a3c1adf0241c342cc6cf5738d76acf1ac233e51.js"
-    integrity="sha512-imdx4qS9yfFnxwh8ncaTRB0AAQK296IOTo9qfo9XKRAOGV772J7/tZ5RIhmKPBrfAkHDQsxs9XONdqzxrCM&#43;UQ==" data-copy="" data-copied=""></script>
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.35ed75d337efc3cd614d83b7e432398c7504b65d1e86a6dc10bb731da1c121fd753bfe792362e7155af66e344d220590b6ee442937a8c478bda92d722edc0eeb.js"
+    integrity="sha512-Ne110zfvw81hTYO35DI5jHUEtl0ehqbcELtzHaHBIf11O/55I2LnFVr2bjRNIgWQtu5EKTeoxHi9qS1yLtwO6w==" data-copy="" data-copied=""></script>
   
   
   <script src="/js/zoom.min.js"></script>
@@ -98,7 +98,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "144"
+    "wordCount": "163"
   }]
   </script>
 
@@ -121,10 +121,10 @@
   <link href="https://open.spotify.com/user/31gq4j4ktficjamwwjn2ql7nncja?si=ae962ef3a28a4bc2" rel="me" />
   
   
-  <link href="https://drive.google.com/file/d/17cHSnTRAHeIbEWEHoGB90iiVEPZf1WWC/view" rel="me" />
+  <link href="https://drive.google.com/file/d/1rma4kUjOfQdzYFAGYPccaRVZgbiCLi4q/view" rel="me" />
   
   
-  <link href="https://0xaddy.xyz" rel="me" />
+  <link href="https://addyv4.vercel.app" rel="me" />
   
   
   
@@ -496,8 +496,8 @@
     });
 </script>
 <p>If you find my projects useful, a <a href="https://github.com/adityaxxz?tab=repositories" target="_blank">star ⭐</a> would be fantastic</p>
-<h2>1️⃣ Tweet App</h2>
-<a id="github-3072eceaa0dca36a4e0b405b6d381a63" target="_blank" href="https://github.com/adityaxxz/Tweet-App" class="cursor-pointer">
+<h2>1️⃣ Booklynn</h2>
+<a id="github-3072eceaa0dca36a4e0b405b6d381a63" target="_blank" href="https://github.com/adityaxxz/Booklynn" class="cursor-pointer">
   <div
     class="w-full md:w-auto pt-3 p-5 border border-neutral-200 dark:border-neutral-700 border rounded-md shadow-2xl">
 
@@ -515,12 +515,12 @@
       <div
         id="github-3072eceaa0dca36a4e0b405b6d381a63-full_name"
         class="m-0 font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral">
-        adityaxxz/Tweet-App
+        adityaxxz/Booklynn
       </div>
     </div>
 
     <p id="github-3072eceaa0dca36a4e0b405b6d381a63-description" class="m-0 mt-2 text-md text-neutral-800 dark:text-neutral">
-      tweet app using django, postgres backend
+      Booklynn is a modern FastAPI backend that powers a book discovery and review service.
     </p>
 
     <div class="m-0 mt-2 flex items-center">
@@ -541,7 +541,7 @@
 
       </span>
       <div id="github-3072eceaa0dca36a4e0b405b6d381a63-stargazers" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
-        0
+        1
       </div>
 
       <span class="text-md mr-1 text-neutral-800 dark:text-neutral">
@@ -567,6 +567,156 @@
       const descriptionElement = document.getElementById('github-3072eceaa0dca36a4e0b405b6d381a63-description');
       const stargazersElement = document.getElementById('github-3072eceaa0dca36a4e0b405b6d381a63-stargazers');
       const forksElement = document.getElementById('github-3072eceaa0dca36a4e0b405b6d381a63-forks');
+      
+      if (fullNameElement && (fullNameElement.textContent.includes('undefined') || fullNameElement.textContent === 'null')) {
+        fullNameElement.textContent = 'adityaxxz\/Booklynn';
+      }
+      if (descriptionElement && (descriptionElement.textContent.includes('undefined') || descriptionElement.textContent === 'null')) {
+        descriptionElement.textContent = 'No description available';
+      }
+      if (stargazersElement && (stargazersElement.textContent.includes('undefined') || stargazersElement.textContent === 'null')) {
+        stargazersElement.textContent = '0';
+      }
+      if (forksElement && (forksElement.textContent.includes('undefined') || forksElement.textContent === 'null')) {
+        forksElement.textContent = '0';
+      }
+    });
+
+    fetch("https://api.github.com/repos/adityaxxz/Booklynn", {
+      headers: new Headers({
+        'User-agent': 'Mozilla/4.0 Custom User Agent'
+      })
+    })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then(data => {
+        
+        const fullNameElement = document.getElementById('github-3072eceaa0dca36a4e0b405b6d381a63-full_name');
+        const descriptionElement = document.getElementById('github-3072eceaa0dca36a4e0b405b6d381a63-description');
+        const stargazersElement = document.getElementById('github-3072eceaa0dca36a4e0b405b6d381a63-stargazers');
+        const forksElement = document.getElementById('github-3072eceaa0dca36a4e0b405b6d381a63-forks');
+        
+        console.log('GitHub API response for adityaxxz\/Booklynn:', data);
+        
+        
+        if (fullNameElement && data && data.full_name && 
+            data.full_name !== 'undefined' && 
+            data.full_name !== 'null' &&
+            !fullNameElement.textContent.includes('undefined')) {
+          fullNameElement.textContent = data.full_name;
+        }
+        
+        
+        if (descriptionElement && data) {
+          if (data.description && 
+              data.description !== 'undefined' && 
+              data.description !== null && 
+              data.description !== 'null' &&
+              data.description.trim() !== '') {
+            descriptionElement.textContent = data.description;
+          } else if (!descriptionElement.textContent || 
+                     descriptionElement.textContent === 'Loading description...' ||
+                     descriptionElement.textContent.includes('undefined') ||
+                     descriptionElement.textContent === 'null') {
+            descriptionElement.textContent = 'No description available';
+          }
+        }
+        
+        
+        if (stargazersElement && data && typeof data.stargazers_count === 'number') {
+          stargazersElement.textContent = data.stargazers_count;
+        }
+        
+        
+        if (forksElement && data && typeof data.forks === 'number') {
+          forksElement.textContent = data.forks;
+        }
+      })
+      .catch(error => {
+        console.error('GitHub API fetch error:', error);
+        
+        const descriptionElement = document.getElementById('github-3072eceaa0dca36a4e0b405b6d381a63-description');
+        if (descriptionElement && descriptionElement.textContent === 'Loading description...') {
+          descriptionElement.textContent = 'Unable to load repository information';
+        }
+      })
+  </script>
+</a>
+<h2>2️⃣ Tweet App</h2>
+<a id="github-be35bc2d8b602b4ad9cf3714a12ee048" target="_blank" href="https://github.com/adityaxxz/Tweet-App" class="cursor-pointer">
+  <div
+    class="w-full md:w-auto pt-3 p-5 border border-neutral-200 dark:border-neutral-700 border rounded-md shadow-2xl">
+
+    <div class="flex items-center">
+      <span class="text-2xl text-neutral-800 dark:text-neutral" style="margin-right:10px;">
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+
+  </span>
+
+
+      </span>
+      <div
+        id="github-be35bc2d8b602b4ad9cf3714a12ee048-full_name"
+        class="m-0 font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral">
+        adityaxxz/Tweet-App
+      </div>
+    </div>
+
+    <p id="github-be35bc2d8b602b4ad9cf3714a12ee048-description" class="m-0 mt-2 text-md text-neutral-800 dark:text-neutral">
+      tweet app using django, postgres backend
+    </p>
+
+    <div class="m-0 mt-2 flex items-center">
+
+      <span class="mr-1 inline-block h-3 w-3 rounded-full"
+        style="background-color: #3572A5"></span>
+      <div class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
+        Python
+      </div>
+
+      <span class="text-md mr-1 text-neutral-800 dark:text-neutral">
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M287.9 0C297.1 0 305.5 5.25 309.5 13.52L378.1 154.8L531.4 177.5C540.4 178.8 547.8 185.1 550.7 193.7C553.5 202.4 551.2 211.9 544.8 218.2L433.6 328.4L459.9 483.9C461.4 492.9 457.7 502.1 450.2 507.4C442.8 512.7 432.1 513.4 424.9 509.1L287.9 435.9L150.1 509.1C142.9 513.4 133.1 512.7 125.6 507.4C118.2 502.1 114.5 492.9 115.1 483.9L142.2 328.4L31.11 218.2C24.65 211.9 22.36 202.4 25.2 193.7C28.03 185.1 35.5 178.8 44.49 177.5L197.7 154.8L266.3 13.52C270.4 5.249 278.7 0 287.9 0L287.9 0zM287.9 78.95L235.4 187.2C231.9 194.3 225.1 199.3 217.3 200.5L98.98 217.9L184.9 303C190.4 308.5 192.9 316.4 191.6 324.1L171.4 443.7L276.6 387.5C283.7 383.7 292.2 383.7 299.2 387.5L404.4 443.7L384.2 324.1C382.9 316.4 385.5 308.5 391 303L476.9 217.9L358.6 200.5C350.7 199.3 343.9 194.3 340.5 187.2L287.9 78.95z"/></svg>
+  </span>
+
+
+      </span>
+      <div id="github-be35bc2d8b602b4ad9cf3714a12ee048-stargazers" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
+        0
+      </div>
+
+      <span class="text-md mr-1 text-neutral-800 dark:text-neutral">
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M80 104c13.3 0 24-10.7 24-24s-10.7-24-24-24S56 66.7 56 80s10.7 24 24 24zm80-24c0 32.8-19.7 61-48 73.3V192c0 17.7 14.3 32 32 32H304c17.7 0 32-14.3 32-32V153.3C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V192c0 53-43 96-96 96H256v70.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3V288H144c-53 0-96-43-96-96V153.3C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm208 24c13.3 0 24-10.7 24-24s-10.7-24-24-24s-24 10.7-24 24s10.7 24 24 24zM248 432c0-13.3-10.7-24-24-24s-24 10.7-24 24s10.7 24 24 24s24-10.7 24-24z"/></svg>
+  </span>
+
+
+      </span>
+      <div id="github-be35bc2d8b602b4ad9cf3714a12ee048-forks" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
+        0
+      </div>
+
+    </div>
+
+  </div>
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      const fullNameElement = document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-full_name');
+      const descriptionElement = document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-description');
+      const stargazersElement = document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-stargazers');
+      const forksElement = document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-forks');
       
       if (fullNameElement && (fullNameElement.textContent.includes('undefined') || fullNameElement.textContent === 'null')) {
         fullNameElement.textContent = 'adityaxxz\/tweet-app';
@@ -595,10 +745,10 @@
       })
       .then(data => {
         
-        const fullNameElement = document.getElementById('github-3072eceaa0dca36a4e0b405b6d381a63-full_name');
-        const descriptionElement = document.getElementById('github-3072eceaa0dca36a4e0b405b6d381a63-description');
-        const stargazersElement = document.getElementById('github-3072eceaa0dca36a4e0b405b6d381a63-stargazers');
-        const forksElement = document.getElementById('github-3072eceaa0dca36a4e0b405b6d381a63-forks');
+        const fullNameElement = document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-full_name');
+        const descriptionElement = document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-description');
+        const stargazersElement = document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-stargazers');
+        const forksElement = document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-forks');
         
         console.log('GitHub API response for adityaxxz\/tweet-app:', data);
         
@@ -639,15 +789,15 @@
       .catch(error => {
         console.error('GitHub API fetch error:', error);
         
-        const descriptionElement = document.getElementById('github-3072eceaa0dca36a4e0b405b6d381a63-description');
+        const descriptionElement = document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-description');
         if (descriptionElement && descriptionElement.textContent === 'Loading description...') {
           descriptionElement.textContent = 'Unable to load repository information';
         }
       })
   </script>
 </a>
-<h2>2️⃣ FastAPI ML App</h2>
-<a id="github-be35bc2d8b602b4ad9cf3714a12ee048" target="_blank" href="https://github.com/adityaxxz/FastAPI-ML-App" class="cursor-pointer">
+<h2>3️⃣ PremiumPredictor App</h2>
+<a id="github-511589c681a531d634a3db1aebac411d" target="_blank" href="https://github.com/adityaxxz/FastAPI-ML-App" class="cursor-pointer">
   <div
     class="w-full md:w-auto pt-3 p-5 border border-neutral-200 dark:border-neutral-700 border rounded-md shadow-2xl">
 
@@ -663,13 +813,13 @@
 
       </span>
       <div
-        id="github-be35bc2d8b602b4ad9cf3714a12ee048-full_name"
+        id="github-511589c681a531d634a3db1aebac411d-full_name"
         class="m-0 font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral">
         adityaxxz/FastAPI-ML-App
       </div>
     </div>
 
-    <p id="github-be35bc2d8b602b4ad9cf3714a12ee048-description" class="m-0 mt-2 text-md text-neutral-800 dark:text-neutral">
+    <p id="github-511589c681a531d634a3db1aebac411d-description" class="m-0 mt-2 text-md text-neutral-800 dark:text-neutral">
       FastAPI endpoints for Insurance premium predictor using ML
     </p>
 
@@ -690,7 +840,7 @@
 
 
       </span>
-      <div id="github-be35bc2d8b602b4ad9cf3714a12ee048-stargazers" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
+      <div id="github-511589c681a531d634a3db1aebac411d-stargazers" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
         1
       </div>
 
@@ -703,7 +853,7 @@
 
 
       </span>
-      <div id="github-be35bc2d8b602b4ad9cf3714a12ee048-forks" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
+      <div id="github-511589c681a531d634a3db1aebac411d-forks" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
         0
       </div>
 
@@ -713,10 +863,10 @@
   <script>
     
     document.addEventListener('DOMContentLoaded', function() {
-      const fullNameElement = document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-full_name');
-      const descriptionElement = document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-description');
-      const stargazersElement = document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-stargazers');
-      const forksElement = document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-forks');
+      const fullNameElement = document.getElementById('github-511589c681a531d634a3db1aebac411d-full_name');
+      const descriptionElement = document.getElementById('github-511589c681a531d634a3db1aebac411d-description');
+      const stargazersElement = document.getElementById('github-511589c681a531d634a3db1aebac411d-stargazers');
+      const forksElement = document.getElementById('github-511589c681a531d634a3db1aebac411d-forks');
       
       if (fullNameElement && (fullNameElement.textContent.includes('undefined') || fullNameElement.textContent === 'null')) {
         fullNameElement.textContent = 'adityaxxz\/fastapi-ml-app';
@@ -745,10 +895,10 @@
       })
       .then(data => {
         
-        const fullNameElement = document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-full_name');
-        const descriptionElement = document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-description');
-        const stargazersElement = document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-stargazers');
-        const forksElement = document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-forks');
+        const fullNameElement = document.getElementById('github-511589c681a531d634a3db1aebac411d-full_name');
+        const descriptionElement = document.getElementById('github-511589c681a531d634a3db1aebac411d-description');
+        const stargazersElement = document.getElementById('github-511589c681a531d634a3db1aebac411d-stargazers');
+        const forksElement = document.getElementById('github-511589c681a531d634a3db1aebac411d-forks');
         
         console.log('GitHub API response for adityaxxz\/fastapi-ml-app:', data);
         
@@ -789,15 +939,15 @@
       .catch(error => {
         console.error('GitHub API fetch error:', error);
         
-        const descriptionElement = document.getElementById('github-be35bc2d8b602b4ad9cf3714a12ee048-description');
+        const descriptionElement = document.getElementById('github-511589c681a531d634a3db1aebac411d-description');
         if (descriptionElement && descriptionElement.textContent === 'Loading description...') {
           descriptionElement.textContent = 'Unable to load repository information';
         }
       })
   </script>
 </a>
-<h2>3️⃣ YouTube Backend</h2>
-<a id="github-511589c681a531d634a3db1aebac411d" target="_blank" href="https://github.com/adityaxxz/yt-backend" class="cursor-pointer">
+<h2>4️⃣ YouTube Backend</h2>
+<a id="github-c799c15b9c8e1fc3700290a1e8bb2eb7" target="_blank" href="https://github.com/adityaxxz/yt-backend" class="cursor-pointer">
   <div
     class="w-full md:w-auto pt-3 p-5 border border-neutral-200 dark:border-neutral-700 border rounded-md shadow-2xl">
 
@@ -813,13 +963,13 @@
 
       </span>
       <div
-        id="github-511589c681a531d634a3db1aebac411d-full_name"
+        id="github-c799c15b9c8e1fc3700290a1e8bb2eb7-full_name"
         class="m-0 font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral">
         adityaxxz/yt-backend
       </div>
     </div>
 
-    <p id="github-511589c681a531d634a3db1aebac411d-description" class="m-0 mt-2 text-md text-neutral-800 dark:text-neutral">
+    <p id="github-c799c15b9c8e1fc3700290a1e8bb2eb7-description" class="m-0 mt-2 text-md text-neutral-800 dark:text-neutral">
       backend for video streaming app like yt using nodejs, express, mongodb
     </p>
 
@@ -840,7 +990,7 @@
 
 
       </span>
-      <div id="github-511589c681a531d634a3db1aebac411d-stargazers" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
+      <div id="github-c799c15b9c8e1fc3700290a1e8bb2eb7-stargazers" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
         0
       </div>
 
@@ -853,7 +1003,7 @@
 
 
       </span>
-      <div id="github-511589c681a531d634a3db1aebac411d-forks" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
+      <div id="github-c799c15b9c8e1fc3700290a1e8bb2eb7-forks" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
         0
       </div>
 
@@ -863,10 +1013,10 @@
   <script>
     
     document.addEventListener('DOMContentLoaded', function() {
-      const fullNameElement = document.getElementById('github-511589c681a531d634a3db1aebac411d-full_name');
-      const descriptionElement = document.getElementById('github-511589c681a531d634a3db1aebac411d-description');
-      const stargazersElement = document.getElementById('github-511589c681a531d634a3db1aebac411d-stargazers');
-      const forksElement = document.getElementById('github-511589c681a531d634a3db1aebac411d-forks');
+      const fullNameElement = document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-full_name');
+      const descriptionElement = document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-description');
+      const stargazersElement = document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-stargazers');
+      const forksElement = document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-forks');
       
       if (fullNameElement && (fullNameElement.textContent.includes('undefined') || fullNameElement.textContent === 'null')) {
         fullNameElement.textContent = 'adityaxxz\/yt-backend';
@@ -895,10 +1045,10 @@
       })
       .then(data => {
         
-        const fullNameElement = document.getElementById('github-511589c681a531d634a3db1aebac411d-full_name');
-        const descriptionElement = document.getElementById('github-511589c681a531d634a3db1aebac411d-description');
-        const stargazersElement = document.getElementById('github-511589c681a531d634a3db1aebac411d-stargazers');
-        const forksElement = document.getElementById('github-511589c681a531d634a3db1aebac411d-forks');
+        const fullNameElement = document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-full_name');
+        const descriptionElement = document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-description');
+        const stargazersElement = document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-stargazers');
+        const forksElement = document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-forks');
         
         console.log('GitHub API response for adityaxxz\/yt-backend:', data);
         
@@ -939,156 +1089,6 @@
       .catch(error => {
         console.error('GitHub API fetch error:', error);
         
-        const descriptionElement = document.getElementById('github-511589c681a531d634a3db1aebac411d-description');
-        if (descriptionElement && descriptionElement.textContent === 'Loading description...') {
-          descriptionElement.textContent = 'Unable to load repository information';
-        }
-      })
-  </script>
-</a>
-<h2>4️⃣ Django DRF Blog API</h2>
-<a id="github-c799c15b9c8e1fc3700290a1e8bb2eb7" target="_blank" href="https://github.com/adityaxxz/BlogApp" class="cursor-pointer">
-  <div
-    class="w-full md:w-auto pt-3 p-5 border border-neutral-200 dark:border-neutral-700 border rounded-md shadow-2xl">
-
-    <div class="flex items-center">
-      <span class="text-2xl text-neutral-800 dark:text-neutral" style="margin-right:10px;">
-        
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-
-  </span>
-
-
-      </span>
-      <div
-        id="github-c799c15b9c8e1fc3700290a1e8bb2eb7-full_name"
-        class="m-0 font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral">
-        adityaxxz/BlogApp
-      </div>
-    </div>
-
-    <p id="github-c799c15b9c8e1fc3700290a1e8bb2eb7-description" class="m-0 mt-2 text-md text-neutral-800 dark:text-neutral">
-      backend using django DRF, SQLite, pillow, OAuth2
-    </p>
-
-    <div class="m-0 mt-2 flex items-center">
-
-      <span class="mr-1 inline-block h-3 w-3 rounded-full"
-        style="background-color: #3572A5"></span>
-      <div class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
-        Python
-      </div>
-
-      <span class="text-md mr-1 text-neutral-800 dark:text-neutral">
-        
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M287.9 0C297.1 0 305.5 5.25 309.5 13.52L378.1 154.8L531.4 177.5C540.4 178.8 547.8 185.1 550.7 193.7C553.5 202.4 551.2 211.9 544.8 218.2L433.6 328.4L459.9 483.9C461.4 492.9 457.7 502.1 450.2 507.4C442.8 512.7 432.1 513.4 424.9 509.1L287.9 435.9L150.1 509.1C142.9 513.4 133.1 512.7 125.6 507.4C118.2 502.1 114.5 492.9 115.1 483.9L142.2 328.4L31.11 218.2C24.65 211.9 22.36 202.4 25.2 193.7C28.03 185.1 35.5 178.8 44.49 177.5L197.7 154.8L266.3 13.52C270.4 5.249 278.7 0 287.9 0L287.9 0zM287.9 78.95L235.4 187.2C231.9 194.3 225.1 199.3 217.3 200.5L98.98 217.9L184.9 303C190.4 308.5 192.9 316.4 191.6 324.1L171.4 443.7L276.6 387.5C283.7 383.7 292.2 383.7 299.2 387.5L404.4 443.7L384.2 324.1C382.9 316.4 385.5 308.5 391 303L476.9 217.9L358.6 200.5C350.7 199.3 343.9 194.3 340.5 187.2L287.9 78.95z"/></svg>
-  </span>
-
-
-      </span>
-      <div id="github-c799c15b9c8e1fc3700290a1e8bb2eb7-stargazers" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
-        1
-      </div>
-
-      <span class="text-md mr-1 text-neutral-800 dark:text-neutral">
-        
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M80 104c13.3 0 24-10.7 24-24s-10.7-24-24-24S56 66.7 56 80s10.7 24 24 24zm80-24c0 32.8-19.7 61-48 73.3V192c0 17.7 14.3 32 32 32H304c17.7 0 32-14.3 32-32V153.3C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V192c0 53-43 96-96 96H256v70.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3V288H144c-53 0-96-43-96-96V153.3C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm208 24c13.3 0 24-10.7 24-24s-10.7-24-24-24s-24 10.7-24 24s10.7 24 24 24zM248 432c0-13.3-10.7-24-24-24s-24 10.7-24 24s10.7 24 24 24s24-10.7 24-24z"/></svg>
-  </span>
-
-
-      </span>
-      <div id="github-c799c15b9c8e1fc3700290a1e8bb2eb7-forks" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
-        0
-      </div>
-
-    </div>
-
-  </div>
-  <script>
-    
-    document.addEventListener('DOMContentLoaded', function() {
-      const fullNameElement = document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-full_name');
-      const descriptionElement = document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-description');
-      const stargazersElement = document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-stargazers');
-      const forksElement = document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-forks');
-      
-      if (fullNameElement && (fullNameElement.textContent.includes('undefined') || fullNameElement.textContent === 'null')) {
-        fullNameElement.textContent = 'adityaxxz\/blogapp';
-      }
-      if (descriptionElement && (descriptionElement.textContent.includes('undefined') || descriptionElement.textContent === 'null')) {
-        descriptionElement.textContent = 'No description available';
-      }
-      if (stargazersElement && (stargazersElement.textContent.includes('undefined') || stargazersElement.textContent === 'null')) {
-        stargazersElement.textContent = '0';
-      }
-      if (forksElement && (forksElement.textContent.includes('undefined') || forksElement.textContent === 'null')) {
-        forksElement.textContent = '0';
-      }
-    });
-
-    fetch("https://api.github.com/repos/adityaxxz/blogapp", {
-      headers: new Headers({
-        'User-agent': 'Mozilla/4.0 Custom User Agent'
-      })
-    })
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        return response.json();
-      })
-      .then(data => {
-        
-        const fullNameElement = document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-full_name');
-        const descriptionElement = document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-description');
-        const stargazersElement = document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-stargazers');
-        const forksElement = document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-forks');
-        
-        console.log('GitHub API response for adityaxxz\/blogapp:', data);
-        
-        
-        if (fullNameElement && data && data.full_name && 
-            data.full_name !== 'undefined' && 
-            data.full_name !== 'null' &&
-            !fullNameElement.textContent.includes('undefined')) {
-          fullNameElement.textContent = data.full_name;
-        }
-        
-        
-        if (descriptionElement && data) {
-          if (data.description && 
-              data.description !== 'undefined' && 
-              data.description !== null && 
-              data.description !== 'null' &&
-              data.description.trim() !== '') {
-            descriptionElement.textContent = data.description;
-          } else if (!descriptionElement.textContent || 
-                     descriptionElement.textContent === 'Loading description...' ||
-                     descriptionElement.textContent.includes('undefined') ||
-                     descriptionElement.textContent === 'null') {
-            descriptionElement.textContent = 'No description available';
-          }
-        }
-        
-        
-        if (stargazersElement && data && typeof data.stargazers_count === 'number') {
-          stargazersElement.textContent = data.stargazers_count;
-        }
-        
-        
-        if (forksElement && data && typeof data.forks === 'number') {
-          forksElement.textContent = data.forks;
-        }
-      })
-      .catch(error => {
-        console.error('GitHub API fetch error:', error);
-        
         const descriptionElement = document.getElementById('github-c799c15b9c8e1fc3700290a1e8bb2eb7-description');
         if (descriptionElement && descriptionElement.textContent === 'Loading description...') {
           descriptionElement.textContent = 'Unable to load repository information';
@@ -1096,9 +1096,8 @@
       })
   </script>
 </a>
-<hr>
-<h2>5️⃣ Account Abstraction</h2>
-<a id="github-bf0ee489211b8679bac58054955703ef" target="_blank" href="https://github.com/adityaxxz/account-abstraction" class="cursor-pointer">
+<h2>5️⃣ Django DRF Blog API</h2>
+<a id="github-bf0ee489211b8679bac58054955703ef" target="_blank" href="https://github.com/adityaxxz/BlogApp" class="cursor-pointer">
   <div
     class="w-full md:w-auto pt-3 p-5 border border-neutral-200 dark:border-neutral-700 border rounded-md shadow-2xl">
 
@@ -1116,20 +1115,20 @@
       <div
         id="github-bf0ee489211b8679bac58054955703ef-full_name"
         class="m-0 font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral">
-        adityaxxz/account-abstraction
+        adityaxxz/BlogApp
       </div>
     </div>
 
     <p id="github-bf0ee489211b8679bac58054955703ef-description" class="m-0 mt-2 text-md text-neutral-800 dark:text-neutral">
-      Minimal Account Abstraction implementation on Ethereum &amp; ZKSync
+      backend using django DRF, SQLite, pillow, OAuth2
     </p>
 
     <div class="m-0 mt-2 flex items-center">
 
       <span class="mr-1 inline-block h-3 w-3 rounded-full"
-        style="background-color: #AA6746"></span>
+        style="background-color: #3572A5"></span>
       <div class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
-        Solidity
+        Python
       </div>
 
       <span class="text-md mr-1 text-neutral-800 dark:text-neutral">
@@ -1170,7 +1169,7 @@
       const forksElement = document.getElementById('github-bf0ee489211b8679bac58054955703ef-forks');
       
       if (fullNameElement && (fullNameElement.textContent.includes('undefined') || fullNameElement.textContent === 'null')) {
-        fullNameElement.textContent = 'adityaxxz\/account-abstraction';
+        fullNameElement.textContent = 'adityaxxz\/blogapp';
       }
       if (descriptionElement && (descriptionElement.textContent.includes('undefined') || descriptionElement.textContent === 'null')) {
         descriptionElement.textContent = 'No description available';
@@ -1183,7 +1182,7 @@
       }
     });
 
-    fetch("https://api.github.com/repos/adityaxxz/account-abstraction", {
+    fetch("https://api.github.com/repos/adityaxxz/blogapp", {
       headers: new Headers({
         'User-agent': 'Mozilla/4.0 Custom User Agent'
       })
@@ -1201,7 +1200,7 @@
         const stargazersElement = document.getElementById('github-bf0ee489211b8679bac58054955703ef-stargazers');
         const forksElement = document.getElementById('github-bf0ee489211b8679bac58054955703ef-forks');
         
-        console.log('GitHub API response for adityaxxz\/account-abstraction:', data);
+        console.log('GitHub API response for adityaxxz\/blogapp:', data);
         
         
         if (fullNameElement && data && data.full_name && 
@@ -1247,8 +1246,9 @@
       })
   </script>
 </a>
-<h2>6️⃣ Stablecoin DeFi Project</h2>
-<a id="github-99ee1c5e1218057c574c308cf8a37596" target="_blank" href="https://github.com/adityaxxz/stablecoin-defi-project" class="cursor-pointer">
+<hr>
+<h2>6️⃣ Account Abstraction</h2>
+<a id="github-99ee1c5e1218057c574c308cf8a37596" target="_blank" href="https://github.com/adityaxxz/account-abstraction" class="cursor-pointer">
   <div
     class="w-full md:w-auto pt-3 p-5 border border-neutral-200 dark:border-neutral-700 border rounded-md shadow-2xl">
 
@@ -1266,12 +1266,12 @@
       <div
         id="github-99ee1c5e1218057c574c308cf8a37596-full_name"
         class="m-0 font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral">
-        adityaxxz/stablecoin-defi-project
+        adityaxxz/account-abstraction
       </div>
     </div>
 
     <p id="github-99ee1c5e1218057c574c308cf8a37596-description" class="m-0 mt-2 text-md text-neutral-800 dark:text-neutral">
-      No description available
+      Minimal Account Abstraction implementation on Ethereum &amp; ZKSync
     </p>
 
     <div class="m-0 mt-2 flex items-center">
@@ -1320,6 +1320,156 @@
       const forksElement = document.getElementById('github-99ee1c5e1218057c574c308cf8a37596-forks');
       
       if (fullNameElement && (fullNameElement.textContent.includes('undefined') || fullNameElement.textContent === 'null')) {
+        fullNameElement.textContent = 'adityaxxz\/account-abstraction';
+      }
+      if (descriptionElement && (descriptionElement.textContent.includes('undefined') || descriptionElement.textContent === 'null')) {
+        descriptionElement.textContent = 'No description available';
+      }
+      if (stargazersElement && (stargazersElement.textContent.includes('undefined') || stargazersElement.textContent === 'null')) {
+        stargazersElement.textContent = '0';
+      }
+      if (forksElement && (forksElement.textContent.includes('undefined') || forksElement.textContent === 'null')) {
+        forksElement.textContent = '0';
+      }
+    });
+
+    fetch("https://api.github.com/repos/adityaxxz/account-abstraction", {
+      headers: new Headers({
+        'User-agent': 'Mozilla/4.0 Custom User Agent'
+      })
+    })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then(data => {
+        
+        const fullNameElement = document.getElementById('github-99ee1c5e1218057c574c308cf8a37596-full_name');
+        const descriptionElement = document.getElementById('github-99ee1c5e1218057c574c308cf8a37596-description');
+        const stargazersElement = document.getElementById('github-99ee1c5e1218057c574c308cf8a37596-stargazers');
+        const forksElement = document.getElementById('github-99ee1c5e1218057c574c308cf8a37596-forks');
+        
+        console.log('GitHub API response for adityaxxz\/account-abstraction:', data);
+        
+        
+        if (fullNameElement && data && data.full_name && 
+            data.full_name !== 'undefined' && 
+            data.full_name !== 'null' &&
+            !fullNameElement.textContent.includes('undefined')) {
+          fullNameElement.textContent = data.full_name;
+        }
+        
+        
+        if (descriptionElement && data) {
+          if (data.description && 
+              data.description !== 'undefined' && 
+              data.description !== null && 
+              data.description !== 'null' &&
+              data.description.trim() !== '') {
+            descriptionElement.textContent = data.description;
+          } else if (!descriptionElement.textContent || 
+                     descriptionElement.textContent === 'Loading description...' ||
+                     descriptionElement.textContent.includes('undefined') ||
+                     descriptionElement.textContent === 'null') {
+            descriptionElement.textContent = 'No description available';
+          }
+        }
+        
+        
+        if (stargazersElement && data && typeof data.stargazers_count === 'number') {
+          stargazersElement.textContent = data.stargazers_count;
+        }
+        
+        
+        if (forksElement && data && typeof data.forks === 'number') {
+          forksElement.textContent = data.forks;
+        }
+      })
+      .catch(error => {
+        console.error('GitHub API fetch error:', error);
+        
+        const descriptionElement = document.getElementById('github-99ee1c5e1218057c574c308cf8a37596-description');
+        if (descriptionElement && descriptionElement.textContent === 'Loading description...') {
+          descriptionElement.textContent = 'Unable to load repository information';
+        }
+      })
+  </script>
+</a>
+<h2>7️⃣ Stablecoin DeFi Project</h2>
+<a id="github-78f6ec2d8083e074882077e4d55cb2d8" target="_blank" href="https://github.com/adityaxxz/stablecoin-defi-project" class="cursor-pointer">
+  <div
+    class="w-full md:w-auto pt-3 p-5 border border-neutral-200 dark:border-neutral-700 border rounded-md shadow-2xl">
+
+    <div class="flex items-center">
+      <span class="text-2xl text-neutral-800 dark:text-neutral" style="margin-right:10px;">
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+
+  </span>
+
+
+      </span>
+      <div
+        id="github-78f6ec2d8083e074882077e4d55cb2d8-full_name"
+        class="m-0 font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral">
+        adityaxxz/stablecoin-defi-project
+      </div>
+    </div>
+
+    <p id="github-78f6ec2d8083e074882077e4d55cb2d8-description" class="m-0 mt-2 text-md text-neutral-800 dark:text-neutral">
+      No description available
+    </p>
+
+    <div class="m-0 mt-2 flex items-center">
+
+      <span class="mr-1 inline-block h-3 w-3 rounded-full"
+        style="background-color: #AA6746"></span>
+      <div class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
+        Solidity
+      </div>
+
+      <span class="text-md mr-1 text-neutral-800 dark:text-neutral">
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M287.9 0C297.1 0 305.5 5.25 309.5 13.52L378.1 154.8L531.4 177.5C540.4 178.8 547.8 185.1 550.7 193.7C553.5 202.4 551.2 211.9 544.8 218.2L433.6 328.4L459.9 483.9C461.4 492.9 457.7 502.1 450.2 507.4C442.8 512.7 432.1 513.4 424.9 509.1L287.9 435.9L150.1 509.1C142.9 513.4 133.1 512.7 125.6 507.4C118.2 502.1 114.5 492.9 115.1 483.9L142.2 328.4L31.11 218.2C24.65 211.9 22.36 202.4 25.2 193.7C28.03 185.1 35.5 178.8 44.49 177.5L197.7 154.8L266.3 13.52C270.4 5.249 278.7 0 287.9 0L287.9 0zM287.9 78.95L235.4 187.2C231.9 194.3 225.1 199.3 217.3 200.5L98.98 217.9L184.9 303C190.4 308.5 192.9 316.4 191.6 324.1L171.4 443.7L276.6 387.5C283.7 383.7 292.2 383.7 299.2 387.5L404.4 443.7L384.2 324.1C382.9 316.4 385.5 308.5 391 303L476.9 217.9L358.6 200.5C350.7 199.3 343.9 194.3 340.5 187.2L287.9 78.95z"/></svg>
+  </span>
+
+
+      </span>
+      <div id="github-78f6ec2d8083e074882077e4d55cb2d8-stargazers" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
+        1
+      </div>
+
+      <span class="text-md mr-1 text-neutral-800 dark:text-neutral">
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M80 104c13.3 0 24-10.7 24-24s-10.7-24-24-24S56 66.7 56 80s10.7 24 24 24zm80-24c0 32.8-19.7 61-48 73.3V192c0 17.7 14.3 32 32 32H304c17.7 0 32-14.3 32-32V153.3C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V192c0 53-43 96-96 96H256v70.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3V288H144c-53 0-96-43-96-96V153.3C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm208 24c13.3 0 24-10.7 24-24s-10.7-24-24-24s-24 10.7-24 24s10.7 24 24 24zM248 432c0-13.3-10.7-24-24-24s-24 10.7-24 24s10.7 24 24 24s24-10.7 24-24z"/></svg>
+  </span>
+
+
+      </span>
+      <div id="github-78f6ec2d8083e074882077e4d55cb2d8-forks" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
+        0
+      </div>
+
+    </div>
+
+  </div>
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      const fullNameElement = document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-full_name');
+      const descriptionElement = document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-description');
+      const stargazersElement = document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-stargazers');
+      const forksElement = document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-forks');
+      
+      if (fullNameElement && (fullNameElement.textContent.includes('undefined') || fullNameElement.textContent === 'null')) {
         fullNameElement.textContent = 'adityaxxz\/stablecoin-defi-project';
       }
       if (descriptionElement && (descriptionElement.textContent.includes('undefined') || descriptionElement.textContent === 'null')) {
@@ -1346,10 +1496,10 @@
       })
       .then(data => {
         
-        const fullNameElement = document.getElementById('github-99ee1c5e1218057c574c308cf8a37596-full_name');
-        const descriptionElement = document.getElementById('github-99ee1c5e1218057c574c308cf8a37596-description');
-        const stargazersElement = document.getElementById('github-99ee1c5e1218057c574c308cf8a37596-stargazers');
-        const forksElement = document.getElementById('github-99ee1c5e1218057c574c308cf8a37596-forks');
+        const fullNameElement = document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-full_name');
+        const descriptionElement = document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-description');
+        const stargazersElement = document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-stargazers');
+        const forksElement = document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-forks');
         
         console.log('GitHub API response for adityaxxz\/stablecoin-defi-project:', data);
         
@@ -1390,7 +1540,7 @@
       .catch(error => {
         console.error('GitHub API fetch error:', error);
         
-        const descriptionElement = document.getElementById('github-99ee1c5e1218057c574c308cf8a37596-description');
+        const descriptionElement = document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-description');
         if (descriptionElement && descriptionElement.textContent === 'Loading description...') {
           descriptionElement.textContent = 'Unable to load repository information';
         }
@@ -1398,158 +1548,8 @@
   </script>
 </a>
 <hr>
-<h2>7️⃣ Running Tracker App</h2>
-<a id="github-78f6ec2d8083e074882077e4d55cb2d8" target="_blank" href="https://github.com/adityaxxz/RunningTrackerApp" class="cursor-pointer">
-  <div
-    class="w-full md:w-auto pt-3 p-5 border border-neutral-200 dark:border-neutral-700 border rounded-md shadow-2xl">
-
-    <div class="flex items-center">
-      <span class="text-2xl text-neutral-800 dark:text-neutral" style="margin-right:10px;">
-        
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-
-  </span>
-
-
-      </span>
-      <div
-        id="github-78f6ec2d8083e074882077e4d55cb2d8-full_name"
-        class="m-0 font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral">
-        adityaxxz/RunningTrackerApp
-      </div>
-    </div>
-
-    <p id="github-78f6ec2d8083e074882077e4d55cb2d8-description" class="m-0 mt-2 text-md text-neutral-800 dark:text-neutral">
-      No description available
-    </p>
-
-    <div class="m-0 mt-2 flex items-center">
-
-      <span class="mr-1 inline-block h-3 w-3 rounded-full"
-        style="background-color: #A97BFF"></span>
-      <div class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
-        Kotlin
-      </div>
-
-      <span class="text-md mr-1 text-neutral-800 dark:text-neutral">
-        
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M287.9 0C297.1 0 305.5 5.25 309.5 13.52L378.1 154.8L531.4 177.5C540.4 178.8 547.8 185.1 550.7 193.7C553.5 202.4 551.2 211.9 544.8 218.2L433.6 328.4L459.9 483.9C461.4 492.9 457.7 502.1 450.2 507.4C442.8 512.7 432.1 513.4 424.9 509.1L287.9 435.9L150.1 509.1C142.9 513.4 133.1 512.7 125.6 507.4C118.2 502.1 114.5 492.9 115.1 483.9L142.2 328.4L31.11 218.2C24.65 211.9 22.36 202.4 25.2 193.7C28.03 185.1 35.5 178.8 44.49 177.5L197.7 154.8L266.3 13.52C270.4 5.249 278.7 0 287.9 0L287.9 0zM287.9 78.95L235.4 187.2C231.9 194.3 225.1 199.3 217.3 200.5L98.98 217.9L184.9 303C190.4 308.5 192.9 316.4 191.6 324.1L171.4 443.7L276.6 387.5C283.7 383.7 292.2 383.7 299.2 387.5L404.4 443.7L384.2 324.1C382.9 316.4 385.5 308.5 391 303L476.9 217.9L358.6 200.5C350.7 199.3 343.9 194.3 340.5 187.2L287.9 78.95z"/></svg>
-  </span>
-
-
-      </span>
-      <div id="github-78f6ec2d8083e074882077e4d55cb2d8-stargazers" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
-        0
-      </div>
-
-      <span class="text-md mr-1 text-neutral-800 dark:text-neutral">
-        
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M80 104c13.3 0 24-10.7 24-24s-10.7-24-24-24S56 66.7 56 80s10.7 24 24 24zm80-24c0 32.8-19.7 61-48 73.3V192c0 17.7 14.3 32 32 32H304c17.7 0 32-14.3 32-32V153.3C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V192c0 53-43 96-96 96H256v70.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3V288H144c-53 0-96-43-96-96V153.3C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm208 24c13.3 0 24-10.7 24-24s-10.7-24-24-24s-24 10.7-24 24s10.7 24 24 24zM248 432c0-13.3-10.7-24-24-24s-24 10.7-24 24s10.7 24 24 24s24-10.7 24-24z"/></svg>
-  </span>
-
-
-      </span>
-      <div id="github-78f6ec2d8083e074882077e4d55cb2d8-forks" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
-        0
-      </div>
-
-    </div>
-
-  </div>
-  <script>
-    
-    document.addEventListener('DOMContentLoaded', function() {
-      const fullNameElement = document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-full_name');
-      const descriptionElement = document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-description');
-      const stargazersElement = document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-stargazers');
-      const forksElement = document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-forks');
-      
-      if (fullNameElement && (fullNameElement.textContent.includes('undefined') || fullNameElement.textContent === 'null')) {
-        fullNameElement.textContent = 'adityaxxz\/RunningTrackerApp';
-      }
-      if (descriptionElement && (descriptionElement.textContent.includes('undefined') || descriptionElement.textContent === 'null')) {
-        descriptionElement.textContent = 'No description available';
-      }
-      if (stargazersElement && (stargazersElement.textContent.includes('undefined') || stargazersElement.textContent === 'null')) {
-        stargazersElement.textContent = '0';
-      }
-      if (forksElement && (forksElement.textContent.includes('undefined') || forksElement.textContent === 'null')) {
-        forksElement.textContent = '0';
-      }
-    });
-
-    fetch("https://api.github.com/repos/adityaxxz/RunningTrackerApp", {
-      headers: new Headers({
-        'User-agent': 'Mozilla/4.0 Custom User Agent'
-      })
-    })
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        return response.json();
-      })
-      .then(data => {
-        
-        const fullNameElement = document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-full_name');
-        const descriptionElement = document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-description');
-        const stargazersElement = document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-stargazers');
-        const forksElement = document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-forks');
-        
-        console.log('GitHub API response for adityaxxz\/RunningTrackerApp:', data);
-        
-        
-        if (fullNameElement && data && data.full_name && 
-            data.full_name !== 'undefined' && 
-            data.full_name !== 'null' &&
-            !fullNameElement.textContent.includes('undefined')) {
-          fullNameElement.textContent = data.full_name;
-        }
-        
-        
-        if (descriptionElement && data) {
-          if (data.description && 
-              data.description !== 'undefined' && 
-              data.description !== null && 
-              data.description !== 'null' &&
-              data.description.trim() !== '') {
-            descriptionElement.textContent = data.description;
-          } else if (!descriptionElement.textContent || 
-                     descriptionElement.textContent === 'Loading description...' ||
-                     descriptionElement.textContent.includes('undefined') ||
-                     descriptionElement.textContent === 'null') {
-            descriptionElement.textContent = 'No description available';
-          }
-        }
-        
-        
-        if (stargazersElement && data && typeof data.stargazers_count === 'number') {
-          stargazersElement.textContent = data.stargazers_count;
-        }
-        
-        
-        if (forksElement && data && typeof data.forks === 'number') {
-          forksElement.textContent = data.forks;
-        }
-      })
-      .catch(error => {
-        console.error('GitHub API fetch error:', error);
-        
-        const descriptionElement = document.getElementById('github-78f6ec2d8083e074882077e4d55cb2d8-description');
-        if (descriptionElement && descriptionElement.textContent === 'Loading description...') {
-          descriptionElement.textContent = 'Unable to load repository information';
-        }
-      })
-  </script>
-</a>
-<h2>8️⃣ Multi-Threaded Web Server</h2>
-<a id="github-9114f70dda0b31e1dc17f51dcb9b0fdd" target="_blank" href="https://github.com/adityaxxz/multithreaded-web-server" class="cursor-pointer">
+<h2>8️⃣ Running Tracker App</h2>
+<a id="github-9114f70dda0b31e1dc17f51dcb9b0fdd" target="_blank" href="https://github.com/adityaxxz/RunningTrackerApp" class="cursor-pointer">
   <div
     class="w-full md:w-auto pt-3 p-5 border border-neutral-200 dark:border-neutral-700 border rounded-md shadow-2xl">
 
@@ -1567,20 +1567,20 @@
       <div
         id="github-9114f70dda0b31e1dc17f51dcb9b0fdd-full_name"
         class="m-0 font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral">
-        adityaxxz/multithreaded-web-server
+        adityaxxz/RunningTrackerApp
       </div>
     </div>
 
     <p id="github-9114f70dda0b31e1dc17f51dcb9b0fdd-description" class="m-0 mt-2 text-md text-neutral-800 dark:text-neutral">
-      Built a Multithreaded Web Server using Rust🦀
+      No description available
     </p>
 
     <div class="m-0 mt-2 flex items-center">
 
       <span class="mr-1 inline-block h-3 w-3 rounded-full"
-        style="background-color: #dea584"></span>
+        style="background-color: #A97BFF"></span>
       <div class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
-        Rust
+        Kotlin
       </div>
 
       <span class="text-md mr-1 text-neutral-800 dark:text-neutral">
@@ -1621,7 +1621,7 @@
       const forksElement = document.getElementById('github-9114f70dda0b31e1dc17f51dcb9b0fdd-forks');
       
       if (fullNameElement && (fullNameElement.textContent.includes('undefined') || fullNameElement.textContent === 'null')) {
-        fullNameElement.textContent = 'adityaxxz\/multithreaded-web-server';
+        fullNameElement.textContent = 'adityaxxz\/RunningTrackerApp';
       }
       if (descriptionElement && (descriptionElement.textContent.includes('undefined') || descriptionElement.textContent === 'null')) {
         descriptionElement.textContent = 'No description available';
@@ -1634,7 +1634,7 @@
       }
     });
 
-    fetch("https://api.github.com/repos/adityaxxz/multithreaded-web-server", {
+    fetch("https://api.github.com/repos/adityaxxz/RunningTrackerApp", {
       headers: new Headers({
         'User-agent': 'Mozilla/4.0 Custom User Agent'
       })
@@ -1652,7 +1652,7 @@
         const stargazersElement = document.getElementById('github-9114f70dda0b31e1dc17f51dcb9b0fdd-stargazers');
         const forksElement = document.getElementById('github-9114f70dda0b31e1dc17f51dcb9b0fdd-forks');
         
-        console.log('GitHub API response for adityaxxz\/multithreaded-web-server:', data);
+        console.log('GitHub API response for adityaxxz\/RunningTrackerApp:', data);
         
         
         if (fullNameElement && data && data.full_name && 
@@ -1698,12 +1698,162 @@
       })
   </script>
 </a>
+<h2>9️⃣ Multi-Threaded Web Server</h2>
+<a id="github-b158f5e5738e70df0f7c9ddc74952cd8" target="_blank" href="https://github.com/adityaxxz/multithreaded-web-server" class="cursor-pointer">
+  <div
+    class="w-full md:w-auto pt-3 p-5 border border-neutral-200 dark:border-neutral-700 border rounded-md shadow-2xl">
+
+    <div class="flex items-center">
+      <span class="text-2xl text-neutral-800 dark:text-neutral" style="margin-right:10px;">
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+
+  </span>
+
+
+      </span>
+      <div
+        id="github-b158f5e5738e70df0f7c9ddc74952cd8-full_name"
+        class="m-0 font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral">
+        adityaxxz/multithreaded-web-server
+      </div>
+    </div>
+
+    <p id="github-b158f5e5738e70df0f7c9ddc74952cd8-description" class="m-0 mt-2 text-md text-neutral-800 dark:text-neutral">
+      Built a Multithreaded Web Server using Rust🦀
+    </p>
+
+    <div class="m-0 mt-2 flex items-center">
+
+      <span class="mr-1 inline-block h-3 w-3 rounded-full"
+        style="background-color: #dea584"></span>
+      <div class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
+        Rust
+      </div>
+
+      <span class="text-md mr-1 text-neutral-800 dark:text-neutral">
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M287.9 0C297.1 0 305.5 5.25 309.5 13.52L378.1 154.8L531.4 177.5C540.4 178.8 547.8 185.1 550.7 193.7C553.5 202.4 551.2 211.9 544.8 218.2L433.6 328.4L459.9 483.9C461.4 492.9 457.7 502.1 450.2 507.4C442.8 512.7 432.1 513.4 424.9 509.1L287.9 435.9L150.1 509.1C142.9 513.4 133.1 512.7 125.6 507.4C118.2 502.1 114.5 492.9 115.1 483.9L142.2 328.4L31.11 218.2C24.65 211.9 22.36 202.4 25.2 193.7C28.03 185.1 35.5 178.8 44.49 177.5L197.7 154.8L266.3 13.52C270.4 5.249 278.7 0 287.9 0L287.9 0zM287.9 78.95L235.4 187.2C231.9 194.3 225.1 199.3 217.3 200.5L98.98 217.9L184.9 303C190.4 308.5 192.9 316.4 191.6 324.1L171.4 443.7L276.6 387.5C283.7 383.7 292.2 383.7 299.2 387.5L404.4 443.7L384.2 324.1C382.9 316.4 385.5 308.5 391 303L476.9 217.9L358.6 200.5C350.7 199.3 343.9 194.3 340.5 187.2L287.9 78.95z"/></svg>
+  </span>
+
+
+      </span>
+      <div id="github-b158f5e5738e70df0f7c9ddc74952cd8-stargazers" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
+        0
+      </div>
+
+      <span class="text-md mr-1 text-neutral-800 dark:text-neutral">
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M80 104c13.3 0 24-10.7 24-24s-10.7-24-24-24S56 66.7 56 80s10.7 24 24 24zm80-24c0 32.8-19.7 61-48 73.3V192c0 17.7 14.3 32 32 32H304c17.7 0 32-14.3 32-32V153.3C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V192c0 53-43 96-96 96H256v70.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3V288H144c-53 0-96-43-96-96V153.3C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm208 24c13.3 0 24-10.7 24-24s-10.7-24-24-24s-24 10.7-24 24s10.7 24 24 24zM248 432c0-13.3-10.7-24-24-24s-24 10.7-24 24s10.7 24 24 24s24-10.7 24-24z"/></svg>
+  </span>
+
+
+      </span>
+      <div id="github-b158f5e5738e70df0f7c9ddc74952cd8-forks" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
+        0
+      </div>
+
+    </div>
+
+  </div>
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      const fullNameElement = document.getElementById('github-b158f5e5738e70df0f7c9ddc74952cd8-full_name');
+      const descriptionElement = document.getElementById('github-b158f5e5738e70df0f7c9ddc74952cd8-description');
+      const stargazersElement = document.getElementById('github-b158f5e5738e70df0f7c9ddc74952cd8-stargazers');
+      const forksElement = document.getElementById('github-b158f5e5738e70df0f7c9ddc74952cd8-forks');
+      
+      if (fullNameElement && (fullNameElement.textContent.includes('undefined') || fullNameElement.textContent === 'null')) {
+        fullNameElement.textContent = 'adityaxxz\/multithreaded-web-server';
+      }
+      if (descriptionElement && (descriptionElement.textContent.includes('undefined') || descriptionElement.textContent === 'null')) {
+        descriptionElement.textContent = 'No description available';
+      }
+      if (stargazersElement && (stargazersElement.textContent.includes('undefined') || stargazersElement.textContent === 'null')) {
+        stargazersElement.textContent = '0';
+      }
+      if (forksElement && (forksElement.textContent.includes('undefined') || forksElement.textContent === 'null')) {
+        forksElement.textContent = '0';
+      }
+    });
+
+    fetch("https://api.github.com/repos/adityaxxz/multithreaded-web-server", {
+      headers: new Headers({
+        'User-agent': 'Mozilla/4.0 Custom User Agent'
+      })
+    })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then(data => {
+        
+        const fullNameElement = document.getElementById('github-b158f5e5738e70df0f7c9ddc74952cd8-full_name');
+        const descriptionElement = document.getElementById('github-b158f5e5738e70df0f7c9ddc74952cd8-description');
+        const stargazersElement = document.getElementById('github-b158f5e5738e70df0f7c9ddc74952cd8-stargazers');
+        const forksElement = document.getElementById('github-b158f5e5738e70df0f7c9ddc74952cd8-forks');
+        
+        console.log('GitHub API response for adityaxxz\/multithreaded-web-server:', data);
+        
+        
+        if (fullNameElement && data && data.full_name && 
+            data.full_name !== 'undefined' && 
+            data.full_name !== 'null' &&
+            !fullNameElement.textContent.includes('undefined')) {
+          fullNameElement.textContent = data.full_name;
+        }
+        
+        
+        if (descriptionElement && data) {
+          if (data.description && 
+              data.description !== 'undefined' && 
+              data.description !== null && 
+              data.description !== 'null' &&
+              data.description.trim() !== '') {
+            descriptionElement.textContent = data.description;
+          } else if (!descriptionElement.textContent || 
+                     descriptionElement.textContent === 'Loading description...' ||
+                     descriptionElement.textContent.includes('undefined') ||
+                     descriptionElement.textContent === 'null') {
+            descriptionElement.textContent = 'No description available';
+          }
+        }
+        
+        
+        if (stargazersElement && data && typeof data.stargazers_count === 'number') {
+          stargazersElement.textContent = data.stargazers_count;
+        }
+        
+        
+        if (forksElement && data && typeof data.forks === 'number') {
+          forksElement.textContent = data.forks;
+        }
+      })
+      .catch(error => {
+        console.error('GitHub API fetch error:', error);
+        
+        const descriptionElement = document.getElementById('github-b158f5e5738e70df0f7c9ddc74952cd8-description');
+        if (descriptionElement && descriptionElement.textContent === 'Loading description...') {
+          descriptionElement.textContent = 'Unable to load repository information';
+        }
+      })
+  </script>
+</a>
 <hr>
-<h2>9️⃣ CryptoTracer</h2>
+<h2>🔟 CryptoTracer</h2>
 <blockquote>
 <p>Visit the <a href="https://github.com/abhinavjain1110/CryptoTracer/tree/addy" target="_blank">addy🔗</a> or <a href="https://github.com/abhinavjain1110/CryptoTracer/tree/ebd7e7e9a46d4417241805f478d08a34f7c25331" target="_blank">test🔗</a> branch to see my commits!</p>
 </blockquote>
-<a id="github-b158f5e5738e70df0f7c9ddc74952cd8" target="_blank" href="https://github.com/adityaxxz/CryptoTracer" class="cursor-pointer">
+<a id="github-4dcd3c2b2c96c3890afc08f2f52caa33" target="_blank" href="https://github.com/adityaxxz/CryptoTracer" class="cursor-pointer">
    <div
      class="w-full md:w-auto pt-3 p-5 border border-neutral-200 dark:border-neutral-700 border rounded-md shadow-2xl">
  
@@ -1719,13 +1869,13 @@
  
        </span>
        <div
-         id="github-b158f5e5738e70df0f7c9ddc74952cd8-full_name"
+         id="github-4dcd3c2b2c96c3890afc08f2f52caa33-full_name"
          class="m-0 font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral">
          adityaxxz/CryptoTracer
        </div>
      </div>
  
-     <p id="github-b158f5e5738e70df0f7c9ddc74952cd8-description" class="m-0 mt-2 text-md text-neutral-800 dark:text-neutral">
+     <p id="github-4dcd3c2b2c96c3890afc08f2f52caa33-description" class="m-0 mt-2 text-md text-neutral-800 dark:text-neutral">
        SIH.1675
      </p>
  
@@ -1746,7 +1896,7 @@
  
  
        </span>
-       <div id="github-b158f5e5738e70df0f7c9ddc74952cd8-stargazers" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
+       <div id="github-4dcd3c2b2c96c3890afc08f2f52caa33-stargazers" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
          0
        </div>
  
@@ -1759,7 +1909,7 @@
  
  
        </span>
-       <div id="github-b158f5e5738e70df0f7c9ddc74952cd8-forks" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
+       <div id="github-4dcd3c2b2c96c3890afc08f2f52caa33-forks" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
          0
        </div>
  
@@ -1769,10 +1919,10 @@
    <script>
      
      document.addEventListener('DOMContentLoaded', function() {
-       const fullNameElement = document.getElementById('github-b158f5e5738e70df0f7c9ddc74952cd8-full_name');
-       const descriptionElement = document.getElementById('github-b158f5e5738e70df0f7c9ddc74952cd8-description');
-       const stargazersElement = document.getElementById('github-b158f5e5738e70df0f7c9ddc74952cd8-stargazers');
-       const forksElement = document.getElementById('github-b158f5e5738e70df0f7c9ddc74952cd8-forks');
+       const fullNameElement = document.getElementById('github-4dcd3c2b2c96c3890afc08f2f52caa33-full_name');
+       const descriptionElement = document.getElementById('github-4dcd3c2b2c96c3890afc08f2f52caa33-description');
+       const stargazersElement = document.getElementById('github-4dcd3c2b2c96c3890afc08f2f52caa33-stargazers');
+       const forksElement = document.getElementById('github-4dcd3c2b2c96c3890afc08f2f52caa33-forks');
        
        if (fullNameElement && (fullNameElement.textContent.includes('undefined') || fullNameElement.textContent === 'null')) {
          fullNameElement.textContent = 'adityaxxz\/CryptoTracer';
@@ -1801,10 +1951,10 @@
        })
        .then(data => {
          
-         const fullNameElement = document.getElementById('github-b158f5e5738e70df0f7c9ddc74952cd8-full_name');
-         const descriptionElement = document.getElementById('github-b158f5e5738e70df0f7c9ddc74952cd8-description');
-         const stargazersElement = document.getElementById('github-b158f5e5738e70df0f7c9ddc74952cd8-stargazers');
-         const forksElement = document.getElementById('github-b158f5e5738e70df0f7c9ddc74952cd8-forks');
+         const fullNameElement = document.getElementById('github-4dcd3c2b2c96c3890afc08f2f52caa33-full_name');
+         const descriptionElement = document.getElementById('github-4dcd3c2b2c96c3890afc08f2f52caa33-description');
+         const stargazersElement = document.getElementById('github-4dcd3c2b2c96c3890afc08f2f52caa33-stargazers');
+         const forksElement = document.getElementById('github-4dcd3c2b2c96c3890afc08f2f52caa33-forks');
          
          console.log('GitHub API response for adityaxxz\/CryptoTracer:', data);
          
@@ -1845,7 +1995,7 @@
        .catch(error => {
          console.error('GitHub API fetch error:', error);
          
-         const descriptionElement = document.getElementById('github-b158f5e5738e70df0f7c9ddc74952cd8-description');
+         const descriptionElement = document.getElementById('github-4dcd3c2b2c96c3890afc08f2f52caa33-description');
          if (descriptionElement && descriptionElement.textContent === 'Loading description...') {
            descriptionElement.textContent = 'Unable to load repository information';
          }
