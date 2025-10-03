@@ -1,0 +1,7 @@
+cd themes\blowfish
+git add assets\js\search.js or other files
+gcma 
+
+git add themes\blowfish
+git commit -m "chore(submodule): update blowfish to latest commit"
+gp
