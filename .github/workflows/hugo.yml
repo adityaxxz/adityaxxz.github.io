@@ -42,7 +42,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: false
+          submodules: false  #dont fecth submodules, themes/blowfish now a regular folder
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
