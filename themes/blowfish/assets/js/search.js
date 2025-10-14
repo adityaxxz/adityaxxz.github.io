@@ -187,7 +187,7 @@ function executeQuery(term) {
         resultsHTML +
         `<li class="mb-2">
           <a class="flex items-center px-3 py-2 rounded-md appearance-none bg-neutral-100 dark:bg-neutral-700 focus:bg-primary-100 hover:bg-primary-100 dark:hover:bg-primary-900 dark:focus:bg-primary-900 focus:outline-dotted focus:outline-transparent focus:outline-2" 
-          href="https://drive.google.com/file/d/1rma4kUjOfQdzYFAGYPccaRVZgbiCLi4q/view" target="_blank" rel="noopener" tabindex="0">
+          href="https://drive.google.com/file/d/1KORaCdrTd7N1b9wd3scfpJZpThU3BDGY/view" target="_blank" rel="noopener" tabindex="0">
             <div class="grow">
               <div class="-mb-1 text-lg font-bold">
                 Resume
