@@ -20,10 +20,18 @@ Welcome to my podcast collection! Here are some episodes that have caught my att
 <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/1shh8qUjlDWEKOoNzzBBms?utm_source=generator" width="90%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>
 
+<div style="margin: 2rem 0;">
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/4LmKkvbo0n45YBmZIUABDT?utm_source=generator" width="90%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+<div style="margin: 2rem 0;">
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/1DW2fkyEkgZaEP40Mj6H9m?utm_source=generator" width="90%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
 
 <div style="margin: 2rem 0;">
 <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/7E7CP6nyrcdOlj1iVNp699?utm_source=generator&theme=0" width="90%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>
+
+
 
 
 <div style="margin: 2rem 0;">
