@@ -16,12 +16,13 @@ title = "0xAdra"
  [author]
   name = "Aditya"
   image = "img/me1.png"
-  headline = "‎ ‎ ‎ ‎ ‎ ‎ ‎  Backend dev  ‎  & ‎   Security researcher "	
-   bio = "Security Researcher"
+  headline = "AI Backend Engineer"	
+   bio = "Backend dev"
    links = [
 	 	{ github = "https://github.com/adityaxxz" },
 		{ x-twitter = "https://twitter.com/0xadra" },
 	 	{ envelope = "https://mail.google.com/mail/?view=cm&to=adityaranjan5995@gmail.com" },
+    { linkedin = "https://linkedin.com/in/ad101ra" },
 #	  { telegram = "https://t.me/adiityaxxz" },
     { spotify = "https://open.spotify.com/user/31gq4j4ktficjamwwjn2ql7nncja?si=ae962ef3a28a4bc2" },
     { resume = "https://drive.google.com/file/d/1ME6ksJbXZZ0SJeH2kNnAX_fkekl_xCpn/view" },
@@ -46,7 +47,6 @@ title = "0xAdra"
 #     { keybase = "https://keybase.io/username" },
 #     { kickstarter = "https://www.kickstarter.com/profile/username" },
 #     { lastfm = "https://lastfm.com/user/username" },
-#     { linkedin = "https://linkedin.com/in/username" },
 #     { mastodon = "https://mastodon.instance/@username" },
 #     { medium = "https://medium.com/username" },
 #     { microsoft = "https://www.microsoft.com/" },
