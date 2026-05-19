@@ -14,22 +14,24 @@ sharingLinks = ["twitter", "email", "whatsapp"]
 
 ![img1.png](img1.png)
 
-### CONS of only using the LLMs :
+## CONS of only using the LLMs
 - llms are trained on a specific set of data, suppose knowledge cut off is month ago, so for current world data **it will hallucinate**.
 - also it **cannot access private or internal data**. such as hr policies, finance docs etc
 - **fine tuning is a very expensive and tedious** process cuz it involves tweaking billions of parameters.
 
-#### Data Ingestion Pipeline
+## Data Ingestion Pipeline
 ![dip.png](dip.png)
 
-- Similarity search : technique used within the RAG pipeline to find info relevant to user query from a db. 
+### Similarity search 
+- technique used within the RAG pipeline to find info relevant to user query from a db. 
 	- to perform - text data is converted to vectors using embedding models
 	- the user query is also converted to vector, the system applies algo like cosine similarity to compare query against the vector in the vector db.
 	- the search identifies the `chunks of data` most similar to req, this retrieved info is called `context`, which is then sent to LLM to help it generate an accurate answer.
 
 
 
-- [Semantic search](https://www.google.com/search?q=Semantic+search&oq=semantic+search+&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIGCAkQLhhA0gEINTQ0MWowajGoAgCwAgA&sourceid=chrome&ie=UTF-8&ved=2ahUKEwjGscO45eyRAxVVSWwGHXOQNQEQgK4QegYIAQgAEAU) is an advanced search method that goes beyond keyword matching to understand the **user's intent and the contextual meaning of a query**.
+### Semantic search
+is an advanced search method that goes beyond keyword matching to understand the **user's intent and the contextual meaning of a query**.
 
 
 ![ex.png](ex.png)

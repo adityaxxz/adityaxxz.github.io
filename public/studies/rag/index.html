@@ -612,13 +612,12 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#what-is-rag-actually">What is RAG, Actually?</a>
+    <li><a href="#what-is-rag-actually">What is RAG, Actually?</a></li>
+    <li><a href="#cons-of-only-using-the-llms">CONS of only using the LLMs</a></li>
+    <li><a href="#data-ingestion-pipeline">Data Ingestion Pipeline</a>
       <ul>
-        <li><a href="#cons-of-only-using-the-llms-">CONS of only using the LLMs :</a>
-          <ul>
-            <li><a href="#data-ingestion-pipeline">Data Ingestion Pipeline</a></li>
-          </ul>
-        </li>
+        <li><a href="#similarity-search">Similarity search</a></li>
+        <li><a href="#semantic-search">Semantic search</a></li>
       </ul>
     </li>
   </ul>
@@ -634,13 +633,12 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#what-is-rag-actually">What is RAG, Actually?</a>
+    <li><a href="#what-is-rag-actually">What is RAG, Actually?</a></li>
+    <li><a href="#cons-of-only-using-the-llms">CONS of only using the LLMs</a></li>
+    <li><a href="#data-ingestion-pipeline">Data Ingestion Pipeline</a>
       <ul>
-        <li><a href="#cons-of-only-using-the-llms-">CONS of only using the LLMs :</a>
-          <ul>
-            <li><a href="#data-ingestion-pipeline">Data Ingestion Pipeline</a></li>
-          </ul>
-        </li>
+        <li><a href="#similarity-search">Similarity search</a></li>
+        <li><a href="#semantic-search">Semantic search</a></li>
       </ul>
     </li>
   </ul>
@@ -756,16 +754,16 @@
 </p>
 
 
-<h3 class="relative group">CONS of only using the LLMs : 
-    <div id="cons-of-only-using-the-llms-" class="anchor"></div>
+<h2 class="relative group">CONS of only using the LLMs 
+    <div id="cons-of-only-using-the-llms" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#cons-of-only-using-the-llms-" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#cons-of-only-using-the-llms" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h2>
 <ul>
 <li>llms are trained on a specific set of data, suppose knowledge cut off is month ago, so for current world data <strong>it will hallucinate</strong>.</li>
 <li>also it <strong>cannot access private or internal data</strong>. such as hr policies, finance docs etc</li>
@@ -773,7 +771,7 @@
 </ul>
 
 
-<h4 class="relative group">Data Ingestion Pipeline 
+<h2 class="relative group">Data Ingestion Pipeline 
     <div id="data-ingestion-pipeline" class="anchor"></div>
     
     <span
@@ -782,7 +780,7 @@
             style="text-decoration-line: none !important;" href="#data-ingestion-pipeline" aria-label="Anchor">#</a>
     </span>        
     
-</h4>
+</h2>
 <p>
     <figure>
       <img
@@ -794,19 +792,40 @@
       
     </figure>
 </p>
+
+
+<h3 class="relative group">Similarity search 
+    <div id="similarity-search" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#similarity-search" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <ul>
-<li>
-<p>Similarity search : technique used within the RAG pipeline to find info relevant to user query from a db.</p>
+<li>technique used within the RAG pipeline to find info relevant to user query from a db.
 <ul>
 <li>to perform - text data is converted to vectors using embedding models</li>
 <li>the user query is also converted to vector, the system applies algo like cosine similarity to compare query against the vector in the vector db.</li>
 <li>the search identifies the <code>chunks of data</code> most similar to req, this retrieved info is called <code>context</code>, which is then sent to LLM to help it generate an accurate answer.</li>
 </ul>
 </li>
-<li>
-<p><a href="https://www.google.com/search?q=Semantic&#43;search&amp;oq=semantic&#43;search&#43;&amp;gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIGCAkQLhhA0gEINTQ0MWowajGoAgCwAgA&amp;sourceid=chrome&amp;ie=UTF-8&amp;ved=2ahUKEwjGscO45eyRAxVVSWwGHXOQNQEQgK4QegYIAQgAEAU" target="_blank">Semantic search</a> is an advanced search method that goes beyond keyword matching to understand the <strong>user&rsquo;s intent and the contextual meaning of a query</strong>.</p>
-</li>
 </ul>
+
+
+<h3 class="relative group">Semantic search 
+    <div id="semantic-search" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#semantic-search" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>is an advanced search method that goes beyond keyword matching to understand the <strong>user&rsquo;s intent and the contextual meaning of a query</strong>.</p>
 <p>
     <figure>
       <img
