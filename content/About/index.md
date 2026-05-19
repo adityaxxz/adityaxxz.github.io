@@ -12,7 +12,7 @@ layout = 'simple'
 About
 {{< /typeit >}} -->
 
-<h2>A backend dev & security researcher auditing smart contracts for a living...
+<h2>Building backend systems, AI apps, and real-time products that actually scale.
 <p>
 
 <h3> <ins>Things I believe</ins> 
