@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>MEV (Maximum Extractable Value) &middot; 0xAdra</title>
-  <meta name="title" content="MEV (Maximum Extractable Value) &middot; 0xAdra" />
+  <title>RAG &middot; 0xAdra</title>
+  <meta name="title" content="RAG &middot; 0xAdra" />
   
   
   
   
   
-  <link rel="canonical" href="http://localhost:1313/studies/mev/" />
+  <link rel="canonical" href="http://localhost:1313/studies/rag/" />
   
   
   
@@ -63,16 +63,15 @@
   
   
   
-  <meta property="og:title" content="MEV (Maximum Extractable Value)" />
-<meta property="og:description" content="What&rsquo;s MEV?" />
+  <meta property="og:title" content="RAG" />
+<meta property="og:description" content="What is RAG, Actually?" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/studies/mev/" /><meta property="og:image" content="http://localhost:1313/studies/mev/featured.jpg" /><meta property="article:section" content="studies" />
-<meta property="article:published_time" content="2025-04-23T18:13:31+05:30" />
-<meta property="article:modified_time" content="2025-04-23T18:13:31+05:30" />
+<meta property="og:url" content="http://localhost:1313/studies/rag/" /><meta property="article:section" content="studies" />
+<meta property="article:published_time" content="2026-05-19T19:00:35+05:30" />
+<meta property="article:modified_time" content="2026-05-19T19:00:35+05:30" />
 
-  <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="http://localhost:1313/studies/mev/featured.jpg" /><meta name="twitter:title" content="MEV (Maximum Extractable Value)"/>
-<meta name="twitter:description" content="What&rsquo;s MEV?"/>
+  <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="RAG"/>
+<meta name="twitter:description" content="What is RAG, Actually?"/>
 
   
   <script type="application/ld+json">
@@ -80,26 +79,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Studies",
-    "name": "MEV (Maximum Extractable Value)",
-    "headline": "MEV (Maximum Extractable Value)",
+    "name": "RAG",
+    "headline": "RAG",
     
-    "abstract": "What\u0026rsquo;s MEV?",
+    "abstract": "What is RAG, Actually?",
     "inLanguage": "en",
-    "url" : "http:\/\/localhost:1313\/studies\/mev\/",
+    "url" : "http:\/\/localhost:1313\/studies\/rag\/",
     "author" : {
       "@type": "Person",
       "name": "Aditya"
     },
-    "copyrightYear": "2025",
-    "dateCreated": "2025-04-23T18:13:31\u002b05:30",
-    "datePublished": "2025-04-23T18:13:31\u002b05:30",
+    "copyrightYear": "2026",
+    "dateCreated": "2026-05-19T19:00:35\u002b05:30",
+    "datePublished": "2026-05-19T19:00:35\u002b05:30",
     
-    "dateModified": "2025-04-23T18:13:31\u002b05:30",
+    "dateModified": "2026-05-19T19:00:35\u002b05:30",
     
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "812"
+    "wordCount": "288"
   }]
   </script>
 
@@ -511,17 +510,15 @@
   
   
   
-        
-            <div class="w-full h-36 md:h-56 lg:h-72 single_hero_basic nozoom" style="background-image:url(/studies/mev/featured.jpg);"></div>
-        
-    
+ 
+
   
   
 
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      MEV (Maximum Extractable Value)
+      RAG
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -564,7 +561,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2025-04-23 18:13:31 &#43;0530 IST">23 April 2025</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
+  <time datetime="2026-05-19 19:00:35 &#43;0530 IST">19 May 2026</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
   
 
   
@@ -615,21 +612,13 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#whats-mev">What&rsquo;s MEV?</a></li>
-    <li><a href="#example">Example</a></li>
-    <li><a href="#types">Types</a>
+    <li><a href="#what-is-rag-actually">What is RAG, Actually?</a>
       <ul>
-        <li><a href="#arbitrage">Arbitrage</a></li>
-        <li><a href="#sandwich-attacks">Sandwich Attacks</a></li>
-        <li><a href="#liquidations">Liquidations</a></li>
-        <li><a href="#jit-just-in-time-liquidity">JIT (Just in time liquidity)</a></li>
-      </ul>
-    </li>
-    <li><a href="#mev-prevention">MEV Prevention</a>
-      <ul>
-        <li><a href="#using-protection">Using Protection</a></li>
-        <li><a href="#consider-private-mempool">Consider Private Mempool</a></li>
-        <li><a href="#constructing-an-mev-bouncer-contract">Constructing an MEV bouncer contract</a></li>
+        <li><a href="#cons-of-only-using-the-llms-">CONS of only using the LLMs :</a>
+          <ul>
+            <li><a href="#data-ingestion-pipeline">Data Ingestion Pipeline</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -645,21 +634,13 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#whats-mev">What&rsquo;s MEV?</a></li>
-    <li><a href="#example">Example</a></li>
-    <li><a href="#types">Types</a>
+    <li><a href="#what-is-rag-actually">What is RAG, Actually?</a>
       <ul>
-        <li><a href="#arbitrage">Arbitrage</a></li>
-        <li><a href="#sandwich-attacks">Sandwich Attacks</a></li>
-        <li><a href="#liquidations">Liquidations</a></li>
-        <li><a href="#jit-just-in-time-liquidity">JIT (Just in time liquidity)</a></li>
-      </ul>
-    </li>
-    <li><a href="#mev-prevention">MEV Prevention</a>
-      <ul>
-        <li><a href="#using-protection">Using Protection</a></li>
-        <li><a href="#consider-private-mempool">Consider Private Mempool</a></li>
-        <li><a href="#constructing-an-mev-bouncer-contract">Constructing an MEV bouncer contract</a></li>
+        <li><a href="#cons-of-only-using-the-llms-">CONS of only using the LLMs :</a>
+          <ul>
+            <li><a href="#data-ingestion-pipeline">Data Ingestion Pipeline</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -747,22 +728,83 @@
         <div class="article-content max-w-prose mb-20">
           
 
-<h2 class="relative group">What&rsquo;s MEV? 
-    <div id="whats-mev" class="anchor"></div>
+<h2 class="relative group">What is RAG, Actually? 
+    <div id="what-is-rag-actually" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#whats-mev" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#what-is-rag-actually" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
 <ul>
+<li><strong>Retrieval-Augmented Generation (RAG) is the process of optimizing the output of a large language model</strong>, so it references an authoritative knowledge base outside of its training data sources before generating a response.</li>
+<li>Large Language Models (LLMs) are trained on vast volumes of data and use billions of parameters to generate original output for tasks like answering questions, translating languages, and completing sentences.</li>
+<li><strong>RAG extends the already powerful capabilities of LLMs to specific domains or an organization&rsquo;s internal knowledqe base</strong>, all without the need to retrain the model. It is a cost-effective approach to improving LLM output so it remains relevant, accurate, and useful in various contexts.</li>
+</ul>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        src="/studies/rag/img1.png"
+        alt="img1.png"
+      />
+      
+    </figure>
+</p>
+
+
+<h3 class="relative group">CONS of only using the LLMs : 
+    <div id="cons-of-only-using-the-llms-" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#cons-of-only-using-the-llms-" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<ul>
+<li>llms are trained on a specific set of data, suppose knowledge cut off is month ago, so for current world data <strong>it will hallucinate</strong>.</li>
+<li>also it <strong>cannot access private or internal data</strong>. such as hr policies, finance docs etc</li>
+<li><strong>fine tuning is a very expensive and tedious</strong> process cuz it involves tweaking billions of parameters.</li>
+</ul>
+
+
+<h4 class="relative group">Data Ingestion Pipeline 
+    <div id="data-ingestion-pipeline" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#data-ingestion-pipeline" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        src="/studies/rag/dip.png"
+        alt="dip.png"
+      />
+      
+    </figure>
+</p>
+<ul>
 <li>
-<p><em><strong>It&rsquo;s the value that blockchain node operators and users can extract by ordering transactions in a block in a specific order.</strong></em></p>
+<p>Similarity search : technique used within the RAG pipeline to find info relevant to user query from a db.</p>
+<ul>
+<li>to perform - text data is converted to vectors using embedding models</li>
+<li>the user query is also converted to vector, the system applies algo like cosine similarity to compare query against the vector in the vector db.</li>
+<li>the search identifies the <code>chunks of data</code> most similar to req, this retrieved info is called <code>context</code>, which is then sent to LLM to help it generate an accurate answer.</li>
+</ul>
 </li>
 <li>
-<p><em>When a transaction is initiated, it is directed to a specific node which, instead of immediately integrating it into its block, places it into its &lsquo;memory pool&rsquo;, or <u>&lsquo;mempool&rsquo;</u> {waiting area for transactions}. This constitutes the lower tier of workings that enable blockchain.</em></p>
+<p><a href="https://www.google.com/search?q=Semantic&#43;search&amp;oq=semantic&#43;search&#43;&amp;gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIGCAkQLhhA0gEINTQ0MWowajGoAgCwAgA&amp;sourceid=chrome&amp;ie=UTF-8&amp;ved=2ahUKEwjGscO45eyRAxVVSWwGHXOQNQEQgK4QegYIAQgAEAU" target="_blank">Semantic search</a> is an advanced search method that goes beyond keyword matching to understand the <strong>user&rsquo;s intent and the contextual meaning of a query</strong>.</p>
 </li>
 </ul>
 <p>
@@ -770,293 +812,13 @@
       <img
         class="my-0 rounded-md"
         loading="lazy"
-        src="/studies/mev/img1.png"
-        alt="alt text"
-      />
-      
-    </figure>
-</p>
-<ul>
-<li>Suppose you&rsquo;re a malicious user and want to use this to your advantage. You have the ability to scan the mempool, essentially predicting future transactions.</li>
-</ul>
-<hr>
-
-
-<h2 class="relative group">Example 
-    <div id="example" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#example" aria-label="Anchor">#</a>
-    </span>        
-    
-</h2>
-<p>Let&rsquo;s say <code>User A</code> is malicious, and sees someone make a transaction that is going to make them $100.</p>
-<p>Well <code>User A</code> might just say &ldquo;Hey! I want to make $100!&rdquo;</p>
-<p>So what <code>User A</code> can do is something called <u><em><strong>front-running</strong></em></u>. They can send their own transaction ahead of your transaction to extract some value. The only reason they are able to extract this value is because they were able to see your transaction ahead of time.</p>
-<ul>
-<li>Front-running is one of the most common forms of MEV.</li>
-</ul>
-<hr>
-
-
-<h2 class="relative group">Types 
-    <div id="types" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#types" aria-label="Anchor">#</a>
-    </span>        
-    
-</h2>
-
-
-<h3 class="relative group">Arbitrage 
-    <div id="arbitrage" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#arbitrage" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
-<ul>
-<li>
-<p>We have a price on Uniswap for BTC/USDT , so selling BTC for USDT. we can have the same pool , the same price BTC to dollar with the BTC to USDT pool.</p>
-</li>
-<li>
-<p>Lets say , <code>User A</code> buys 10 BTC from the first pool, now the price will increase. this means we will have different prices for BTC to USDT.</p>
-</li>
-<li>
-<p>Here, MEV bot an arbitrager comes in and rebalances the pool, he will do some swap or use flashloan,  and the prices will become roughly the same.</p>
-</li>
-</ul>
-<p>
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        loading="lazy"
-        src="/studies/mev/img2.png"
-        alt="alt text"
+        src="/studies/rag/ex.png"
+        alt="ex.png"
       />
       
     </figure>
 </p>
 
-
-<h3 class="relative group">Sandwich Attacks 
-    <div id="sandwich-attacks" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#sandwich-attacks" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
-<p>Where the attacker front-runs the user and then back-runs the user where basically they see the transaction by the user and then they step in. (in this order)</p>
-<ol>
-<li>Attacker Txn (front-run)</li>
-<li>User Txn</li>
-<li>Attacker Txn (back-run)</li>
-</ol>
-<p>ThunderLoan MEV example :</p>
-<ol>
-<li><code>User A</code> makes a request to the Thunderloan protocol for a flash loan.</li>
-<li>Seeing the incoming flash loan request, <code>User B</code>, decides to exploit the situation. <code>User B</code> doesn&rsquo;t just want the fee to be high, they want it way higher!</li>
-<li><code>User B</code> then front runs the flash loan function, and spikes the price on Uniswap by taking out a flash loan <em>themselves</em> to make the price go higher. Effectively, this swap alters the balances from the initial ten USDC and one ETH to highly skewed figures: perhaps 0.1 ETH and an astronomical amount of USDC (let&rsquo;s say a billion). Since the fee is derived from the T-Swap pool, the Thunder Loan platform now has a way bigger fee, that the user wasn&rsquo;t aware of.</li>
-<li>Then, after collecting the fee, User B swaps back to the original ratio of 10 USDC and 1 ETH.</li>
-</ol>
-<p>
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        loading="lazy"
-        src="/studies/mev/img3.png"
-        alt="alt text"
-      />
-      
-    </figure>
-</p>
-
-
-<h3 class="relative group">Liquidations 
-    <div id="liquidations" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#liquidations" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
-<p>
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        loading="lazy"
-        src="/studies/mev/img4.png"
-        alt="alt text"
-      />
-      
-    </figure>
-</p>
-
-
-<h3 class="relative group">JIT (Just in time liquidity) 
-    <div id="jit-just-in-time-liquidity" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#jit-just-in-time-liquidity" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
-<ul>
-<li>
-<p>This is an attack, its part of Uniswap V3 where in V3 we have fragmented liquidity, so you have price ticks or price buckets.</p>
-</li>
-<li>
-<p>Let&rsquo;s say Tether price is $2000, when the price shoots up and somebody does a swap. this liquidity that you provided at this exact price will be used up, but somebody with an MEV bot with an off-chain monitoring system can actually see that somebody is about to do a swap.</p>
-</li>
-<li>
-<p>The MEV bot can front-run this transaction and provide liquidity for this exact price point , this will make it so that their liquidity will be used before yours. but the fees  that the LPs will split between MEV and you.</p>
-</li>
-</ul>
-<p>
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        loading="lazy"
-        src="/studies/mev/img5.png"
-        alt="alt text"
-      />
-      
-    </figure>
-</p>
-<hr>
-
-
-<h2 class="relative group">MEV Prevention 
-    <div id="mev-prevention" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#mev-prevention" aria-label="Anchor">#</a>
-    </span>        
-    
-</h2>
-
-
-<h3 class="relative group">Using Protection 
-    <div id="using-protection" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#using-protection" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
-<ul>
-<li>Initializing a bool state variable value as <code>False</code> and set it to <code>True</code> in an ending transaction function, Then if the state variable value is <code>True</code> inside the main function, revert().</li>
-</ul>
-
-
-<h3 class="relative group">Consider Private Mempool 
-    <div id="consider-private-mempool" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#consider-private-mempool" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
-<ul>
-<li>Instead of submitting your transaction to a public mempool, you can send your transaction to this private mempool. Unlike the public mempool, this keeps the transaction for itself until it&rsquo;s time to post it on the chain &amp; uses flashbots.</li>
-<li>Despite its pros, the private mempool requires you to trust that it will maintain your privacy and avoid front-running. Another downside is the slower transaction speed.</li>
-</ul>
-<p>
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        loading="lazy"
-        src="/studies/mev/img7.png"
-        alt="alt text"
-      />
-      
-    </figure>
-</p>
-
-
-<h3 class="relative group">Constructing an MEV bouncer contract 
-    <div id="constructing-an-mev-bouncer-contract" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#constructing-an-mev-bouncer-contract" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
-<ul>
-<li>
-<p>To save user from getting MEV&rsquo;ed? (Not Applicable but still)</p>
-</li>
-<li>
-<p>But this wont work because the MEV bot (inside the mempool) can see in the bytecode when a contract calls another contract , so the bot just skips the line &amp; call the other contract directly.</p>
-</li>
-</ul>
-<p>
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        loading="lazy"
-        src="/studies/mev/img8.png"
-        alt="alt text"
-      />
-      
-    </figure>
-</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// SPDX-License-Identifier: MIT
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">pragma</span> <span class="nx">solidity</span> <span class="mf">0.8</span><span class="p">.</span><span class="mi">20</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kr">interface</span> <span class="nx">IFrontRan</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">function</span> <span class="nx">withdraw</span><span class="p">(</span><span class="nx">string</span> <span class="nx">memory</span> <span class="nx">password</span><span class="p">)</span> <span class="nx">external</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">contract</span> <span class="nx">Bouncer</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">error</span> <span class="nx">Bouncer__NotOwner</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">error</span> <span class="nx">Bouncer__DidntMoney</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="nx">address</span> <span class="nx">s_owner</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">address</span> <span class="nx">s_frontRan</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="nx">constructor</span><span class="p">(</span><span class="nx">address</span> <span class="nx">frontRan</span><span class="p">)</span> <span class="nx">payable</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="nx">s_owner</span> <span class="o">=</span> <span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="nx">s_frontRan</span> <span class="o">=</span> <span class="nx">frontRan</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="kd">function</span> <span class="nx">go</span><span class="p">(</span><span class="nx">string</span> <span class="nx">memory</span> <span class="nx">password</span><span class="p">)</span> <span class="nx">external</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span> <span class="o">!=</span> <span class="nx">s_owner</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="nx">revert</span> <span class="nx">Bouncer__NotOwner</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">        <span class="nx">IFrontRan</span><span class="p">(</span><span class="nx">s_frontRan</span><span class="p">).</span><span class="nx">withdraw</span><span class="p">(</span><span class="nx">password</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="nx">bool</span> <span class="nx">success</span><span class="p">,)</span> <span class="o">=</span> <span class="nx">payable</span><span class="p">(</span><span class="nx">s_owner</span><span class="p">).</span><span class="nx">call</span><span class="p">{</span><span class="nx">value</span><span class="o">:</span> <span class="nx">address</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">balance</span><span class="p">}(</span><span class="s2">&#34;&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">success</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="nx">revert</span> <span class="nx">Bouncer__DidntMoney</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="nx">receive</span><span class="p">()</span> <span class="nx">external</span> <span class="nx">payable</span> <span class="p">{}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div>
         </div>
         
         
@@ -1070,7 +832,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=http://localhost:1313/studies/mev/&amp;text=MEV%20%28Maximum%20Extractable%20Value%29"
+      href="https://twitter.com/intent/tweet/?url=http://localhost:1313/studies/rag/&amp;text=RAG"
       title="Tweet on Twitter"
       aria-label="Tweet on Twitter"
       >
@@ -1088,7 +850,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=http://localhost:1313/studies/mev/&amp;subject=MEV%20%28Maximum%20Extractable%20Value%29"
+      href="mailto:?body=http://localhost:1313/studies/rag/&amp;subject=RAG"
       title="Send via email"
       aria-label="Send via email"
       >
@@ -1107,7 +869,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=http://localhost:1313/studies/mev/&amp;resubmit=true&amp;title=MEV%20%28Maximum%20Extractable%20Value%29"
+      href="https://api.whatsapp.com/send?text=http://localhost:1313/studies/rag/&amp;resubmit=true&amp;title=RAG"
       title=""
       aria-label=""
       >
@@ -1136,8 +898,8 @@
           
         
       <script>
-        var oid = "views_studies\\MEV\\index.md"
-        var oid_likes = "likes_studies\\MEV\\index.md"
+        var oid = "views_studies\\RAG\\index.md"
+        var oid_likes = "likes_studies\\RAG\\index.md"
       </script>
       
       
@@ -1157,7 +919,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/studies/perpetuals/">
+            <a class="flex group mr-3" href="/studies/mev/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -1169,11 +931,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Perpetuals</span
+                  >MEV (Maximum Extractable Value)</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2025-04-17 18:13:31 &#43;0530 IST">17 April 2025</time>
+                    <time datetime="2025-04-23 18:13:31 &#43;0530 IST">23 April 2025</time>
                   
                 </span>
               </span>
@@ -1181,28 +943,6 @@
           
         </span>
         <span>
-          
-            <a class="flex text-right group ml-3" href="/studies/rag/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >RAG</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2026-05-19 19:00:35 &#43;0530 IST">19 May 2026</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>

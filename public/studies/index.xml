@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>0xAdra ©2026</copyright>
-    <lastBuildDate>Wed, 23 Apr 2025 18:13:31 +0530</lastBuildDate><atom:link href="http://localhost:1313/studies/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 May 2026 19:00:35 +0530</lastBuildDate><atom:link href="http://localhost:1313/studies/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RAG</title>
+      <link>http://localhost:1313/studies/rag/</link>
+      <pubDate>Tue, 19 May 2026 19:00:35 +0530</pubDate>
+      
+      <guid>http://localhost:1313/studies/rag/</guid>
+      <description>What is RAG, Actually?</description>
+      
+    </item>
+    
     <item>
       <title>MEV (Maximum Extractable Value)</title>
       <link>http://localhost:1313/studies/mev/</link>
