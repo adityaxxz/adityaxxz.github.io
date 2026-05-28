@@ -11,24 +11,29 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
+name = "resume"
+url = "https://drive.google.com/file/d/1cDKVOwWSumPp72rOrM1u7JylFHP26ni5/view"
+weight = 1
+
+[[main]]
 name = "projects"
 pageRef = "Projects"
 weight = 2
 
-[[main]]
-  name = "books"
-  pageRef = "Books"
-  weight = 3
+#[[main]]
+#  name = "books"
+#  pageRef = "Books"
+#  weight = 3
 
-[[main]]
-  name = "podcasts"
-  pageRef = "Podcasts"
-  weight = 4
+#[[main]]
+#  name = "podcasts"
+#  pageRef = "Podcasts"
+#  weight = 4
 
-[[main]]
-  name = "quotes"
-  pageRef = "Quotes"
-  weight = 5
+#[[main]]
+#  name = "quotes"
+#  pageRef = "Quotes"
+#  weight = 5
 
 [[main]]
   name = "thoughts"

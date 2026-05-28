@@ -16,16 +16,16 @@ title = "0xAdra"
  [author]
   name = "Aditya"
   image = "img/me1.png"
-  headline = "AI Backend Engineer"	
+  headline = "AI Backend Engineer"
    bio = "Backend dev"
    links = [
 	 	{ github = "https://github.com/adityaxxz" },
 		{ x-twitter = "https://twitter.com/0xadra" },
-	 	{ envelope = "https://mail.google.com/mail/?view=cm&to=adityaranjan5995@gmail.com" },
+	 	{ envelope = "mailto:aditya59ranjan@gmail.com" },
     { linkedin = "https://linkedin.com/in/ad101ra" },
 #	  { telegram = "https://t.me/adiityaxxz" },
     { spotify = "https://open.spotify.com/user/31gq4j4ktficjamwwjn2ql7nncja?si=ae962ef3a28a4bc2" },
-    { resume = "https://drive.google.com/file/d/1cDKVOwWSumPp72rOrM1u7JylFHP26ni5/view" },
+    # { resume = "https://drive.google.com/file/d/1cDKVOwWSumPp72rOrM1u7JylFHP26ni5/view" },
     { link = "https://adra.pw" },
 		{ code = "https://leetcode.com/ad101ra/" },
 #     { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
