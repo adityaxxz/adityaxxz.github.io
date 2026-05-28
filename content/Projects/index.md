@@ -18,30 +18,34 @@ If you find my projects useful, a [star ⭐](https://github.com/adityaxxz?tab=re
 
 
 
-<h2>1️⃣ TaskiMate</h2>
+<h2>1️⃣ Django AI Agent</h2>
+
+{{< github repo="adityaxxz/django-ai-agent" >}}
+
+<h2>2️⃣ TaskiMate</h2>
 
 {{< github repo="adityaxxz/ticket-dashboard" >}}
 
 
-<h2>2️⃣ Booklynn</h2>
+<h2>3️⃣ Booklynn</h2>
 
 {{< github repo="adityaxxz/Booklynn" >}}
 
-<h2>3️⃣ Twiiq </h2>
+<h2>4️⃣ Twiiq </h2>
 
 {{< github repo="adityaxxz/tweet-app" >}}
 
-<h2>4️⃣ PremiumPredictor App</h2>
+<h2>5️⃣ PremiumPredictor App (ML)</h2>
 
 {{< github repo="adityaxxz/fastapi-ml-app" >}}
 
-<h2>5️⃣ StreamItBro </h2>
+<h2>6️⃣ StreamItBro </h2>
 
 {{< github repo="adityaxxz/yt-backend" >}}
 
-<h2>6️⃣ Django DRF Blog API</h2>
+<!-- <h2> Django DRF Blog API</h2>
 
-{{< github repo="adityaxxz/blogapp" >}}
+{{< github repo="adityaxxz/blogapp" >}} -->
 
 ---
 
@@ -57,9 +61,9 @@ If you find my projects useful, a [star ⭐](https://github.com/adityaxxz?tab=re
 
 ---
 
-<h2>9️⃣ Running Tracker App</h2>
+<!-- <h2>9️⃣ Running Tracker App</h2>
 
-{{< github repo="adityaxxz/RunningTrackerApp" >}}
+{{< github repo="adityaxxz/RunningTrackerApp" >}} -->
 
 
 <h2>🔟 Multi-Threaded Web Server</h2>
