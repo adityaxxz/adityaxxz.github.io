@@ -18,28 +18,32 @@ If you find my projects useful, a [star ⭐](https://github.com/adityaxxz?tab=re
 
 
 
-<h2>1️⃣ Django AI Agent</h2>
+<h2>1️⃣ Adra-AI</h2>
+
+{{< github repo="adityaxxz/adra-ai" >}}
+
+<h2>2️⃣ Django AI Agent</h2>
 
 {{< github repo="adityaxxz/django-ai-agent" >}}
 
-<h2>2️⃣ TaskiMate</h2>
+<h2>3️⃣ TaskiMate</h2>
 
 {{< github repo="adityaxxz/ticket-dashboard" >}}
 
 
-<h2>3️⃣ Booklynn</h2>
+<h2>4️⃣ Booklynn</h2>
 
 {{< github repo="adityaxxz/Booklynn" >}}
 
-<h2>4️⃣ Twiiq </h2>
+<h2>5️⃣ Twiiq </h2>
 
 {{< github repo="adityaxxz/tweet-app" >}}
 
-<h2>5️⃣ PremiumPredictor App (ML)</h2>
+<h2>6️⃣ PremiumPredictor App (ML)</h2>
 
 {{< github repo="adityaxxz/fastapi-ml-app" >}}
 
-<h2>6️⃣ StreamItBro </h2>
+<h2>7️⃣ StreamItBro </h2>
 
 {{< github repo="adityaxxz/yt-backend" >}}
 
@@ -49,7 +53,7 @@ If you find my projects useful, a [star ⭐](https://github.com/adityaxxz?tab=re
 
 ---
 
-<h2>7️⃣ Account Abstraction</h2>
+<h2>8️⃣ Account Abstraction</h2>
 
 {{< github repo="adityaxxz/account-abstraction" >}}
 
